@@ -1,0 +1,1 @@
+/usr/bin/c++ -m64 -g -m64 CMakeFiles/my_project.dir/src/main.cpp.o -o my_project   -L/home/alderson/.conan2/p/b/fmt7df5fcf1e98ca/p/lib  -Wl,-rpath,/home/alderson/.conan2/p/b/fmt7df5fcf1e98ca/p/lib /home/alderson/.conan2/p/b/fmt7df5fcf1e98ca/p/lib/libfmtd.a -lm 

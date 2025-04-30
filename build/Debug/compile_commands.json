@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/alderson/Projects/Mine/finance-infra-cpp/build/Debug",
+  "command": "/usr/bin/c++  -isystem /home/alderson/.conan2/p/b/fmt7df5fcf1e98ca/p/include -m64 -g -std=gnu++17 -o CMakeFiles/my_project.dir/src/main.cpp.o -c /home/alderson/Projects/Mine/finance-infra-cpp/src/main.cpp",
+  "file": "/home/alderson/Projects/Mine/finance-infra-cpp/src/main.cpp",
+  "output": "CMakeFiles/my_project.dir/src/main.cpp.o"
+}
+]
