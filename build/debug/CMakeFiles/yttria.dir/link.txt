@@ -1,2 +1,2 @@
-/usr/bin/ar qc libyttria.a CMakeFiles/yttria.dir/src/backend/instance.cpp.o CMakeFiles/yttria.dir/src/backend/window.cpp.o CMakeFiles/yttria.dir/src/frontend/renderer.cpp.o
+/usr/bin/ar qc libyttria.a CMakeFiles/yttria.dir/src/backend/instance.cpp.o CMakeFiles/yttria.dir/src/backend/physical_device.cpp.o CMakeFiles/yttria.dir/src/backend/surface.cpp.o CMakeFiles/yttria.dir/src/backend/window.cpp.o CMakeFiles/yttria.dir/src/frontend/renderer.cpp.o
 /usr/bin/ranlib libyttria.a

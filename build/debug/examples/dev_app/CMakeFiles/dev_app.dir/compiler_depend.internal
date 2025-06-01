@@ -3,7 +3,11 @@
 
 examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o
  /home/alderson/Projects/Mine/yttria/examples/dev_app/main.cpp
+ /home/alderson/Projects/Mine/yttria/include/yttria/backend/instance.hpp
+ /home/alderson/Projects/Mine/yttria/include/yttria/backend/physical_device.hpp
+ /home/alderson/Projects/Mine/yttria/include/yttria/backend/surface.hpp
  /home/alderson/Projects/Mine/yttria/include/yttria/backend/window.hpp
+ /home/alderson/Projects/Mine/yttria/include/yttria/frontend/rendered.hpp
  /usr/include/GL/gl.h
  /usr/include/GL/glext.h
  /usr/include/GLFW/glfw3.h
@@ -62,6 +66,7 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o
  /usr/include/c++/13/bits/shared_ptr_base.h
  /usr/include/c++/13/bits/std_abs.h
  /usr/include/c++/13/bits/stl_algobase.h
+ /usr/include/c++/13/bits/stl_bvector.h
  /usr/include/c++/13/bits/stl_construct.h
  /usr/include/c++/13/bits/stl_function.h
  /usr/include/c++/13/bits/stl_iterator.h
@@ -71,6 +76,7 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o
  /usr/include/c++/13/bits/stl_raw_storage_iter.h
  /usr/include/c++/13/bits/stl_tempbuf.h
  /usr/include/c++/13/bits/stl_uninitialized.h
+ /usr/include/c++/13/bits/stl_vector.h
  /usr/include/c++/13/bits/streambuf.tcc
  /usr/include/c++/13/bits/streambuf_iterator.h
  /usr/include/c++/13/bits/string_view.tcc
@@ -79,6 +85,7 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o
  /usr/include/c++/13/bits/uses_allocator.h
  /usr/include/c++/13/bits/uses_allocator_args.h
  /usr/include/c++/13/bits/utility.h
+ /usr/include/c++/13/bits/vector.tcc
  /usr/include/c++/13/cctype
  /usr/include/c++/13/cerrno
  /usr/include/c++/13/clocale
@@ -116,6 +123,7 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o
  /usr/include/c++/13/tuple
  /usr/include/c++/13/type_traits
  /usr/include/c++/13/typeinfo
+ /usr/include/c++/13/vector
  /usr/include/ctype.h
  /usr/include/endian.h
  /usr/include/errno.h

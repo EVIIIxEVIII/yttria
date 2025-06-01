@@ -167,6 +167,54 @@ src/backend/instance.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/instance.cpp.s
 .PHONY : src/backend/instance.cpp.s
 
+src/backend/physical_device.o: src/backend/physical_device.cpp.o
+.PHONY : src/backend/physical_device.o
+
+# target to build an object file
+src/backend/physical_device.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/physical_device.cpp.o
+.PHONY : src/backend/physical_device.cpp.o
+
+src/backend/physical_device.i: src/backend/physical_device.cpp.i
+.PHONY : src/backend/physical_device.i
+
+# target to preprocess a source file
+src/backend/physical_device.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/physical_device.cpp.i
+.PHONY : src/backend/physical_device.cpp.i
+
+src/backend/physical_device.s: src/backend/physical_device.cpp.s
+.PHONY : src/backend/physical_device.s
+
+# target to generate assembly for a file
+src/backend/physical_device.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/physical_device.cpp.s
+.PHONY : src/backend/physical_device.cpp.s
+
+src/backend/surface.o: src/backend/surface.cpp.o
+.PHONY : src/backend/surface.o
+
+# target to build an object file
+src/backend/surface.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/surface.cpp.o
+.PHONY : src/backend/surface.cpp.o
+
+src/backend/surface.i: src/backend/surface.cpp.i
+.PHONY : src/backend/surface.i
+
+# target to preprocess a source file
+src/backend/surface.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/surface.cpp.i
+.PHONY : src/backend/surface.cpp.i
+
+src/backend/surface.s: src/backend/surface.cpp.s
+.PHONY : src/backend/surface.s
+
+# target to generate assembly for a file
+src/backend/surface.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/surface.cpp.s
+.PHONY : src/backend/surface.cpp.s
+
 src/backend/window.o: src/backend/window.cpp.o
 .PHONY : src/backend/window.o
 
@@ -228,6 +276,12 @@ help:
 	@echo "... src/backend/instance.o"
 	@echo "... src/backend/instance.i"
 	@echo "... src/backend/instance.s"
+	@echo "... src/backend/physical_device.o"
+	@echo "... src/backend/physical_device.i"
+	@echo "... src/backend/physical_device.s"
+	@echo "... src/backend/surface.o"
+	@echo "... src/backend/surface.i"
+	@echo "... src/backend/surface.s"
 	@echo "... src/backend/window.o"
 	@echo "... src/backend/window.i"
 	@echo "... src/backend/window.s"

@@ -12,7 +12,6 @@ public:
     Window(int w, int h, std::string names);
     ~Window();
 
-
     Window(const Window &) = delete;
     Window &operator=(const Window &) = delete;
 
@@ -21,7 +20,6 @@ public:
     bool wasWindowResized() { return framebufferResized_; }
     void resetWindowResized() { framebufferResized_ = false; }
 
-    void createWindowSurface(VkInstance instance, VkSurfaceKHR *surface);
     GLFWwindow *getGLFWWindow() const { return window_; }
 
 private:
