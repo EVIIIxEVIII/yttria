@@ -1,13 +1,25 @@
 [
 {
   "directory": "/home/alderson/Projects/Mine/yttria/build/debug",
-  "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/window.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/window.cpp",
+  "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/instance.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/instance.cpp",
+  "file": "/home/alderson/Projects/Mine/yttria/src/backend/instance.cpp",
+  "output": "CMakeFiles/yttria.dir/src/backend/instance.cpp.o"
+},
+{
+  "directory": "/home/alderson/Projects/Mine/yttria/build/debug",
+  "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/window.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/window.cpp",
   "file": "/home/alderson/Projects/Mine/yttria/src/backend/window.cpp",
   "output": "CMakeFiles/yttria.dir/src/backend/window.cpp.o"
 },
 {
+  "directory": "/home/alderson/Projects/Mine/yttria/build/debug",
+  "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/frontend/renderer.cpp.o -c /home/alderson/Projects/Mine/yttria/src/frontend/renderer.cpp",
+  "file": "/home/alderson/Projects/Mine/yttria/src/frontend/renderer.cpp",
+  "output": "CMakeFiles/yttria.dir/src/frontend/renderer.cpp.o"
+},
+{
   "directory": "/home/alderson/Projects/Mine/yttria/build/debug/examples/dev_app",
-  "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include -g -std=gnu++17 -o CMakeFiles/dev_app.dir/main.cpp.o -c /home/alderson/Projects/Mine/yttria/examples/dev_app/main.cpp",
+  "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/dev_app.dir/main.cpp.o -c /home/alderson/Projects/Mine/yttria/examples/dev_app/main.cpp",
   "file": "/home/alderson/Projects/Mine/yttria/examples/dev_app/main.cpp",
   "output": "examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o"
 }

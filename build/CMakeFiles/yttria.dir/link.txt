@@ -1,2 +1,0 @@
-/usr/bin/ar qc libyttria.a CMakeFiles/yttria.dir/src/backend/window.cpp.o
-/usr/bin/ranlib libyttria.a

@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/alderson/Projects/Mine/yttria/include
 
-CXX_FLAGS = -g -std=gnu++17
+CXX_FLAGS =  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17
 

@@ -143,6 +143,30 @@ dev_app/fast:
 	$(MAKE) $(MAKESILENT) -f examples/dev_app/CMakeFiles/dev_app.dir/build.make examples/dev_app/CMakeFiles/dev_app.dir/build
 .PHONY : dev_app/fast
 
+src/backend/instance.o: src/backend/instance.cpp.o
+.PHONY : src/backend/instance.o
+
+# target to build an object file
+src/backend/instance.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/instance.cpp.o
+.PHONY : src/backend/instance.cpp.o
+
+src/backend/instance.i: src/backend/instance.cpp.i
+.PHONY : src/backend/instance.i
+
+# target to preprocess a source file
+src/backend/instance.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/instance.cpp.i
+.PHONY : src/backend/instance.cpp.i
+
+src/backend/instance.s: src/backend/instance.cpp.s
+.PHONY : src/backend/instance.s
+
+# target to generate assembly for a file
+src/backend/instance.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/instance.cpp.s
+.PHONY : src/backend/instance.cpp.s
+
 src/backend/window.o: src/backend/window.cpp.o
 .PHONY : src/backend/window.o
 
@@ -167,6 +191,30 @@ src/backend/window.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/window.cpp.s
 .PHONY : src/backend/window.cpp.s
 
+src/frontend/renderer.o: src/frontend/renderer.cpp.o
+.PHONY : src/frontend/renderer.o
+
+# target to build an object file
+src/frontend/renderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/frontend/renderer.cpp.o
+.PHONY : src/frontend/renderer.cpp.o
+
+src/frontend/renderer.i: src/frontend/renderer.cpp.i
+.PHONY : src/frontend/renderer.i
+
+# target to preprocess a source file
+src/frontend/renderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/frontend/renderer.cpp.i
+.PHONY : src/frontend/renderer.cpp.i
+
+src/frontend/renderer.s: src/frontend/renderer.cpp.s
+.PHONY : src/frontend/renderer.s
+
+# target to generate assembly for a file
+src/frontend/renderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/frontend/renderer.cpp.s
+.PHONY : src/frontend/renderer.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -177,9 +225,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... dev_app"
 	@echo "... yttria"
+	@echo "... src/backend/instance.o"
+	@echo "... src/backend/instance.i"
+	@echo "... src/backend/instance.s"
 	@echo "... src/backend/window.o"
 	@echo "... src/backend/window.i"
 	@echo "... src/backend/window.s"
+	@echo "... src/frontend/renderer.o"
+	@echo "... src/frontend/renderer.i"
+	@echo "... src/frontend/renderer.s"
 .PHONY : help
 
 
