@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/dev_app.dir/main.cpp.o -o dev_app  ../../libyttria.a /usr/lib/x86_64-linux-gnu/libvulkan.so -lglfw 

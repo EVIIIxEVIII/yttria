@@ -1,0 +1,6 @@
+/home/alderson/Projects/Mine/yttria/build/CMakeFiles/yttria.dir
+/home/alderson/Projects/Mine/yttria/build/CMakeFiles/edit_cache.dir
+/home/alderson/Projects/Mine/yttria/build/CMakeFiles/rebuild_cache.dir
+/home/alderson/Projects/Mine/yttria/build/examples/dev_app/CMakeFiles/dev_app.dir
+/home/alderson/Projects/Mine/yttria/build/examples/dev_app/CMakeFiles/edit_cache.dir
+/home/alderson/Projects/Mine/yttria/build/examples/dev_app/CMakeFiles/rebuild_cache.dir

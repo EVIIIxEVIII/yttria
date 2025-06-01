@@ -1,1 +1,0 @@
-. "/home/alderson/Projects/Mine/finance-infra-cpp/build/Debug/generators/conanbuildenv-debug-x86_64.sh"

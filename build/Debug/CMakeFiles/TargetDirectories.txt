@@ -1,3 +1,0 @@
-/home/alderson/Projects/Mine/finance-infra-cpp/build/Debug/CMakeFiles/my_project.dir
-/home/alderson/Projects/Mine/finance-infra-cpp/build/Debug/CMakeFiles/edit_cache.dir
-/home/alderson/Projects/Mine/finance-infra-cpp/build/Debug/CMakeFiles/rebuild_cache.dir
