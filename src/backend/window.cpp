@@ -4,16 +4,16 @@
 
 namespace yttria {
 
-Window::Window(int w, int h, std::string name) : width_{w}, height_{h}, windowName_{name} {
+backend::Window::Window(int w, int h, std::string name) : width_{w}, height_{h}, windowName_{name} {
     initWindow();
 }
 
-Window::~Window() {
+backend::Window::~Window() {
     glfwDestroyWindow(window_);
     glfwTerminate();
 }
 
-void Window::initWindow() {
+void backend::Window::initWindow() {
     glfwInit();
     glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
     glfwWindowHint(GLFW_RESIZABLE, GLFW_TRUE);
@@ -23,13 +23,13 @@ void Window::initWindow() {
     glfwSetFramebufferSizeCallback(window_, framebufferResizeCallback);
 }
 
-void Window::createWindowSurface(VkInstance instance, VkSurfaceKHR *surface) {
+void backend::Window::createWindowSurface(VkInstance instance, VkSurfaceKHR *surface) {
     if (glfwCreateWindowSurface(instance, window_, nullptr, surface) != VK_SUCCESS) {
         throw std::runtime_error("failed to craete window_ surface");
     }
 }
 
-void Window::framebufferResizeCallback(GLFWwindow *window, int width, int height) {
+void backend::Window::framebufferResizeCallback(GLFWwindow *window, int width, int height) {
     auto Window = reinterpret_cast<class Window*>(glfwGetWindowUserPointer(window));
     Window->framebufferResized_ = true;
     Window->width_ = width;
