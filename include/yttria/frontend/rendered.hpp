@@ -1,4 +1,5 @@
 #pragma once
+#include "yttria/backend/command_pool.hpp"
 #include "yttria/backend/instance.hpp"
 #include "yttria/backend/logical_device.hpp"
 #include "yttria/backend/surface.hpp"
@@ -14,15 +15,15 @@ class Renderer {
         Renderer();
 
     private:
+        const std::vector<const char *> validationLayers_ = {"VK_LAYER_KHRONOS_validation"};
+        const std::vector<const char *> deviceExtensions_ = {VK_KHR_SWAPCHAIN_EXTENSION_NAME};
+
         be::Window window_;
         be::Instance instance_;
         be::Surface surface_;
         be::PhysicalDevice physicalDevice_;
         be::LogicalDevice logicalDevice_;
-
-        const std::vector<const char *> validationLayers_ = {"VK_LAYER_KHRONOS_validation"};
-        const std::vector<const char *> deviceExtensions_ = {VK_KHR_SWAPCHAIN_EXTENSION_NAME};
-
+        be::CommandPool commandPool_;
 };
 
 }

@@ -13,7 +13,7 @@ class Instance {
 #endif
 
         Instance(const std::vector<const char*>& validationLayers);
-        VkInstance instance() const { return instance_; }
+        VkInstance get() const { return instance_; }
 
     private:
         bool checkValidationLayerSupport(const std::vector<const char*>& validationLayers);

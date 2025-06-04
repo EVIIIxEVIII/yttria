@@ -23,8 +23,8 @@ struct QueueFamilyIndices {
 class PhysicalDevice {
 public:
     PhysicalDevice(const VkInstance instance, VkSurfaceKHR surface);
-    VkPhysicalDevice getPhysicalDevice() const { return physicalDevice_; };
-    const QueueFamilyIndices& getFamilyIndices() const { return queueFamilyIndices_; };
+    VkPhysicalDevice get() const { return physicalDevice_; };
+    const QueueFamilyIndices& FamilyIndices() const { return queueFamilyIndices_; };
 
 private:
     QueueFamilyIndices findQueueFamilies(VkPhysicalDevice device);

@@ -1,7 +1,6 @@
-CMakeFiles/yttria.dir/src/frontend/renderer.cpp.o: \
- /home/alderson/Projects/Mine/yttria/src/frontend/renderer.cpp \
+CMakeFiles/yttria.dir/src/backend/command_pool.cpp.o: \
+ /home/alderson/Projects/Mine/yttria/src/backend/command_pool.cpp \
  /usr/include/stdc-predef.h \
- /home/alderson/Projects/Mine/yttria/include/yttria/frontend/rendered.hpp \
  /home/alderson/Projects/Mine/yttria/include/yttria/backend/command_pool.hpp \
  /home/alderson/Projects/Mine/yttria/include/yttria/backend/physical_device.hpp \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/requires_hosted.h \
@@ -78,13 +77,10 @@ CMakeFiles/yttria.dir/src/frontend/renderer.cpp.o: \
  /usr/include/vk_video/vulkan_video_codec_av1std_decode.h \
  /usr/include/vk_video/vulkan_video_codec_av1std.h \
  /usr/include/vk_video/vulkan_video_codec_av1std_encode.h \
- /usr/include/vulkan/vulkan_core.h \
- /home/alderson/Projects/Mine/yttria/include/yttria/backend/instance.hpp \
- /home/alderson/Projects/Mine/yttria/include/yttria/backend/logical_device.hpp \
- /home/alderson/Projects/Mine/yttria/include/yttria/backend/surface.hpp \
- /usr/include/GLFW/glfw3.h /usr/include/GL/gl.h /usr/include/GL/glext.h \
- /usr/include/KHR/khrplatform.h \
- /home/alderson/Projects/Mine/yttria/include/yttria/backend/window.hpp \
+ /usr/include/vulkan/vulkan_core.h /usr/include/c++/13/stdexcept \
+ /usr/include/c++/13/exception /usr/include/c++/13/bits/exception_ptr.h \
+ /usr/include/c++/13/bits/cxxabi_init_exception.h \
+ /usr/include/c++/13/typeinfo /usr/include/c++/13/bits/nested_exception.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/stringfwd.h \
  /usr/include/c++/13/bits/char_traits.h \
  /usr/include/c++/13/bits/postypes.h /usr/include/c++/13/cwchar \

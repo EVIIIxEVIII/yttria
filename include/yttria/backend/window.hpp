@@ -15,12 +15,13 @@ public:
     Window(const Window &) = delete;
     Window &operator=(const Window &) = delete;
 
-    bool shouldClose() {return glfwWindowShouldClose(window_); };
-    VkExtent2D getExtent() { return {static_cast<uint32_t>(width_), static_cast<uint32_t>(height_)}; }
-    bool wasWindowResized() { return framebufferResized_; }
-    void resetWindowResized() { framebufferResized_ = false; }
+    bool ShouldClose() {return glfwWindowShouldClose(window_); };
+    VkExtent2D Extent() { return {static_cast<uint32_t>(width_), static_cast<uint32_t>(height_)}; }
+    bool WasWindowResized() { return framebufferResized_; }
 
-    GLFWwindow *getGLFWWindow() const { return window_; }
+    void ResetWindowResized() { framebufferResized_ = false; }
+
+    GLFWwindow *GLFWWindow() const { return window_; }
 
 private:
     static void framebufferResizeCallback(GLFWwindow *window, int width, int height);

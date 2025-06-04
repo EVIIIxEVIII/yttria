@@ -188,9 +188,11 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: \
  /usr/include/vulkan/vulkan_core.h /usr/include/GL/gl.h \
  /usr/include/GL/glext.h /usr/include/KHR/khrplatform.h \
  /home/alderson/Projects/Mine/yttria/include/yttria/frontend/rendered.hpp \
- /home/alderson/Projects/Mine/yttria/include/yttria/backend/instance.hpp \
+ /home/alderson/Projects/Mine/yttria/include/yttria/backend/command_pool.hpp \
+ /home/alderson/Projects/Mine/yttria/include/yttria/backend/physical_device.hpp \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /home/alderson/Projects/Mine/yttria/include/yttria/backend/surface.hpp \
- /home/alderson/Projects/Mine/yttria/include/yttria/backend/physical_device.hpp
+ /home/alderson/Projects/Mine/yttria/include/yttria/backend/instance.hpp \
+ /home/alderson/Projects/Mine/yttria/include/yttria/backend/logical_device.hpp \
+ /home/alderson/Projects/Mine/yttria/include/yttria/backend/surface.hpp

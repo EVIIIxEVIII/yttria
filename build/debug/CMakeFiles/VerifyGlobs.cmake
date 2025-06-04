@@ -5,6 +5,7 @@ cmake_policy(SET CMP0009 NEW)
 # YTTRIA_SRC at CMakeLists.txt:14 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/alderson/Projects/Mine/yttria/src/*.cpp")
 set(OLD_GLOB
+  "/home/alderson/Projects/Mine/yttria/src/backend/command_pool.cpp"
   "/home/alderson/Projects/Mine/yttria/src/backend/instance.cpp"
   "/home/alderson/Projects/Mine/yttria/src/backend/logical_device.cpp"
   "/home/alderson/Projects/Mine/yttria/src/backend/physical_device.cpp"

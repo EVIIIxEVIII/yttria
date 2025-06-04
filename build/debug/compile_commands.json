@@ -1,6 +1,12 @@
 [
 {
   "directory": "/home/alderson/Projects/Mine/yttria/build/debug",
+  "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/command_pool.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/command_pool.cpp",
+  "file": "/home/alderson/Projects/Mine/yttria/src/backend/command_pool.cpp",
+  "output": "CMakeFiles/yttria.dir/src/backend/command_pool.cpp.o"
+},
+{
+  "directory": "/home/alderson/Projects/Mine/yttria/build/debug",
   "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/instance.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/instance.cpp",
   "file": "/home/alderson/Projects/Mine/yttria/src/backend/instance.cpp",
   "output": "CMakeFiles/yttria.dir/src/backend/instance.cpp.o"

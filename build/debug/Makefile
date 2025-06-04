@@ -143,6 +143,30 @@ dev_app/fast:
 	$(MAKE) $(MAKESILENT) -f examples/dev_app/CMakeFiles/dev_app.dir/build.make examples/dev_app/CMakeFiles/dev_app.dir/build
 .PHONY : dev_app/fast
 
+src/backend/command_pool.o: src/backend/command_pool.cpp.o
+.PHONY : src/backend/command_pool.o
+
+# target to build an object file
+src/backend/command_pool.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/command_pool.cpp.o
+.PHONY : src/backend/command_pool.cpp.o
+
+src/backend/command_pool.i: src/backend/command_pool.cpp.i
+.PHONY : src/backend/command_pool.i
+
+# target to preprocess a source file
+src/backend/command_pool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/command_pool.cpp.i
+.PHONY : src/backend/command_pool.cpp.i
+
+src/backend/command_pool.s: src/backend/command_pool.cpp.s
+.PHONY : src/backend/command_pool.s
+
+# target to generate assembly for a file
+src/backend/command_pool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/command_pool.cpp.s
+.PHONY : src/backend/command_pool.cpp.s
+
 src/backend/instance.o: src/backend/instance.cpp.o
 .PHONY : src/backend/instance.o
 
@@ -297,6 +321,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... dev_app"
 	@echo "... yttria"
+	@echo "... src/backend/command_pool.o"
+	@echo "... src/backend/command_pool.i"
+	@echo "... src/backend/command_pool.s"
 	@echo "... src/backend/instance.o"
 	@echo "... src/backend/instance.i"
 	@echo "... src/backend/instance.s"

@@ -5,15 +5,16 @@ namespace yttria::frontend {
 Renderer::Renderer():
     window_(200, 300, "Renderer"),
     instance_(validationLayers_),
-    surface_(instance_.instance(), window_.getGLFWWindow()),
-    physicalDevice_(instance_.instance(), surface_.surface()),
+    surface_(instance_.get(), window_.GLFWWindow()),
+    physicalDevice_(instance_.get(), surface_.get()),
     logicalDevice_(
-        physicalDevice_.getPhysicalDevice(),
-        physicalDevice_.getFamilyIndices(),
+        physicalDevice_.get(),
+        physicalDevice_.FamilyIndices(),
         deviceExtensions_,
         validationLayers_,
-        true,
-    )
+        true
+    ),
+    commandPool_(logicalDevice_.get(), physicalDevice_.FamilyIndices())
 {
 
 }

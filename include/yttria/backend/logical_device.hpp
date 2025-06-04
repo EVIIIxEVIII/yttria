@@ -15,6 +15,7 @@ public:
         bool enableValidationLayers
     );
 
+    VkDevice get() const { return device_; }
 
 private:
     VkDevice device_;

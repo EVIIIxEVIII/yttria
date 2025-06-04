@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/yttria.dir/src/backend/command_pool.cpp.o"
+  "CMakeFiles/yttria.dir/src/backend/command_pool.cpp.o.d"
   "CMakeFiles/yttria.dir/src/backend/instance.cpp.o"
   "CMakeFiles/yttria.dir/src/backend/instance.cpp.o.d"
   "CMakeFiles/yttria.dir/src/backend/logical_device.cpp.o"
