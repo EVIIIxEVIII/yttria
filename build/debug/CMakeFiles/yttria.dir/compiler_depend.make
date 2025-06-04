@@ -226,6 +226,10 @@ CMakeFiles/yttria.dir/src/backend/instance.cpp.o: /home/alderson/Projects/Mine/y
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
 
+CMakeFiles/yttria.dir/src/backend/logical_device.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/logical_device.cpp \
+  /home/alderson/Projects/Mine/yttria/include/yttria/backend/logical_device.hpp \
+  /usr/include/stdc-predef.h
+
 CMakeFiles/yttria.dir/src/backend/physical_device.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/physical_device.cpp \
   /home/alderson/Projects/Mine/yttria/include/yttria/backend/physical_device.hpp \
   /usr/include/alloca.h \
@@ -952,6 +956,10 @@ CMakeFiles/yttria.dir/src/frontend/renderer.cpp.o: /home/alderson/Projects/Mine/
 /usr/include/c++/13/bits/stl_tree.h:
 
 /usr/include/c++/13/bits/stl_set.h:
+
+/home/alderson/Projects/Mine/yttria/include/yttria/backend/logical_device.hpp:
+
+/home/alderson/Projects/Mine/yttria/src/backend/logical_device.cpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
 

@@ -7,6 +7,12 @@
 },
 {
   "directory": "/home/alderson/Projects/Mine/yttria/build/debug",
+  "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/logical_device.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/logical_device.cpp",
+  "file": "/home/alderson/Projects/Mine/yttria/src/backend/logical_device.cpp",
+  "output": "CMakeFiles/yttria.dir/src/backend/logical_device.cpp.o"
+},
+{
+  "directory": "/home/alderson/Projects/Mine/yttria/build/debug",
   "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/physical_device.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/physical_device.cpp",
   "file": "/home/alderson/Projects/Mine/yttria/src/backend/physical_device.cpp",
   "output": "CMakeFiles/yttria.dir/src/backend/physical_device.cpp.o"

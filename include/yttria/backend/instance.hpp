@@ -12,11 +12,11 @@ class Instance {
         const bool enableValidationLayers = true;
 #endif
 
-        Instance();
-        VkInstance instance() { return instance_; }
+        Instance(const std::vector<const char*>& validationLayers);
+        VkInstance instance() const { return instance_; }
 
     private:
-        bool checkValidationLayerSupport();
+        bool checkValidationLayerSupport(const std::vector<const char*>& validationLayers);
         std::vector<const char*> getRequiredExtensions();
         void createInstance();
         void populateDebugMessengerCreateInfo(VkDebugUtilsMessengerCreateInfoEXT &createInfo);
@@ -28,7 +28,6 @@ class Instance {
         );
 
         VkInstance instance_;
-        const std::vector<const char *> validationLayers = {"VK_LAYER_KHRONOS_validation"};
         void hasGflwRequiredInstanceExtensions();
 };
 

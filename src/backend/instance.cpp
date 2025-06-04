@@ -9,8 +9,8 @@
 
 namespace yttria::backend {
 
-Instance::Instance() {
-    if (enableValidationLayers && !checkValidationLayerSupport()) {
+Instance::Instance(const std::vector<const char*>& validationLayers) {
+    if (enableValidationLayers && !checkValidationLayerSupport(validationLayers)) {
         throw std::runtime_error("validation layers requested, but not available!");
     }
 
@@ -115,7 +115,7 @@ std::vector<const char*> Instance::getRequiredExtensions() {
     return extensions;
 }
 
-bool Instance::checkValidationLayerSupport() {
+bool Instance::checkValidationLayerSupport(const std::vector<const char*>& validationLayers) {
     uint32_t layerCount;
     vkEnumerateInstanceLayerProperties(&layerCount, nullptr);
 

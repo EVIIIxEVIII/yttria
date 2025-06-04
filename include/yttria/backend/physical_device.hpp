@@ -23,7 +23,8 @@ struct QueueFamilyIndices {
 class PhysicalDevice {
 public:
     PhysicalDevice(const VkInstance instance, VkSurfaceKHR surface);
-    VkPhysicalDevice getPhysicalDevice() { return physicalDevice_; };
+    VkPhysicalDevice getPhysicalDevice() const { return physicalDevice_; };
+    const QueueFamilyIndices& getFamilyIndices() const { return queueFamilyIndices_; };
 
 private:
     QueueFamilyIndices findQueueFamilies(VkPhysicalDevice device);
@@ -32,10 +33,12 @@ private:
     void pickPhysicalDevice();
     SwapChainSupportDetails querySwapChainSupport(VkPhysicalDevice device);
 
+
     const VkInstance instance_;
     VkSurfaceKHR surface_;
     VkPhysicalDevice physicalDevice_ = VK_NULL_HANDLE;
     VkPhysicalDeviceProperties properties_;
+    QueueFamilyIndices queueFamilyIndices_;
 
     const std::vector<const char *> deviceExtensions = {VK_KHR_SWAPCHAIN_EXTENSION_NAME};
 };

@@ -6,6 +6,7 @@ cmake_policy(SET CMP0009 NEW)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/alderson/Projects/Mine/yttria/src/*.cpp")
 set(OLD_GLOB
   "/home/alderson/Projects/Mine/yttria/src/backend/instance.cpp"
+  "/home/alderson/Projects/Mine/yttria/src/backend/logical_device.cpp"
   "/home/alderson/Projects/Mine/yttria/src/backend/physical_device.cpp"
   "/home/alderson/Projects/Mine/yttria/src/backend/surface.cpp"
   "/home/alderson/Projects/Mine/yttria/src/backend/window.cpp"

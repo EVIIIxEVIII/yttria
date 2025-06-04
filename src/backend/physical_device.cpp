@@ -18,7 +18,6 @@ PhysicalDevice::PhysicalDevice(const VkInstance instance, VkSurfaceKHR surface):
 
 bool PhysicalDevice::isDeviceSuitable(VkPhysicalDevice device) {
     QueueFamilyIndices indices = findQueueFamilies(device);
-
     bool extensionsSupported = checkDeviceExtensionSupport(device);
 
     bool swapChainAdequate = false;
@@ -143,6 +142,7 @@ void PhysicalDevice::pickPhysicalDevice() {
         throw std::runtime_error("failed to find a suitable GPU!");
     }
 
+    queueFamilyIndices_ = findQueueFamilies(physicalDevice_);
     vkGetPhysicalDeviceProperties(physicalDevice_, &properties_);
     std::cout << "physical device: " << properties_.deviceName << std::endl;
 }

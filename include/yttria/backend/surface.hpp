@@ -6,7 +6,7 @@ namespace yttria::backend {
 class Surface {
 
 public:
-    Surface(VkInstance instance, GLFWwindow* window);
+    Surface(const VkInstance& instance, GLFWwindow* window);
     VkSurfaceKHR surface() { return surface_; };
 
 private:

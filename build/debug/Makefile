@@ -167,6 +167,30 @@ src/backend/instance.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/instance.cpp.s
 .PHONY : src/backend/instance.cpp.s
 
+src/backend/logical_device.o: src/backend/logical_device.cpp.o
+.PHONY : src/backend/logical_device.o
+
+# target to build an object file
+src/backend/logical_device.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/logical_device.cpp.o
+.PHONY : src/backend/logical_device.cpp.o
+
+src/backend/logical_device.i: src/backend/logical_device.cpp.i
+.PHONY : src/backend/logical_device.i
+
+# target to preprocess a source file
+src/backend/logical_device.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/logical_device.cpp.i
+.PHONY : src/backend/logical_device.cpp.i
+
+src/backend/logical_device.s: src/backend/logical_device.cpp.s
+.PHONY : src/backend/logical_device.s
+
+# target to generate assembly for a file
+src/backend/logical_device.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/logical_device.cpp.s
+.PHONY : src/backend/logical_device.cpp.s
+
 src/backend/physical_device.o: src/backend/physical_device.cpp.o
 .PHONY : src/backend/physical_device.o
 
@@ -276,6 +300,9 @@ help:
 	@echo "... src/backend/instance.o"
 	@echo "... src/backend/instance.i"
 	@echo "... src/backend/instance.s"
+	@echo "... src/backend/logical_device.o"
+	@echo "... src/backend/logical_device.i"
+	@echo "... src/backend/logical_device.s"
 	@echo "... src/backend/physical_device.o"
 	@echo "... src/backend/physical_device.i"
 	@echo "... src/backend/physical_device.s"

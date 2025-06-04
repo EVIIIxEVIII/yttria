@@ -1,14 +1,19 @@
 #include "yttria/frontend/rendered.hpp"
 
-namespace be = yttria::backend;
-
 namespace yttria::frontend {
 
 Renderer::Renderer():
-    window_(be::Window(200, 300, "Renderer")),
-    instance_(be::Instance()),
+    window_(200, 300, "Renderer"),
+    instance_(validationLayers_),
     surface_(instance_.instance(), window_.getGLFWWindow()),
-    physicalDevice_(instance_.instance(), surface_.surface())
+    physicalDevice_(instance_.instance(), surface_.surface()),
+    logicalDevice_(
+        physicalDevice_.getPhysicalDevice(),
+        physicalDevice_.getFamilyIndices(),
+        deviceExtensions_,
+        validationLayers_,
+        true,
+    )
 {
 
 }
