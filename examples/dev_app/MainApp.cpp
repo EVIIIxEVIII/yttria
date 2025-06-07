@@ -35,7 +35,7 @@ MainApp::~MainApp() {}
 
 void MainApp::run() {
     std::vector<std::unique_ptr<Buffer>> uboBuffers(SwapChain::MAX_FRAMES_IN_FLIGHT);
-    for (int i = 0; i < uboBuffers.size(); i++) {
+    for (size_t i = 0; i < uboBuffers.size(); i++) {
         uboBuffers[i] = std::make_unique<Buffer>(
             device,
             sizeof(GlobalUbo),
@@ -54,7 +54,7 @@ void MainApp::run() {
             .build();
 
     std::vector<VkDescriptorSet> globalDescriptorSets(SwapChain::MAX_FRAMES_IN_FLIGHT);
-    for (int i = 0; i < globalDescriptorSets.size(); i++) {
+    for (size_t i = 0; i < globalDescriptorSets.size(); i++) {
         auto bufferInfo = uboBuffers[i]->descriptorInfo();
         DescriptorWriter(*globalSetLayout, *globalPool)
             .writeBuffer(0, &bufferInfo)
@@ -105,7 +105,7 @@ void MainApp::run() {
                 frameTime,
                 commandBuffer,
                 camera,
-                globalDescriptorSets[frameIndex],
+                globalDescriptorSets[static_cast<size_t>(frameIndex)],
                 sceneObjects
             };
 
@@ -115,8 +115,8 @@ void MainApp::run() {
             ubo.view = camera.getView();
             ubo.inverseView = camera.getInverseView();
             pointLightSystem.update(frameInfo, ubo);
-            uboBuffers[frameIndex]->writeToBuffer((void*)&ubo);
-            uboBuffers[frameIndex]->flush();
+            uboBuffers[static_cast<size_t>(frameIndex)]->writeToBuffer((void*)&ubo);
+            uboBuffers[static_cast<size_t>(frameIndex)]->flush();
 
             // render
             renderer.beginSwapChainRenderPass(commandBuffer);
@@ -161,12 +161,12 @@ void MainApp::loadSceneObjects() {
       {1.f, 1.f, 1.f}
     };
 
-    for (int i = 0; i < lightColors.size(); i++) {
+    for (size_t i = 0; i < lightColors.size(); i++) {
         auto pointLight = SceneObject::makePointLight(0.4f);
         pointLight.color = lightColors[i];
         auto rotateLight = glm::rotate(
             glm::mat4(1.f),
-            (i * glm::two_pi<float>()) / lightColors.size(),
+            (static_cast<float>(i) * glm::two_pi<float>()) / static_cast<float>(lightColors.size()),
             { 0.f, -1.f, 0.f}
         );
 
