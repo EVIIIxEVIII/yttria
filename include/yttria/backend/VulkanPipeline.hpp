@@ -1,6 +1,6 @@
 #pragma once
 
-#include "VulkanDevice.hpp"
+#include "yttria/backend/VulkanDevice.hpp"
 
 #include <string>
 #include <vector>
@@ -56,10 +56,10 @@ private:
 
     void createShaderModule(const std::vector<char>& code, VkShaderModule *shaderModule);
 
-    Device& device;
-    VkPipeline pipeline;
-    VkShaderModule vertShaderModule;
-    VkShaderModule fragShaderModule;
+    Device& device_;
+    VkPipeline pipeline_;
+    VkShaderModule vertShaderModule_;
+    VkShaderModule fragShaderModule_;
 };
 
 }

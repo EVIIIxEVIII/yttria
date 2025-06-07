@@ -15,14 +15,14 @@ struct PointLightPushConstant {
 };
 
 PointLightSystem::PointLightSystem(Device& device, VkRenderPass renderPass, VkDescriptorSetLayout globalSetLayout):
-    device(device)
+    device_(device)
 {
     createPipelineLayout(globalSetLayout);
     createPipeline(renderPass);
 }
 
 PointLightSystem::~PointLightSystem() {
-    vkDestroyPipelineLayout(device.device(), pipelineLayout, nullptr);
+    vkDestroyPipelineLayout(device_.device(), pipelineLayout_, nullptr);
 }
 
 void PointLightSystem::createPipelineLayout(VkDescriptorSetLayout globalSetLayout) {
@@ -39,13 +39,13 @@ void PointLightSystem::createPipelineLayout(VkDescriptorSetLayout globalSetLayou
     pipelineLayoutCreateInfo.pSetLayouts = descriptorSetLayouts.data();
     pipelineLayoutCreateInfo.pushConstantRangeCount = 1;
     pipelineLayoutCreateInfo.pPushConstantRanges = &pushConstantRange;
-    if (vkCreatePipelineLayout(device.device(), &pipelineLayoutCreateInfo, nullptr, &pipelineLayout) != VK_SUCCESS) {
+    if (vkCreatePipelineLayout(device_.device(), &pipelineLayoutCreateInfo, nullptr, &pipelineLayout_) != VK_SUCCESS) {
         throw std::runtime_error("failed to create a pipeline layout");
     }
 }
 
 void PointLightSystem::createPipeline(VkRenderPass renderPass) {
-    assert(pipelineLayout != nullptr && "Cannot create pipeline before pipeline layout");
+    assert(pipelineLayout_ != nullptr && "Cannot create pipeline before pipeline layout");
 
     PipelineConfigInfo pipelineConfig{};
     Pipeline::defaultPipelineConfigInfo(pipelineConfig);
@@ -53,9 +53,9 @@ void PointLightSystem::createPipeline(VkRenderPass renderPass) {
     pipelineConfig.bindingDescriptions.clear();
 
     pipelineConfig.renderPass = renderPass;
-    pipelineConfig.pipelineLayout = pipelineLayout;
-    pipeline = std::make_unique<Pipeline>(
-        device,
+    pipelineConfig.pipelineLayout = pipelineLayout_;
+    pipeline_ = std::make_unique<Pipeline>(
+        device_,
         "src/shaders/point_light.vert.spv",
         "src/shaders/point_light.frag.spv",
         pipelineConfig
@@ -89,12 +89,12 @@ void PointLightSystem::update(FrameInfo &frameInfo, GlobalUbo &ubo) {
 }
 
 void PointLightSystem::render(FrameInfo &frameInfo) {
-    pipeline->bind(frameInfo.commandBuffer);
+    pipeline_->bind(frameInfo.commandBuffer);
 
     vkCmdBindDescriptorSets(
         frameInfo.commandBuffer,
         VK_PIPELINE_BIND_POINT_GRAPHICS,
-        pipelineLayout,
+        pipelineLayout_,
         0, 1,
         &frameInfo.globalDescriptorSet,
         0, nullptr);
@@ -110,7 +110,7 @@ void PointLightSystem::render(FrameInfo &frameInfo) {
 
         vkCmdPushConstants(
             frameInfo.commandBuffer,
-            pipelineLayout,
+            pipelineLayout_,
             VK_SHADER_STAGE_VERTEX_BIT | VK_SHADER_STAGE_FRAGMENT_BIT,
             0,
             sizeof(PointLightPushConstant),

@@ -1,6 +1,6 @@
 #pragma once
-#include "VulkanDevice.hpp"
-#include "VulkanBuffer.hpp"
+#include "yttria/backend/VulkanDevice.hpp"
+#include "yttria/backend/VulkanBuffer.hpp"
 
 #include <glm/glm.hpp>
 #include <vulkan/vulkan_core.h>
@@ -52,14 +52,14 @@ private:
     void createVertexBuffers(const std::vector<Vertex> &vertices);
     void createIndexBuffer(const std::vector<uint32_t> &indices);
 
-    Device& device;
+    Device& device_;
 
-    std::unique_ptr<Buffer> vertexBuffer;
-    uint32_t vertexCount;
+    std::unique_ptr<Buffer> vertexBuffer_;
+    uint32_t vertexCount_;
 
-    bool hasIndexBuffer = false;
-    std::unique_ptr<Buffer> indexBuffer;
-    uint32_t indexCount;
+    bool hasIndexBuffer_ = false;
+    std::unique_ptr<Buffer> indexBuffer_;
+    uint32_t indexCount_;
 };
 
 

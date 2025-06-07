@@ -1,7 +1,7 @@
 #pragma once
 
-#include "VulkanCamera.hpp"
-#include "VulkanSceneObject.hpp"
+#include "yttria/backend/VulkanCamera.hpp"
+#include "yttria/backend/VulkanSceneObject.hpp"
 #include <GLFW/glfw3.h>
 
 #include <vulkan/vulkan.h>

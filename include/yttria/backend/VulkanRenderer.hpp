@@ -5,9 +5,9 @@
 #include <vulkan/vulkan_core.h>
 #include <cassert>
 
-#include "Window.hpp"
-#include "VulkanDevice.hpp"
-#include "VulkanSwapChain.hpp"
+#include "yttria/backend/Window.hpp"
+#include "yttria/backend/VulkanDevice.hpp"
+#include "yttria/backend/VulkanSwapChain.hpp"
 
 namespace yttria::backend {
 
@@ -20,18 +20,18 @@ public:
     Renderer(const Renderer&) = delete;
     Renderer operator=(const Renderer&) = delete;
 
-    VkRenderPass getSwapChainRenderPass() const { return swapChain->getRenderPass(); }
-    float getAspectRatio() const { return swapChain->extentAspectRatio(); };
-    bool isFrameInProgress() const { return isFrameStarted; }
+    VkRenderPass getSwapChainRenderPass() const { return swapChain_->getRenderPass(); }
+    float getAspectRatio() const { return swapChain_->extentAspectRatio(); };
+    bool isFrameInProgress() const { return isFrameStarted_; }
 
     VkCommandBuffer getCurrentCommandBuffer() const {
-        assert(isFrameStarted && "Cannot get command buffer when frame is in progress");
-        return commandBuffers[currentFrameIndex];
+        assert(isFrameStarted_ && "Cannot get command buffer when frame is in progress");
+        return commandBuffers_[static_cast<size_t>(currentFrameIndex_)];
     }
 
     int getFrameIndex() const {
-        assert(isFrameStarted && "Cannot get the frame index when frame is in progress");
-        return currentFrameIndex;
+        assert(isFrameStarted_ && "Cannot get the frame index when frame is in progress");
+        return currentFrameIndex_;
     }
 
     VkCommandBuffer beginFrame();
@@ -44,14 +44,14 @@ private:
     void recreateSwapChain();
     void freeCommandBuffers();
 
-    Window& window;
-    Device& device;
-    std::unique_ptr<SwapChain> swapChain;
-    std::vector<VkCommandBuffer> commandBuffers;
+    Window& window_;
+    Device& device_;
+    std::unique_ptr<SwapChain> swapChain_;
+    std::vector<VkCommandBuffer> commandBuffers_;
 
-    uint32_t currentImageIndex;
-    int currentFrameIndex = 0;
-    bool isFrameStarted = false;
+    uint32_t currentImageIndex_;
+    int currentFrameIndex_ = 0;
+    bool isFrameStarted_ = false;
 };
 
 }

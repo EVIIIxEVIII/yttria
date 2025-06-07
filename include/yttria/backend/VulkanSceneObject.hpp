@@ -1,8 +1,7 @@
 #pragma once
 
-#include "VulkanModel.hpp"
+#include "yttria/backend/VulkanModel.hpp"
 
-#include <algorithm>
 #include <glm/ext/matrix_transform.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/ext/matrix_float2x2.hpp>
@@ -44,7 +43,7 @@ public:
     SceneObject(SceneObject &&) = default;
     SceneObject &operator=(SceneObject &&) = default;
 
-    id_t getId() const { return id; }
+    id_t getId() const { return id_; }
 
     std::shared_ptr<Model> model{};
     glm::vec3 color{};
@@ -53,9 +52,9 @@ public:
     std::unique_ptr<PointLightComponent> pointLight = nullptr;
 
 private:
-    SceneObject(id_t objId): id{objId} {};
+    SceneObject(id_t objId): id_{objId} {};
 
-    id_t id;
+    id_t id_;
 };
 
 }

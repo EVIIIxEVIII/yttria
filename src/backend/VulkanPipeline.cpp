@@ -1,6 +1,7 @@
 #include "yttria/backend/VulkanPipeline.hpp"
 #include "yttria/backend/VulkanModel.hpp"
 
+#include <ios>
 #include <stdexcept>
 #include <string>
 #include <vector>
@@ -16,7 +17,7 @@ Pipeline::Pipeline(
     const std::string& vertFilepath,
     const std::string& fragFilepath,
     const PipelineConfigInfo& configInfo
-):  device{device}
+):  device_{device}
 {
     createPipeline(vertFilepath, fragFilepath, configInfo);
 }
@@ -29,8 +30,8 @@ std::vector<char> Pipeline::readFile(const std::string& filename) {
         throw std::runtime_error("failed to open file!");
     }
 
-    size_t fileSize = (size_t) file.tellg();
-    std::vector<char> buffer(fileSize);
+    std::streamsize fileSize = (std::streamsize) file.tellg();
+    std::vector<char> buffer((size_t)fileSize);
 
     file.seekg(0);
     file.read(buffer.data(), fileSize);
@@ -58,13 +59,13 @@ void Pipeline::createPipeline(
     auto vertCode = readFile(vertFilepath);
     auto fragCode = readFile(fragFilepath);
 
-    createShaderModule(vertCode, &vertShaderModule);
-    createShaderModule(fragCode, &fragShaderModule);
+    createShaderModule(vertCode, &vertShaderModule_);
+    createShaderModule(fragCode, &fragShaderModule_);
 
     VkPipelineShaderStageCreateInfo shaderStages[2];
     shaderStages[0].sType = VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_CREATE_INFO;
     shaderStages[0].stage = VK_SHADER_STAGE_VERTEX_BIT;
-    shaderStages[0].module = vertShaderModule;
+    shaderStages[0].module = vertShaderModule_;
     shaderStages[0].pName = "main";
     shaderStages[0].flags = 0;
     shaderStages[0].pNext = nullptr;
@@ -72,7 +73,7 @@ void Pipeline::createPipeline(
 
     shaderStages[1].sType = VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_CREATE_INFO;
     shaderStages[1].stage = VK_SHADER_STAGE_FRAGMENT_BIT;
-    shaderStages[1].module = fragShaderModule;
+    shaderStages[1].module = fragShaderModule_;
     shaderStages[1].pName = "main";
     shaderStages[1].flags = 0;
     shaderStages[1].pNext = nullptr;
@@ -109,12 +110,12 @@ void Pipeline::createPipeline(
     pipelineInfo.basePipelineIndex = -1;
 
     if (vkCreateGraphicsPipelines(
-          device.device(),
+          device_.device(),
           VK_NULL_HANDLE,
           1,
           &pipelineInfo,
           nullptr,
-          &pipeline) != VK_SUCCESS) {
+          &pipeline_) != VK_SUCCESS) {
         throw std::runtime_error("failed to create graphics pipeline!");
     }
 
@@ -124,12 +125,12 @@ void Pipeline::createPipeline(
 }
 
 Pipeline::~Pipeline() {
-    vkDestroyShaderModule(device.device(), fragShaderModule, nullptr);
-    vkDestroyShaderModule(device.device(), vertShaderModule, nullptr);
-    vkDestroyPipeline(device.device(), pipeline, nullptr);
+    vkDestroyShaderModule(device_.device(), fragShaderModule_, nullptr);
+    vkDestroyShaderModule(device_.device(), vertShaderModule_, nullptr);
+    vkDestroyPipeline(device_.device(), pipeline_, nullptr);
 
-    fragShaderModule = VK_NULL_HANDLE;
-    vertShaderModule = VK_NULL_HANDLE;
+    fragShaderModule_ = VK_NULL_HANDLE;
+    vertShaderModule_ = VK_NULL_HANDLE;
 }
 
 void Pipeline::createShaderModule(const std::vector<char>& code, VkShaderModule *shaderModule) {
@@ -138,7 +139,7 @@ void Pipeline::createShaderModule(const std::vector<char>& code, VkShaderModule 
     createInfo.codeSize = code.size();
     createInfo.pCode = reinterpret_cast<const uint32_t*>(code.data());
 
-    if (vkCreateShaderModule(device.device(), &createInfo, nullptr, shaderModule) != VK_SUCCESS) {
+    if (vkCreateShaderModule(device_.device(), &createInfo, nullptr, shaderModule) != VK_SUCCESS) {
         throw std::runtime_error("failed to create shader module");
     }
 }
@@ -218,7 +219,7 @@ void Pipeline::defaultPipelineConfigInfo(PipelineConfigInfo& configInfo) {
 }
 
 void Pipeline::bind(VkCommandBuffer commandBuffer) {
-    vkCmdBindPipeline(commandBuffer, VK_PIPELINE_BIND_POINT_GRAPHICS, pipeline);
+    vkCmdBindPipeline(commandBuffer, VK_PIPELINE_BIND_POINT_GRAPHICS, pipeline_);
 }
 
 }

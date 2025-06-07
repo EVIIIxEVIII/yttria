@@ -1395,11 +1395,9 @@ CMakeFiles/yttria.dir/src/backend/VulkanMovementController.cpp.o: /home/alderson
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/assert.h \
-  /usr/include/c++/13/algorithm \
   /usr/include/c++/13/backward/auto_ptr.h \
   /usr/include/c++/13/backward/binders.h \
   /usr/include/c++/13/bit \
-  /usr/include/c++/13/bits/algorithmfwd.h \
   /usr/include/c++/13/bits/align.h \
   /usr/include/c++/13/bits/alloc_traits.h \
   /usr/include/c++/13/bits/allocated_ptr.h \
@@ -1444,12 +1442,10 @@ CMakeFiles/yttria.dir/src/backend/VulkanMovementController.cpp.o: /home/alderson
   /usr/include/c++/13/bits/shared_ptr_base.h \
   /usr/include/c++/13/bits/specfun.h \
   /usr/include/c++/13/bits/std_abs.h \
-  /usr/include/c++/13/bits/stl_algo.h \
   /usr/include/c++/13/bits/stl_algobase.h \
   /usr/include/c++/13/bits/stl_bvector.h \
   /usr/include/c++/13/bits/stl_construct.h \
   /usr/include/c++/13/bits/stl_function.h \
-  /usr/include/c++/13/bits/stl_heap.h \
   /usr/include/c++/13/bits/stl_iterator.h \
   /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13/bits/stl_iterator_base_types.h \
@@ -1460,7 +1456,6 @@ CMakeFiles/yttria.dir/src/backend/VulkanMovementController.cpp.o: /home/alderson
   /usr/include/c++/13/bits/stl_vector.h \
   /usr/include/c++/13/bits/string_view.tcc \
   /usr/include/c++/13/bits/stringfwd.h \
-  /usr/include/c++/13/bits/uniform_int_dist.h \
   /usr/include/c++/13/bits/unique_ptr.h \
   /usr/include/c++/13/bits/unordered_map.h \
   /usr/include/c++/13/bits/uses_allocator.h \
@@ -1495,7 +1490,6 @@ CMakeFiles/yttria.dir/src/backend/VulkanMovementController.cpp.o: /home/alderson
   /usr/include/c++/13/memory \
   /usr/include/c++/13/new \
   /usr/include/c++/13/pstl/execution_defs.h \
-  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
   /usr/include/c++/13/pstl/glue_memory_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/string \
@@ -2429,11 +2423,9 @@ CMakeFiles/yttria.dir/src/backend/VulkanSceneObject.cpp.o: /home/alderson/Projec
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/assert.h \
-  /usr/include/c++/13/algorithm \
   /usr/include/c++/13/backward/auto_ptr.h \
   /usr/include/c++/13/backward/binders.h \
   /usr/include/c++/13/bit \
-  /usr/include/c++/13/bits/algorithmfwd.h \
   /usr/include/c++/13/bits/align.h \
   /usr/include/c++/13/bits/alloc_traits.h \
   /usr/include/c++/13/bits/allocated_ptr.h \
@@ -2478,12 +2470,10 @@ CMakeFiles/yttria.dir/src/backend/VulkanSceneObject.cpp.o: /home/alderson/Projec
   /usr/include/c++/13/bits/shared_ptr_base.h \
   /usr/include/c++/13/bits/specfun.h \
   /usr/include/c++/13/bits/std_abs.h \
-  /usr/include/c++/13/bits/stl_algo.h \
   /usr/include/c++/13/bits/stl_algobase.h \
   /usr/include/c++/13/bits/stl_bvector.h \
   /usr/include/c++/13/bits/stl_construct.h \
   /usr/include/c++/13/bits/stl_function.h \
-  /usr/include/c++/13/bits/stl_heap.h \
   /usr/include/c++/13/bits/stl_iterator.h \
   /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13/bits/stl_iterator_base_types.h \
@@ -2494,7 +2484,6 @@ CMakeFiles/yttria.dir/src/backend/VulkanSceneObject.cpp.o: /home/alderson/Projec
   /usr/include/c++/13/bits/stl_vector.h \
   /usr/include/c++/13/bits/string_view.tcc \
   /usr/include/c++/13/bits/stringfwd.h \
-  /usr/include/c++/13/bits/uniform_int_dist.h \
   /usr/include/c++/13/bits/unique_ptr.h \
   /usr/include/c++/13/bits/unordered_map.h \
   /usr/include/c++/13/bits/uses_allocator.h \
@@ -2529,7 +2518,6 @@ CMakeFiles/yttria.dir/src/backend/VulkanSceneObject.cpp.o: /home/alderson/Projec
   /usr/include/c++/13/memory \
   /usr/include/c++/13/new \
   /usr/include/c++/13/pstl/execution_defs.h \
-  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
   /usr/include/c++/13/pstl/glue_memory_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/string \
@@ -3233,11 +3221,11 @@ CMakeFiles/yttria.dir/src/backend/systems/VulkanPointLightSystem.cpp.o: /home/al
   /home/alderson/Projects/Mine/yttria/include/yttria/backend/VulkanBuffer.hpp \
   /home/alderson/Projects/Mine/yttria/include/yttria/backend/VulkanCamera.hpp \
   /home/alderson/Projects/Mine/yttria/include/yttria/backend/VulkanDevice.hpp \
-  /home/alderson/Projects/Mine/yttria/include/yttria/backend/VulkanFrameInfo.hpp \
   /home/alderson/Projects/Mine/yttria/include/yttria/backend/VulkanModel.hpp \
-  /home/alderson/Projects/Mine/yttria/include/yttria/backend/VulkanPipeline.hpp \
   /home/alderson/Projects/Mine/yttria/include/yttria/backend/VulkanSceneObject.hpp \
   /home/alderson/Projects/Mine/yttria/include/yttria/backend/Window.hpp \
+  /home/alderson/Projects/Mine/yttria/include/yttria/backend/VulkanFrameInfo.hpp \
+  /home/alderson/Projects/Mine/yttria/include/yttria/backend/VulkanPipeline.hpp \
   /home/alderson/Projects/Mine/yttria/include/yttria/backend/systems/VulkanPointLightSystem.hpp \
   /usr/include/GL/gl.h \
   /usr/include/GL/glext.h \
@@ -3247,11 +3235,9 @@ CMakeFiles/yttria.dir/src/backend/systems/VulkanPointLightSystem.cpp.o: /home/al
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/assert.h \
-  /usr/include/c++/13/algorithm \
   /usr/include/c++/13/backward/auto_ptr.h \
   /usr/include/c++/13/backward/binders.h \
   /usr/include/c++/13/bit \
-  /usr/include/c++/13/bits/algorithmfwd.h \
   /usr/include/c++/13/bits/align.h \
   /usr/include/c++/13/bits/alloc_traits.h \
   /usr/include/c++/13/bits/allocated_ptr.h \
@@ -3296,12 +3282,10 @@ CMakeFiles/yttria.dir/src/backend/systems/VulkanPointLightSystem.cpp.o: /home/al
   /usr/include/c++/13/bits/shared_ptr_base.h \
   /usr/include/c++/13/bits/specfun.h \
   /usr/include/c++/13/bits/std_abs.h \
-  /usr/include/c++/13/bits/stl_algo.h \
   /usr/include/c++/13/bits/stl_algobase.h \
   /usr/include/c++/13/bits/stl_bvector.h \
   /usr/include/c++/13/bits/stl_construct.h \
   /usr/include/c++/13/bits/stl_function.h \
-  /usr/include/c++/13/bits/stl_heap.h \
   /usr/include/c++/13/bits/stl_iterator.h \
   /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13/bits/stl_iterator_base_types.h \
@@ -3312,7 +3296,6 @@ CMakeFiles/yttria.dir/src/backend/systems/VulkanPointLightSystem.cpp.o: /home/al
   /usr/include/c++/13/bits/stl_vector.h \
   /usr/include/c++/13/bits/string_view.tcc \
   /usr/include/c++/13/bits/stringfwd.h \
-  /usr/include/c++/13/bits/uniform_int_dist.h \
   /usr/include/c++/13/bits/unique_ptr.h \
   /usr/include/c++/13/bits/unordered_map.h \
   /usr/include/c++/13/bits/uses_allocator.h \
@@ -3347,7 +3330,6 @@ CMakeFiles/yttria.dir/src/backend/systems/VulkanPointLightSystem.cpp.o: /home/al
   /usr/include/c++/13/memory \
   /usr/include/c++/13/new \
   /usr/include/c++/13/pstl/execution_defs.h \
-  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
   /usr/include/c++/13/pstl/glue_memory_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/stdexcept \
@@ -3646,11 +3628,11 @@ CMakeFiles/yttria.dir/src/backend/systems/VulkanSimpleRenderSystem.cpp.o: /home/
   /home/alderson/Projects/Mine/yttria/include/yttria/backend/VulkanBuffer.hpp \
   /home/alderson/Projects/Mine/yttria/include/yttria/backend/VulkanCamera.hpp \
   /home/alderson/Projects/Mine/yttria/include/yttria/backend/VulkanDevice.hpp \
-  /home/alderson/Projects/Mine/yttria/include/yttria/backend/VulkanFrameInfo.hpp \
   /home/alderson/Projects/Mine/yttria/include/yttria/backend/VulkanModel.hpp \
-  /home/alderson/Projects/Mine/yttria/include/yttria/backend/VulkanPipeline.hpp \
   /home/alderson/Projects/Mine/yttria/include/yttria/backend/VulkanSceneObject.hpp \
   /home/alderson/Projects/Mine/yttria/include/yttria/backend/Window.hpp \
+  /home/alderson/Projects/Mine/yttria/include/yttria/backend/VulkanFrameInfo.hpp \
+  /home/alderson/Projects/Mine/yttria/include/yttria/backend/VulkanPipeline.hpp \
   /home/alderson/Projects/Mine/yttria/include/yttria/backend/systems/VulkanSimpleRenderSystem.hpp \
   /usr/include/GL/gl.h \
   /usr/include/GL/glext.h \
@@ -3660,11 +3642,9 @@ CMakeFiles/yttria.dir/src/backend/systems/VulkanSimpleRenderSystem.cpp.o: /home/
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/assert.h \
-  /usr/include/c++/13/algorithm \
   /usr/include/c++/13/backward/auto_ptr.h \
   /usr/include/c++/13/backward/binders.h \
   /usr/include/c++/13/bit \
-  /usr/include/c++/13/bits/algorithmfwd.h \
   /usr/include/c++/13/bits/align.h \
   /usr/include/c++/13/bits/alloc_traits.h \
   /usr/include/c++/13/bits/allocated_ptr.h \
@@ -3709,12 +3689,10 @@ CMakeFiles/yttria.dir/src/backend/systems/VulkanSimpleRenderSystem.cpp.o: /home/
   /usr/include/c++/13/bits/shared_ptr_base.h \
   /usr/include/c++/13/bits/specfun.h \
   /usr/include/c++/13/bits/std_abs.h \
-  /usr/include/c++/13/bits/stl_algo.h \
   /usr/include/c++/13/bits/stl_algobase.h \
   /usr/include/c++/13/bits/stl_bvector.h \
   /usr/include/c++/13/bits/stl_construct.h \
   /usr/include/c++/13/bits/stl_function.h \
-  /usr/include/c++/13/bits/stl_heap.h \
   /usr/include/c++/13/bits/stl_iterator.h \
   /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13/bits/stl_iterator_base_types.h \
@@ -3725,7 +3703,6 @@ CMakeFiles/yttria.dir/src/backend/systems/VulkanSimpleRenderSystem.cpp.o: /home/
   /usr/include/c++/13/bits/stl_vector.h \
   /usr/include/c++/13/bits/string_view.tcc \
   /usr/include/c++/13/bits/stringfwd.h \
-  /usr/include/c++/13/bits/uniform_int_dist.h \
   /usr/include/c++/13/bits/unique_ptr.h \
   /usr/include/c++/13/bits/unordered_map.h \
   /usr/include/c++/13/bits/uses_allocator.h \
@@ -3760,7 +3737,6 @@ CMakeFiles/yttria.dir/src/backend/systems/VulkanSimpleRenderSystem.cpp.o: /home/
   /usr/include/c++/13/memory \
   /usr/include/c++/13/new \
   /usr/include/c++/13/pstl/execution_defs.h \
-  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
   /usr/include/c++/13/pstl/glue_memory_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/stdexcept \
@@ -4070,8 +4046,6 @@ CMakeFiles/yttria.dir/src/backend/systems/VulkanSimpleRenderSystem.cpp.o: /home/
 
 /home/alderson/Projects/Mine/yttria/src/backend/VulkanPipeline.cpp:
 
-/usr/include/c++/13/pstl/glue_algorithm_defs.h:
-
 /home/alderson/Projects/Mine/yttria/include/yttria/backend/VulkanSceneObject.hpp:
 
 /usr/include/glm/gtx/dual_quaternion.inl:
@@ -4117,8 +4091,6 @@ CMakeFiles/yttria.dir/src/backend/systems/VulkanSimpleRenderSystem.cpp.o: /home/
 /usr/include/c++/13/bits/stl_algo.h:
 
 /usr/include/c++/13/bits/sstream.tcc:
-
-/usr/include/c++/13/algorithm:
 
 /home/alderson/Projects/Mine/yttria/src/backend/VulkanModel.cpp:
 

@@ -15,14 +15,14 @@ struct SimplePushConstantData {
 };
 
 SimpleRenderSystem::SimpleRenderSystem(Device& device, VkRenderPass renderPass, VkDescriptorSetLayout globalSetLayout):
-    device(device)
+    device_(device)
 {
     createPipelineLayout(globalSetLayout);
     createPipeline(renderPass);
 }
 
 SimpleRenderSystem::~SimpleRenderSystem() {
-    vkDestroyPipelineLayout(device.device(), pipelineLayout, nullptr);
+    vkDestroyPipelineLayout(device_.device(), pipelineLayout_, nullptr);
 }
 
 void SimpleRenderSystem::createPipelineLayout(VkDescriptorSetLayout globalSetLayout) {
@@ -39,20 +39,20 @@ void SimpleRenderSystem::createPipelineLayout(VkDescriptorSetLayout globalSetLay
     pipelineLayoutCreateInfo.pSetLayouts = descriptorSetLayouts.data();
     pipelineLayoutCreateInfo.pushConstantRangeCount = 1;
     pipelineLayoutCreateInfo.pPushConstantRanges = &pushConstantRange;
-    if (vkCreatePipelineLayout(device.device(), &pipelineLayoutCreateInfo, nullptr, &pipelineLayout) != VK_SUCCESS) {
+    if (vkCreatePipelineLayout(device_.device(), &pipelineLayoutCreateInfo, nullptr, &pipelineLayout_) != VK_SUCCESS) {
         throw std::runtime_error("failed to create a pipeline layout");
     }
 }
 
 void SimpleRenderSystem::createPipeline(VkRenderPass renderPass) {
-    assert(pipelineLayout != nullptr && "Cannot create pipeline before pipeline layout");
+    assert(pipelineLayout_ != nullptr && "Cannot create pipeline before pipeline layout");
 
     PipelineConfigInfo pipelineConfig{};
     Pipeline::defaultPipelineConfigInfo(pipelineConfig);
     pipelineConfig.renderPass = renderPass;
-    pipelineConfig.pipelineLayout = pipelineLayout;
-    pipeline = std::make_unique<Pipeline>(
-        device,
+    pipelineConfig.pipelineLayout = pipelineLayout_;
+    pipeline_ = std::make_unique<Pipeline>(
+        device_,
         "src/shaders/vert.spv",
         "src/shaders/frag.spv",
         pipelineConfig
@@ -62,12 +62,12 @@ void SimpleRenderSystem::createPipeline(VkRenderPass renderPass) {
 void SimpleRenderSystem::renderSceneObjects(
     FrameInfo &frameInfo
 ) {
-    pipeline->bind(frameInfo.commandBuffer);
+    pipeline_->bind(frameInfo.commandBuffer);
 
     vkCmdBindDescriptorSets(
         frameInfo.commandBuffer,
         VK_PIPELINE_BIND_POINT_GRAPHICS,
-        pipelineLayout,
+        pipelineLayout_,
         0, 1,
         &frameInfo.globalDescriptorSet,
         0, nullptr
@@ -84,7 +84,7 @@ void SimpleRenderSystem::renderSceneObjects(
 
         vkCmdPushConstants(
             frameInfo.commandBuffer,
-            pipelineLayout,
+            pipelineLayout_,
             VK_SHADER_STAGE_VERTEX_BIT | VK_SHADER_STAGE_FRAGMENT_BIT,
             0,
             sizeof(SimplePushConstantData),

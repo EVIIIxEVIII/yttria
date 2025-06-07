@@ -131,8 +131,8 @@ CMakeFiles/yttria.dir/src/backend/systems/VulkanSimpleRenderSystem.cpp.o: \
  /usr/include/vk_video/vulkan_video_codec_av1std.h \
  /usr/include/vk_video/vulkan_video_codec_av1std_encode.h \
  /home/alderson/Projects/Mine/yttria/include/yttria/backend/systems/../VulkanPipeline.hpp \
- /home/alderson/Projects/Mine/yttria/include/yttria/backend/systems/../VulkanDevice.hpp \
- /home/alderson/Projects/Mine/yttria/include/yttria/backend/systems/../Window.hpp \
+ /home/alderson/Projects/Mine/yttria/include/yttria/backend/VulkanDevice.hpp \
+ /home/alderson/Projects/Mine/yttria/include/yttria/backend/Window.hpp \
  /usr/include/GLFW/glfw3.h /usr/include/vulkan/vulkan.h \
  /usr/include/vulkan/vulkan_core.h /usr/include/GL/gl.h \
  /usr/include/GL/glext.h /usr/include/KHR/khrplatform.h \
@@ -176,7 +176,7 @@ CMakeFiles/yttria.dir/src/backend/systems/VulkanSimpleRenderSystem.cpp.o: \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
  /home/alderson/Projects/Mine/yttria/include/yttria/backend/systems/../VulkanFrameInfo.hpp \
- /home/alderson/Projects/Mine/yttria/include/yttria/backend/systems/../VulkanCamera.hpp \
+ /home/alderson/Projects/Mine/yttria/include/yttria/backend/VulkanCamera.hpp \
  /usr/include/glm/glm.hpp /usr/include/glm/detail/_fixes.hpp \
  /usr/include/c++/13/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
@@ -324,14 +324,9 @@ CMakeFiles/yttria.dir/src/backend/systems/VulkanSimpleRenderSystem.cpp.o: \
  /usr/include/glm/detail/type_half.hpp \
  /usr/include/glm/detail/type_half.inl /usr/include/glm/integer.hpp \
  /usr/include/glm/detail/func_integer.inl \
- /home/alderson/Projects/Mine/yttria/include/yttria/backend/systems/../VulkanSceneObject.hpp \
- /home/alderson/Projects/Mine/yttria/include/yttria/backend/systems/../VulkanModel.hpp \
- /home/alderson/Projects/Mine/yttria/include/yttria/backend/systems/../VulkanBuffer.hpp \
- /usr/include/c++/13/algorithm /usr/include/c++/13/bits/stl_algo.h \
- /usr/include/c++/13/bits/algorithmfwd.h \
- /usr/include/c++/13/bits/stl_heap.h \
- /usr/include/c++/13/bits/uniform_int_dist.h \
- /usr/include/c++/13/pstl/glue_algorithm_defs.h \
+ /home/alderson/Projects/Mine/yttria/include/yttria/backend/VulkanSceneObject.hpp \
+ /home/alderson/Projects/Mine/yttria/include/yttria/backend/VulkanModel.hpp \
+ /home/alderson/Projects/Mine/yttria/include/yttria/backend/VulkanBuffer.hpp \
  /usr/include/glm/ext/matrix_transform.hpp \
  /usr/include/glm/gtc/constants.hpp \
  /usr/include/glm/ext/scalar_constants.hpp \

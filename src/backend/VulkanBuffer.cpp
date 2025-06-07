@@ -19,42 +19,42 @@ Buffer::Buffer(class Device &device, VkDeviceSize instanceSize,
                uint32_t instanceCount, VkBufferUsageFlags usageFlags,
                VkMemoryPropertyFlags memoryPropertyFlags,
                VkDeviceSize minOffsetAlignment)
-    : device{device},
-      instanceSize{instanceSize},
-      instanceCount{instanceCount},
-      usageFlags{usageFlags},
-      memoryPropertyFlags{memoryPropertyFlags} {
-    alignmentSize = getAlignment(instanceSize, minOffsetAlignment);
-    bufferSize = alignmentSize * instanceCount;
-    device.createBuffer(bufferSize, usageFlags, memoryPropertyFlags, buffer,
-                        memory);
+    : device_{device},
+      instanceSize_{instanceSize},
+      instanceCount_{instanceCount},
+      usageFlags_{usageFlags},
+      memoryPropertyFlags_{memoryPropertyFlags} {
+    alignmentSize_ = getAlignment(instanceSize_, minOffsetAlignment);
+    bufferSize_ = alignmentSize_ * instanceCount_;
+    device_.createBuffer(bufferSize_, usageFlags, memoryPropertyFlags, buffer_,
+                        memory_);
 }
 
 Buffer::~Buffer() {
     unmap();
-    vkDestroyBuffer(device.device(), buffer, nullptr);
-    vkFreeMemory(device.device(), memory, nullptr);
+    vkDestroyBuffer(device_.device(), buffer_, nullptr);
+    vkFreeMemory(device_.device(), memory_, nullptr);
 }
 
 VkResult Buffer::map(VkDeviceSize size, VkDeviceSize offset) {
-    assert(buffer && memory && "Called map on buffer before create");
-    return vkMapMemory(device.device(), memory, offset, size, 0, &mapped);
+    assert(buffer_ && memory_ && "Called map on buffer before create");
+    return vkMapMemory(device_.device(), memory_, offset, size, 0, &mapped_);
 }
 
 void Buffer::unmap() {
-    if (mapped) {
-        vkUnmapMemory(device.device(), memory);
-        mapped = nullptr;
+    if (mapped_) {
+        vkUnmapMemory(device_.device(), memory_);
+        mapped_ = nullptr;
     }
 }
 
 void Buffer::writeToBuffer(void *data, VkDeviceSize size, VkDeviceSize offset) {
-    assert(mapped && "Cannot copy to unmapped buffer");
+    assert(mapped_ && "Cannot copy to unmapped buffer");
 
     if (size == VK_WHOLE_SIZE) {
-        memcpy(mapped, data, bufferSize);
+        memcpy(mapped_, data, bufferSize_);
     } else {
-        char *memOffset = (char *)mapped;
+        char *memOffset = (char *)mapped_;
         memOffset += offset;
         memcpy(memOffset, data, size);
     }
@@ -63,47 +63,47 @@ void Buffer::writeToBuffer(void *data, VkDeviceSize size, VkDeviceSize offset) {
 VkResult Buffer::flush(VkDeviceSize size, VkDeviceSize offset) {
     VkMappedMemoryRange mappedRange = {};
     mappedRange.sType = VK_STRUCTURE_TYPE_MAPPED_MEMORY_RANGE;
-    mappedRange.memory = memory;
+    mappedRange.memory = memory_;
     mappedRange.offset = offset;
     mappedRange.size = size;
-    return vkFlushMappedMemoryRanges(device.device(), 1, &mappedRange);
+    return vkFlushMappedMemoryRanges(device_.device(), 1, &mappedRange);
 }
 
 VkResult Buffer::invalidate(VkDeviceSize size, VkDeviceSize offset) {
     VkMappedMemoryRange mappedRange = {};
     mappedRange.sType = VK_STRUCTURE_TYPE_MAPPED_MEMORY_RANGE;
-    mappedRange.memory = memory;
+    mappedRange.memory = memory_;
     mappedRange.offset = offset;
     mappedRange.size = size;
-    return vkInvalidateMappedMemoryRanges(device.device(), 1, &mappedRange);
+    return vkInvalidateMappedMemoryRanges(device_.device(), 1, &mappedRange);
 }
 
 VkDescriptorBufferInfo Buffer::descriptorInfo(VkDeviceSize size,
                                               VkDeviceSize offset) {
     return VkDescriptorBufferInfo{
-        buffer,
+        buffer_,
         offset,
         size,
     };
 }
 
 void Buffer::writeToIndex(void *data, int index) {
-    writeToBuffer(data, instanceSize,
-                  static_cast<size_t>(index) * alignmentSize);
+    writeToBuffer(data, instanceSize_,
+                  static_cast<size_t>(index) * alignmentSize_);
 }
 
 VkResult Buffer::flushIndex(int index) {
-    return flush(alignmentSize, static_cast<size_t>(index) * alignmentSize);
+    return flush(alignmentSize_, static_cast<size_t>(index) * alignmentSize_);
 }
 
 VkDescriptorBufferInfo Buffer::descriptorInfoForIndex(int index) {
-    return descriptorInfo(alignmentSize,
-                          static_cast<size_t>(index) * alignmentSize);
+    return descriptorInfo(alignmentSize_,
+                          static_cast<size_t>(index) * alignmentSize_);
 }
 
 VkResult Buffer::invalidateIndex(int index) {
-    return invalidate(alignmentSize,
-                      static_cast<size_t>(index) * alignmentSize);
+    return invalidate(alignmentSize_,
+                      static_cast<size_t>(index) * alignmentSize_);
 }
 
 }

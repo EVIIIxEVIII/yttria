@@ -327,12 +327,7 @@ examples/dev_app/CMakeFiles/dev_app.dir/MainApp.cpp.o: \
  /usr/include/glm/packing.hpp /usr/include/glm/detail/func_packing.inl \
  /usr/include/glm/detail/type_half.hpp \
  /usr/include/glm/detail/type_half.inl /usr/include/glm/integer.hpp \
- /usr/include/glm/detail/func_integer.inl /usr/include/c++/13/algorithm \
- /usr/include/c++/13/bits/stl_algo.h \
- /usr/include/c++/13/bits/algorithmfwd.h \
- /usr/include/c++/13/bits/stl_heap.h \
- /usr/include/c++/13/bits/uniform_int_dist.h \
- /usr/include/c++/13/pstl/glue_algorithm_defs.h \
+ /usr/include/glm/detail/func_integer.inl \
  /usr/include/glm/ext/matrix_transform.hpp \
  /usr/include/glm/gtc/constants.hpp \
  /usr/include/glm/ext/scalar_constants.hpp \

@@ -1,7 +1,6 @@
 #pragma once
 
-#include "VulkanSceneObject.hpp"
-#include "Window.hpp"
+#include "yttria/backend/VulkanSceneObject.hpp"
 #include <GLFW/glfw3.h>
 
 namespace yttria::backend {

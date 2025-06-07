@@ -41,7 +41,5 @@ void MovementController::moveInPlaneXZ(GLFWwindow* window, float dt, SceneObject
     }
 }
 
-
-
 }
 
