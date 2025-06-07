@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/alderson/Projects/Mine/yttria/examples/dev_app/MainApp.cpp" "examples/dev_app/CMakeFiles/dev_app.dir/MainApp.cpp.o" "gcc" "examples/dev_app/CMakeFiles/dev_app.dir/MainApp.cpp.o.d"
   "/home/alderson/Projects/Mine/yttria/examples/dev_app/main.cpp" "examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o" "gcc" "examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o.d"
   )
 

@@ -1,50 +1,92 @@
 [
 {
   "directory": "/home/alderson/Projects/Mine/yttria/build/debug",
-  "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/command_pool.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/command_pool.cpp",
-  "file": "/home/alderson/Projects/Mine/yttria/src/backend/command_pool.cpp",
-  "output": "CMakeFiles/yttria.dir/src/backend/command_pool.cpp.o"
+  "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/VulkanBuffer.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/VulkanBuffer.cpp",
+  "file": "/home/alderson/Projects/Mine/yttria/src/backend/VulkanBuffer.cpp",
+  "output": "CMakeFiles/yttria.dir/src/backend/VulkanBuffer.cpp.o"
 },
 {
   "directory": "/home/alderson/Projects/Mine/yttria/build/debug",
-  "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/instance.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/instance.cpp",
-  "file": "/home/alderson/Projects/Mine/yttria/src/backend/instance.cpp",
-  "output": "CMakeFiles/yttria.dir/src/backend/instance.cpp.o"
+  "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/VulkanCamera.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/VulkanCamera.cpp",
+  "file": "/home/alderson/Projects/Mine/yttria/src/backend/VulkanCamera.cpp",
+  "output": "CMakeFiles/yttria.dir/src/backend/VulkanCamera.cpp.o"
 },
 {
   "directory": "/home/alderson/Projects/Mine/yttria/build/debug",
-  "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/logical_device.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/logical_device.cpp",
-  "file": "/home/alderson/Projects/Mine/yttria/src/backend/logical_device.cpp",
-  "output": "CMakeFiles/yttria.dir/src/backend/logical_device.cpp.o"
+  "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/VulkanDescriptors.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/VulkanDescriptors.cpp",
+  "file": "/home/alderson/Projects/Mine/yttria/src/backend/VulkanDescriptors.cpp",
+  "output": "CMakeFiles/yttria.dir/src/backend/VulkanDescriptors.cpp.o"
 },
 {
   "directory": "/home/alderson/Projects/Mine/yttria/build/debug",
-  "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/physical_device.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/physical_device.cpp",
-  "file": "/home/alderson/Projects/Mine/yttria/src/backend/physical_device.cpp",
-  "output": "CMakeFiles/yttria.dir/src/backend/physical_device.cpp.o"
+  "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/VulkanDevice.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/VulkanDevice.cpp",
+  "file": "/home/alderson/Projects/Mine/yttria/src/backend/VulkanDevice.cpp",
+  "output": "CMakeFiles/yttria.dir/src/backend/VulkanDevice.cpp.o"
 },
 {
   "directory": "/home/alderson/Projects/Mine/yttria/build/debug",
-  "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/surface.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/surface.cpp",
-  "file": "/home/alderson/Projects/Mine/yttria/src/backend/surface.cpp",
-  "output": "CMakeFiles/yttria.dir/src/backend/surface.cpp.o"
+  "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/VulkanModel.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/VulkanModel.cpp",
+  "file": "/home/alderson/Projects/Mine/yttria/src/backend/VulkanModel.cpp",
+  "output": "CMakeFiles/yttria.dir/src/backend/VulkanModel.cpp.o"
 },
 {
   "directory": "/home/alderson/Projects/Mine/yttria/build/debug",
-  "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/window.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/window.cpp",
-  "file": "/home/alderson/Projects/Mine/yttria/src/backend/window.cpp",
-  "output": "CMakeFiles/yttria.dir/src/backend/window.cpp.o"
+  "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/VulkanMovementController.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/VulkanMovementController.cpp",
+  "file": "/home/alderson/Projects/Mine/yttria/src/backend/VulkanMovementController.cpp",
+  "output": "CMakeFiles/yttria.dir/src/backend/VulkanMovementController.cpp.o"
 },
 {
   "directory": "/home/alderson/Projects/Mine/yttria/build/debug",
-  "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/frontend/renderer.cpp.o -c /home/alderson/Projects/Mine/yttria/src/frontend/renderer.cpp",
-  "file": "/home/alderson/Projects/Mine/yttria/src/frontend/renderer.cpp",
-  "output": "CMakeFiles/yttria.dir/src/frontend/renderer.cpp.o"
+  "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/VulkanPipeline.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/VulkanPipeline.cpp",
+  "file": "/home/alderson/Projects/Mine/yttria/src/backend/VulkanPipeline.cpp",
+  "output": "CMakeFiles/yttria.dir/src/backend/VulkanPipeline.cpp.o"
+},
+{
+  "directory": "/home/alderson/Projects/Mine/yttria/build/debug",
+  "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/VulkanRenderer.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/VulkanRenderer.cpp",
+  "file": "/home/alderson/Projects/Mine/yttria/src/backend/VulkanRenderer.cpp",
+  "output": "CMakeFiles/yttria.dir/src/backend/VulkanRenderer.cpp.o"
+},
+{
+  "directory": "/home/alderson/Projects/Mine/yttria/build/debug",
+  "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/VulkanSceneObject.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/VulkanSceneObject.cpp",
+  "file": "/home/alderson/Projects/Mine/yttria/src/backend/VulkanSceneObject.cpp",
+  "output": "CMakeFiles/yttria.dir/src/backend/VulkanSceneObject.cpp.o"
+},
+{
+  "directory": "/home/alderson/Projects/Mine/yttria/build/debug",
+  "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/VulkanSwapChain.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/VulkanSwapChain.cpp",
+  "file": "/home/alderson/Projects/Mine/yttria/src/backend/VulkanSwapChain.cpp",
+  "output": "CMakeFiles/yttria.dir/src/backend/VulkanSwapChain.cpp.o"
+},
+{
+  "directory": "/home/alderson/Projects/Mine/yttria/build/debug",
+  "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/Window.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/Window.cpp",
+  "file": "/home/alderson/Projects/Mine/yttria/src/backend/Window.cpp",
+  "output": "CMakeFiles/yttria.dir/src/backend/Window.cpp.o"
+},
+{
+  "directory": "/home/alderson/Projects/Mine/yttria/build/debug",
+  "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/systems/VulkanPointLightSystem.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/systems/VulkanPointLightSystem.cpp",
+  "file": "/home/alderson/Projects/Mine/yttria/src/backend/systems/VulkanPointLightSystem.cpp",
+  "output": "CMakeFiles/yttria.dir/src/backend/systems/VulkanPointLightSystem.cpp.o"
+},
+{
+  "directory": "/home/alderson/Projects/Mine/yttria/build/debug",
+  "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/systems/VulkanSimpleRenderSystem.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/systems/VulkanSimpleRenderSystem.cpp",
+  "file": "/home/alderson/Projects/Mine/yttria/src/backend/systems/VulkanSimpleRenderSystem.cpp",
+  "output": "CMakeFiles/yttria.dir/src/backend/systems/VulkanSimpleRenderSystem.cpp.o"
 },
 {
   "directory": "/home/alderson/Projects/Mine/yttria/build/debug/examples/dev_app",
   "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/dev_app.dir/main.cpp.o -c /home/alderson/Projects/Mine/yttria/examples/dev_app/main.cpp",
   "file": "/home/alderson/Projects/Mine/yttria/examples/dev_app/main.cpp",
   "output": "examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o"
+},
+{
+  "directory": "/home/alderson/Projects/Mine/yttria/build/debug/examples/dev_app",
+  "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/dev_app.dir/MainApp.cpp.o -c /home/alderson/Projects/Mine/yttria/examples/dev_app/MainApp.cpp",
+  "file": "/home/alderson/Projects/Mine/yttria/examples/dev_app/MainApp.cpp",
+  "output": "examples/dev_app/CMakeFiles/dev_app.dir/MainApp.cpp.o"
 }
 ]

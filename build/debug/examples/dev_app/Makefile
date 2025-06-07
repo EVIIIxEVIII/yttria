@@ -131,6 +131,30 @@ dev_app/fast:
 	cd /home/alderson/Projects/Mine/yttria/build/debug && $(MAKE) $(MAKESILENT) -f examples/dev_app/CMakeFiles/dev_app.dir/build.make examples/dev_app/CMakeFiles/dev_app.dir/build
 .PHONY : dev_app/fast
 
+MainApp.o: MainApp.cpp.o
+.PHONY : MainApp.o
+
+# target to build an object file
+MainApp.cpp.o:
+	cd /home/alderson/Projects/Mine/yttria/build/debug && $(MAKE) $(MAKESILENT) -f examples/dev_app/CMakeFiles/dev_app.dir/build.make examples/dev_app/CMakeFiles/dev_app.dir/MainApp.cpp.o
+.PHONY : MainApp.cpp.o
+
+MainApp.i: MainApp.cpp.i
+.PHONY : MainApp.i
+
+# target to preprocess a source file
+MainApp.cpp.i:
+	cd /home/alderson/Projects/Mine/yttria/build/debug && $(MAKE) $(MAKESILENT) -f examples/dev_app/CMakeFiles/dev_app.dir/build.make examples/dev_app/CMakeFiles/dev_app.dir/MainApp.cpp.i
+.PHONY : MainApp.cpp.i
+
+MainApp.s: MainApp.cpp.s
+.PHONY : MainApp.s
+
+# target to generate assembly for a file
+MainApp.cpp.s:
+	cd /home/alderson/Projects/Mine/yttria/build/debug && $(MAKE) $(MAKESILENT) -f examples/dev_app/CMakeFiles/dev_app.dir/build.make examples/dev_app/CMakeFiles/dev_app.dir/MainApp.cpp.s
+.PHONY : MainApp.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -164,6 +188,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... dev_app"
+	@echo "... MainApp.o"
+	@echo "... MainApp.i"
+	@echo "... MainApp.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

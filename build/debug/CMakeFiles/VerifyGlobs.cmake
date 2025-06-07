@@ -5,13 +5,19 @@ cmake_policy(SET CMP0009 NEW)
 # YTTRIA_SRC at CMakeLists.txt:14 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/alderson/Projects/Mine/yttria/src/*.cpp")
 set(OLD_GLOB
-  "/home/alderson/Projects/Mine/yttria/src/backend/command_pool.cpp"
-  "/home/alderson/Projects/Mine/yttria/src/backend/instance.cpp"
-  "/home/alderson/Projects/Mine/yttria/src/backend/logical_device.cpp"
-  "/home/alderson/Projects/Mine/yttria/src/backend/physical_device.cpp"
-  "/home/alderson/Projects/Mine/yttria/src/backend/surface.cpp"
-  "/home/alderson/Projects/Mine/yttria/src/backend/window.cpp"
-  "/home/alderson/Projects/Mine/yttria/src/frontend/renderer.cpp"
+  "/home/alderson/Projects/Mine/yttria/src/backend/VulkanBuffer.cpp"
+  "/home/alderson/Projects/Mine/yttria/src/backend/VulkanCamera.cpp"
+  "/home/alderson/Projects/Mine/yttria/src/backend/VulkanDescriptors.cpp"
+  "/home/alderson/Projects/Mine/yttria/src/backend/VulkanDevice.cpp"
+  "/home/alderson/Projects/Mine/yttria/src/backend/VulkanModel.cpp"
+  "/home/alderson/Projects/Mine/yttria/src/backend/VulkanMovementController.cpp"
+  "/home/alderson/Projects/Mine/yttria/src/backend/VulkanPipeline.cpp"
+  "/home/alderson/Projects/Mine/yttria/src/backend/VulkanRenderer.cpp"
+  "/home/alderson/Projects/Mine/yttria/src/backend/VulkanSceneObject.cpp"
+  "/home/alderson/Projects/Mine/yttria/src/backend/VulkanSwapChain.cpp"
+  "/home/alderson/Projects/Mine/yttria/src/backend/Window.cpp"
+  "/home/alderson/Projects/Mine/yttria/src/backend/systems/VulkanPointLightSystem.cpp"
+  "/home/alderson/Projects/Mine/yttria/src/backend/systems/VulkanSimpleRenderSystem.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

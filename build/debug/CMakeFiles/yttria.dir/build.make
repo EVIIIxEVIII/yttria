@@ -69,127 +69,223 @@ include CMakeFiles/yttria.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/yttria.dir/flags.make
 
-CMakeFiles/yttria.dir/src/backend/command_pool.cpp.o: CMakeFiles/yttria.dir/flags.make
-CMakeFiles/yttria.dir/src/backend/command_pool.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/command_pool.cpp
-CMakeFiles/yttria.dir/src/backend/command_pool.cpp.o: CMakeFiles/yttria.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/yttria.dir/src/backend/command_pool.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/yttria.dir/src/backend/command_pool.cpp.o -MF CMakeFiles/yttria.dir/src/backend/command_pool.cpp.o.d -o CMakeFiles/yttria.dir/src/backend/command_pool.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/command_pool.cpp
+CMakeFiles/yttria.dir/src/backend/VulkanBuffer.cpp.o: CMakeFiles/yttria.dir/flags.make
+CMakeFiles/yttria.dir/src/backend/VulkanBuffer.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/VulkanBuffer.cpp
+CMakeFiles/yttria.dir/src/backend/VulkanBuffer.cpp.o: CMakeFiles/yttria.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/yttria.dir/src/backend/VulkanBuffer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/yttria.dir/src/backend/VulkanBuffer.cpp.o -MF CMakeFiles/yttria.dir/src/backend/VulkanBuffer.cpp.o.d -o CMakeFiles/yttria.dir/src/backend/VulkanBuffer.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/VulkanBuffer.cpp
 
-CMakeFiles/yttria.dir/src/backend/command_pool.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/yttria.dir/src/backend/command_pool.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alderson/Projects/Mine/yttria/src/backend/command_pool.cpp > CMakeFiles/yttria.dir/src/backend/command_pool.cpp.i
+CMakeFiles/yttria.dir/src/backend/VulkanBuffer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/yttria.dir/src/backend/VulkanBuffer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alderson/Projects/Mine/yttria/src/backend/VulkanBuffer.cpp > CMakeFiles/yttria.dir/src/backend/VulkanBuffer.cpp.i
 
-CMakeFiles/yttria.dir/src/backend/command_pool.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/yttria.dir/src/backend/command_pool.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alderson/Projects/Mine/yttria/src/backend/command_pool.cpp -o CMakeFiles/yttria.dir/src/backend/command_pool.cpp.s
+CMakeFiles/yttria.dir/src/backend/VulkanBuffer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/yttria.dir/src/backend/VulkanBuffer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alderson/Projects/Mine/yttria/src/backend/VulkanBuffer.cpp -o CMakeFiles/yttria.dir/src/backend/VulkanBuffer.cpp.s
 
-CMakeFiles/yttria.dir/src/backend/instance.cpp.o: CMakeFiles/yttria.dir/flags.make
-CMakeFiles/yttria.dir/src/backend/instance.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/instance.cpp
-CMakeFiles/yttria.dir/src/backend/instance.cpp.o: CMakeFiles/yttria.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/yttria.dir/src/backend/instance.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/yttria.dir/src/backend/instance.cpp.o -MF CMakeFiles/yttria.dir/src/backend/instance.cpp.o.d -o CMakeFiles/yttria.dir/src/backend/instance.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/instance.cpp
+CMakeFiles/yttria.dir/src/backend/VulkanCamera.cpp.o: CMakeFiles/yttria.dir/flags.make
+CMakeFiles/yttria.dir/src/backend/VulkanCamera.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/VulkanCamera.cpp
+CMakeFiles/yttria.dir/src/backend/VulkanCamera.cpp.o: CMakeFiles/yttria.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/yttria.dir/src/backend/VulkanCamera.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/yttria.dir/src/backend/VulkanCamera.cpp.o -MF CMakeFiles/yttria.dir/src/backend/VulkanCamera.cpp.o.d -o CMakeFiles/yttria.dir/src/backend/VulkanCamera.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/VulkanCamera.cpp
 
-CMakeFiles/yttria.dir/src/backend/instance.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/yttria.dir/src/backend/instance.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alderson/Projects/Mine/yttria/src/backend/instance.cpp > CMakeFiles/yttria.dir/src/backend/instance.cpp.i
+CMakeFiles/yttria.dir/src/backend/VulkanCamera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/yttria.dir/src/backend/VulkanCamera.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alderson/Projects/Mine/yttria/src/backend/VulkanCamera.cpp > CMakeFiles/yttria.dir/src/backend/VulkanCamera.cpp.i
 
-CMakeFiles/yttria.dir/src/backend/instance.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/yttria.dir/src/backend/instance.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alderson/Projects/Mine/yttria/src/backend/instance.cpp -o CMakeFiles/yttria.dir/src/backend/instance.cpp.s
+CMakeFiles/yttria.dir/src/backend/VulkanCamera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/yttria.dir/src/backend/VulkanCamera.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alderson/Projects/Mine/yttria/src/backend/VulkanCamera.cpp -o CMakeFiles/yttria.dir/src/backend/VulkanCamera.cpp.s
 
-CMakeFiles/yttria.dir/src/backend/logical_device.cpp.o: CMakeFiles/yttria.dir/flags.make
-CMakeFiles/yttria.dir/src/backend/logical_device.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/logical_device.cpp
-CMakeFiles/yttria.dir/src/backend/logical_device.cpp.o: CMakeFiles/yttria.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/yttria.dir/src/backend/logical_device.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/yttria.dir/src/backend/logical_device.cpp.o -MF CMakeFiles/yttria.dir/src/backend/logical_device.cpp.o.d -o CMakeFiles/yttria.dir/src/backend/logical_device.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/logical_device.cpp
+CMakeFiles/yttria.dir/src/backend/VulkanDescriptors.cpp.o: CMakeFiles/yttria.dir/flags.make
+CMakeFiles/yttria.dir/src/backend/VulkanDescriptors.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/VulkanDescriptors.cpp
+CMakeFiles/yttria.dir/src/backend/VulkanDescriptors.cpp.o: CMakeFiles/yttria.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/yttria.dir/src/backend/VulkanDescriptors.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/yttria.dir/src/backend/VulkanDescriptors.cpp.o -MF CMakeFiles/yttria.dir/src/backend/VulkanDescriptors.cpp.o.d -o CMakeFiles/yttria.dir/src/backend/VulkanDescriptors.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/VulkanDescriptors.cpp
 
-CMakeFiles/yttria.dir/src/backend/logical_device.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/yttria.dir/src/backend/logical_device.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alderson/Projects/Mine/yttria/src/backend/logical_device.cpp > CMakeFiles/yttria.dir/src/backend/logical_device.cpp.i
+CMakeFiles/yttria.dir/src/backend/VulkanDescriptors.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/yttria.dir/src/backend/VulkanDescriptors.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alderson/Projects/Mine/yttria/src/backend/VulkanDescriptors.cpp > CMakeFiles/yttria.dir/src/backend/VulkanDescriptors.cpp.i
 
-CMakeFiles/yttria.dir/src/backend/logical_device.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/yttria.dir/src/backend/logical_device.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alderson/Projects/Mine/yttria/src/backend/logical_device.cpp -o CMakeFiles/yttria.dir/src/backend/logical_device.cpp.s
+CMakeFiles/yttria.dir/src/backend/VulkanDescriptors.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/yttria.dir/src/backend/VulkanDescriptors.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alderson/Projects/Mine/yttria/src/backend/VulkanDescriptors.cpp -o CMakeFiles/yttria.dir/src/backend/VulkanDescriptors.cpp.s
 
-CMakeFiles/yttria.dir/src/backend/physical_device.cpp.o: CMakeFiles/yttria.dir/flags.make
-CMakeFiles/yttria.dir/src/backend/physical_device.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/physical_device.cpp
-CMakeFiles/yttria.dir/src/backend/physical_device.cpp.o: CMakeFiles/yttria.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/yttria.dir/src/backend/physical_device.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/yttria.dir/src/backend/physical_device.cpp.o -MF CMakeFiles/yttria.dir/src/backend/physical_device.cpp.o.d -o CMakeFiles/yttria.dir/src/backend/physical_device.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/physical_device.cpp
+CMakeFiles/yttria.dir/src/backend/VulkanDevice.cpp.o: CMakeFiles/yttria.dir/flags.make
+CMakeFiles/yttria.dir/src/backend/VulkanDevice.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/VulkanDevice.cpp
+CMakeFiles/yttria.dir/src/backend/VulkanDevice.cpp.o: CMakeFiles/yttria.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/yttria.dir/src/backend/VulkanDevice.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/yttria.dir/src/backend/VulkanDevice.cpp.o -MF CMakeFiles/yttria.dir/src/backend/VulkanDevice.cpp.o.d -o CMakeFiles/yttria.dir/src/backend/VulkanDevice.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/VulkanDevice.cpp
 
-CMakeFiles/yttria.dir/src/backend/physical_device.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/yttria.dir/src/backend/physical_device.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alderson/Projects/Mine/yttria/src/backend/physical_device.cpp > CMakeFiles/yttria.dir/src/backend/physical_device.cpp.i
+CMakeFiles/yttria.dir/src/backend/VulkanDevice.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/yttria.dir/src/backend/VulkanDevice.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alderson/Projects/Mine/yttria/src/backend/VulkanDevice.cpp > CMakeFiles/yttria.dir/src/backend/VulkanDevice.cpp.i
 
-CMakeFiles/yttria.dir/src/backend/physical_device.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/yttria.dir/src/backend/physical_device.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alderson/Projects/Mine/yttria/src/backend/physical_device.cpp -o CMakeFiles/yttria.dir/src/backend/physical_device.cpp.s
+CMakeFiles/yttria.dir/src/backend/VulkanDevice.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/yttria.dir/src/backend/VulkanDevice.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alderson/Projects/Mine/yttria/src/backend/VulkanDevice.cpp -o CMakeFiles/yttria.dir/src/backend/VulkanDevice.cpp.s
 
-CMakeFiles/yttria.dir/src/backend/surface.cpp.o: CMakeFiles/yttria.dir/flags.make
-CMakeFiles/yttria.dir/src/backend/surface.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/surface.cpp
-CMakeFiles/yttria.dir/src/backend/surface.cpp.o: CMakeFiles/yttria.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/yttria.dir/src/backend/surface.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/yttria.dir/src/backend/surface.cpp.o -MF CMakeFiles/yttria.dir/src/backend/surface.cpp.o.d -o CMakeFiles/yttria.dir/src/backend/surface.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/surface.cpp
+CMakeFiles/yttria.dir/src/backend/VulkanModel.cpp.o: CMakeFiles/yttria.dir/flags.make
+CMakeFiles/yttria.dir/src/backend/VulkanModel.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/VulkanModel.cpp
+CMakeFiles/yttria.dir/src/backend/VulkanModel.cpp.o: CMakeFiles/yttria.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/yttria.dir/src/backend/VulkanModel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/yttria.dir/src/backend/VulkanModel.cpp.o -MF CMakeFiles/yttria.dir/src/backend/VulkanModel.cpp.o.d -o CMakeFiles/yttria.dir/src/backend/VulkanModel.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/VulkanModel.cpp
 
-CMakeFiles/yttria.dir/src/backend/surface.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/yttria.dir/src/backend/surface.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alderson/Projects/Mine/yttria/src/backend/surface.cpp > CMakeFiles/yttria.dir/src/backend/surface.cpp.i
+CMakeFiles/yttria.dir/src/backend/VulkanModel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/yttria.dir/src/backend/VulkanModel.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alderson/Projects/Mine/yttria/src/backend/VulkanModel.cpp > CMakeFiles/yttria.dir/src/backend/VulkanModel.cpp.i
 
-CMakeFiles/yttria.dir/src/backend/surface.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/yttria.dir/src/backend/surface.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alderson/Projects/Mine/yttria/src/backend/surface.cpp -o CMakeFiles/yttria.dir/src/backend/surface.cpp.s
+CMakeFiles/yttria.dir/src/backend/VulkanModel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/yttria.dir/src/backend/VulkanModel.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alderson/Projects/Mine/yttria/src/backend/VulkanModel.cpp -o CMakeFiles/yttria.dir/src/backend/VulkanModel.cpp.s
 
-CMakeFiles/yttria.dir/src/backend/window.cpp.o: CMakeFiles/yttria.dir/flags.make
-CMakeFiles/yttria.dir/src/backend/window.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/window.cpp
-CMakeFiles/yttria.dir/src/backend/window.cpp.o: CMakeFiles/yttria.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/yttria.dir/src/backend/window.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/yttria.dir/src/backend/window.cpp.o -MF CMakeFiles/yttria.dir/src/backend/window.cpp.o.d -o CMakeFiles/yttria.dir/src/backend/window.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/window.cpp
+CMakeFiles/yttria.dir/src/backend/VulkanMovementController.cpp.o: CMakeFiles/yttria.dir/flags.make
+CMakeFiles/yttria.dir/src/backend/VulkanMovementController.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/VulkanMovementController.cpp
+CMakeFiles/yttria.dir/src/backend/VulkanMovementController.cpp.o: CMakeFiles/yttria.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/yttria.dir/src/backend/VulkanMovementController.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/yttria.dir/src/backend/VulkanMovementController.cpp.o -MF CMakeFiles/yttria.dir/src/backend/VulkanMovementController.cpp.o.d -o CMakeFiles/yttria.dir/src/backend/VulkanMovementController.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/VulkanMovementController.cpp
 
-CMakeFiles/yttria.dir/src/backend/window.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/yttria.dir/src/backend/window.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alderson/Projects/Mine/yttria/src/backend/window.cpp > CMakeFiles/yttria.dir/src/backend/window.cpp.i
+CMakeFiles/yttria.dir/src/backend/VulkanMovementController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/yttria.dir/src/backend/VulkanMovementController.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alderson/Projects/Mine/yttria/src/backend/VulkanMovementController.cpp > CMakeFiles/yttria.dir/src/backend/VulkanMovementController.cpp.i
 
-CMakeFiles/yttria.dir/src/backend/window.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/yttria.dir/src/backend/window.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alderson/Projects/Mine/yttria/src/backend/window.cpp -o CMakeFiles/yttria.dir/src/backend/window.cpp.s
+CMakeFiles/yttria.dir/src/backend/VulkanMovementController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/yttria.dir/src/backend/VulkanMovementController.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alderson/Projects/Mine/yttria/src/backend/VulkanMovementController.cpp -o CMakeFiles/yttria.dir/src/backend/VulkanMovementController.cpp.s
 
-CMakeFiles/yttria.dir/src/frontend/renderer.cpp.o: CMakeFiles/yttria.dir/flags.make
-CMakeFiles/yttria.dir/src/frontend/renderer.cpp.o: /home/alderson/Projects/Mine/yttria/src/frontend/renderer.cpp
-CMakeFiles/yttria.dir/src/frontend/renderer.cpp.o: CMakeFiles/yttria.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/yttria.dir/src/frontend/renderer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/yttria.dir/src/frontend/renderer.cpp.o -MF CMakeFiles/yttria.dir/src/frontend/renderer.cpp.o.d -o CMakeFiles/yttria.dir/src/frontend/renderer.cpp.o -c /home/alderson/Projects/Mine/yttria/src/frontend/renderer.cpp
+CMakeFiles/yttria.dir/src/backend/VulkanPipeline.cpp.o: CMakeFiles/yttria.dir/flags.make
+CMakeFiles/yttria.dir/src/backend/VulkanPipeline.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/VulkanPipeline.cpp
+CMakeFiles/yttria.dir/src/backend/VulkanPipeline.cpp.o: CMakeFiles/yttria.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/yttria.dir/src/backend/VulkanPipeline.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/yttria.dir/src/backend/VulkanPipeline.cpp.o -MF CMakeFiles/yttria.dir/src/backend/VulkanPipeline.cpp.o.d -o CMakeFiles/yttria.dir/src/backend/VulkanPipeline.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/VulkanPipeline.cpp
 
-CMakeFiles/yttria.dir/src/frontend/renderer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/yttria.dir/src/frontend/renderer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alderson/Projects/Mine/yttria/src/frontend/renderer.cpp > CMakeFiles/yttria.dir/src/frontend/renderer.cpp.i
+CMakeFiles/yttria.dir/src/backend/VulkanPipeline.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/yttria.dir/src/backend/VulkanPipeline.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alderson/Projects/Mine/yttria/src/backend/VulkanPipeline.cpp > CMakeFiles/yttria.dir/src/backend/VulkanPipeline.cpp.i
 
-CMakeFiles/yttria.dir/src/frontend/renderer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/yttria.dir/src/frontend/renderer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alderson/Projects/Mine/yttria/src/frontend/renderer.cpp -o CMakeFiles/yttria.dir/src/frontend/renderer.cpp.s
+CMakeFiles/yttria.dir/src/backend/VulkanPipeline.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/yttria.dir/src/backend/VulkanPipeline.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alderson/Projects/Mine/yttria/src/backend/VulkanPipeline.cpp -o CMakeFiles/yttria.dir/src/backend/VulkanPipeline.cpp.s
+
+CMakeFiles/yttria.dir/src/backend/VulkanRenderer.cpp.o: CMakeFiles/yttria.dir/flags.make
+CMakeFiles/yttria.dir/src/backend/VulkanRenderer.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/VulkanRenderer.cpp
+CMakeFiles/yttria.dir/src/backend/VulkanRenderer.cpp.o: CMakeFiles/yttria.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/yttria.dir/src/backend/VulkanRenderer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/yttria.dir/src/backend/VulkanRenderer.cpp.o -MF CMakeFiles/yttria.dir/src/backend/VulkanRenderer.cpp.o.d -o CMakeFiles/yttria.dir/src/backend/VulkanRenderer.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/VulkanRenderer.cpp
+
+CMakeFiles/yttria.dir/src/backend/VulkanRenderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/yttria.dir/src/backend/VulkanRenderer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alderson/Projects/Mine/yttria/src/backend/VulkanRenderer.cpp > CMakeFiles/yttria.dir/src/backend/VulkanRenderer.cpp.i
+
+CMakeFiles/yttria.dir/src/backend/VulkanRenderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/yttria.dir/src/backend/VulkanRenderer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alderson/Projects/Mine/yttria/src/backend/VulkanRenderer.cpp -o CMakeFiles/yttria.dir/src/backend/VulkanRenderer.cpp.s
+
+CMakeFiles/yttria.dir/src/backend/VulkanSceneObject.cpp.o: CMakeFiles/yttria.dir/flags.make
+CMakeFiles/yttria.dir/src/backend/VulkanSceneObject.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/VulkanSceneObject.cpp
+CMakeFiles/yttria.dir/src/backend/VulkanSceneObject.cpp.o: CMakeFiles/yttria.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/yttria.dir/src/backend/VulkanSceneObject.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/yttria.dir/src/backend/VulkanSceneObject.cpp.o -MF CMakeFiles/yttria.dir/src/backend/VulkanSceneObject.cpp.o.d -o CMakeFiles/yttria.dir/src/backend/VulkanSceneObject.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/VulkanSceneObject.cpp
+
+CMakeFiles/yttria.dir/src/backend/VulkanSceneObject.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/yttria.dir/src/backend/VulkanSceneObject.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alderson/Projects/Mine/yttria/src/backend/VulkanSceneObject.cpp > CMakeFiles/yttria.dir/src/backend/VulkanSceneObject.cpp.i
+
+CMakeFiles/yttria.dir/src/backend/VulkanSceneObject.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/yttria.dir/src/backend/VulkanSceneObject.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alderson/Projects/Mine/yttria/src/backend/VulkanSceneObject.cpp -o CMakeFiles/yttria.dir/src/backend/VulkanSceneObject.cpp.s
+
+CMakeFiles/yttria.dir/src/backend/VulkanSwapChain.cpp.o: CMakeFiles/yttria.dir/flags.make
+CMakeFiles/yttria.dir/src/backend/VulkanSwapChain.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/VulkanSwapChain.cpp
+CMakeFiles/yttria.dir/src/backend/VulkanSwapChain.cpp.o: CMakeFiles/yttria.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/yttria.dir/src/backend/VulkanSwapChain.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/yttria.dir/src/backend/VulkanSwapChain.cpp.o -MF CMakeFiles/yttria.dir/src/backend/VulkanSwapChain.cpp.o.d -o CMakeFiles/yttria.dir/src/backend/VulkanSwapChain.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/VulkanSwapChain.cpp
+
+CMakeFiles/yttria.dir/src/backend/VulkanSwapChain.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/yttria.dir/src/backend/VulkanSwapChain.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alderson/Projects/Mine/yttria/src/backend/VulkanSwapChain.cpp > CMakeFiles/yttria.dir/src/backend/VulkanSwapChain.cpp.i
+
+CMakeFiles/yttria.dir/src/backend/VulkanSwapChain.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/yttria.dir/src/backend/VulkanSwapChain.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alderson/Projects/Mine/yttria/src/backend/VulkanSwapChain.cpp -o CMakeFiles/yttria.dir/src/backend/VulkanSwapChain.cpp.s
+
+CMakeFiles/yttria.dir/src/backend/Window.cpp.o: CMakeFiles/yttria.dir/flags.make
+CMakeFiles/yttria.dir/src/backend/Window.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/Window.cpp
+CMakeFiles/yttria.dir/src/backend/Window.cpp.o: CMakeFiles/yttria.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/yttria.dir/src/backend/Window.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/yttria.dir/src/backend/Window.cpp.o -MF CMakeFiles/yttria.dir/src/backend/Window.cpp.o.d -o CMakeFiles/yttria.dir/src/backend/Window.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/Window.cpp
+
+CMakeFiles/yttria.dir/src/backend/Window.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/yttria.dir/src/backend/Window.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alderson/Projects/Mine/yttria/src/backend/Window.cpp > CMakeFiles/yttria.dir/src/backend/Window.cpp.i
+
+CMakeFiles/yttria.dir/src/backend/Window.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/yttria.dir/src/backend/Window.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alderson/Projects/Mine/yttria/src/backend/Window.cpp -o CMakeFiles/yttria.dir/src/backend/Window.cpp.s
+
+CMakeFiles/yttria.dir/src/backend/systems/VulkanPointLightSystem.cpp.o: CMakeFiles/yttria.dir/flags.make
+CMakeFiles/yttria.dir/src/backend/systems/VulkanPointLightSystem.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/systems/VulkanPointLightSystem.cpp
+CMakeFiles/yttria.dir/src/backend/systems/VulkanPointLightSystem.cpp.o: CMakeFiles/yttria.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/yttria.dir/src/backend/systems/VulkanPointLightSystem.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/yttria.dir/src/backend/systems/VulkanPointLightSystem.cpp.o -MF CMakeFiles/yttria.dir/src/backend/systems/VulkanPointLightSystem.cpp.o.d -o CMakeFiles/yttria.dir/src/backend/systems/VulkanPointLightSystem.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/systems/VulkanPointLightSystem.cpp
+
+CMakeFiles/yttria.dir/src/backend/systems/VulkanPointLightSystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/yttria.dir/src/backend/systems/VulkanPointLightSystem.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alderson/Projects/Mine/yttria/src/backend/systems/VulkanPointLightSystem.cpp > CMakeFiles/yttria.dir/src/backend/systems/VulkanPointLightSystem.cpp.i
+
+CMakeFiles/yttria.dir/src/backend/systems/VulkanPointLightSystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/yttria.dir/src/backend/systems/VulkanPointLightSystem.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alderson/Projects/Mine/yttria/src/backend/systems/VulkanPointLightSystem.cpp -o CMakeFiles/yttria.dir/src/backend/systems/VulkanPointLightSystem.cpp.s
+
+CMakeFiles/yttria.dir/src/backend/systems/VulkanSimpleRenderSystem.cpp.o: CMakeFiles/yttria.dir/flags.make
+CMakeFiles/yttria.dir/src/backend/systems/VulkanSimpleRenderSystem.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/systems/VulkanSimpleRenderSystem.cpp
+CMakeFiles/yttria.dir/src/backend/systems/VulkanSimpleRenderSystem.cpp.o: CMakeFiles/yttria.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/yttria.dir/src/backend/systems/VulkanSimpleRenderSystem.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/yttria.dir/src/backend/systems/VulkanSimpleRenderSystem.cpp.o -MF CMakeFiles/yttria.dir/src/backend/systems/VulkanSimpleRenderSystem.cpp.o.d -o CMakeFiles/yttria.dir/src/backend/systems/VulkanSimpleRenderSystem.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/systems/VulkanSimpleRenderSystem.cpp
+
+CMakeFiles/yttria.dir/src/backend/systems/VulkanSimpleRenderSystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/yttria.dir/src/backend/systems/VulkanSimpleRenderSystem.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alderson/Projects/Mine/yttria/src/backend/systems/VulkanSimpleRenderSystem.cpp > CMakeFiles/yttria.dir/src/backend/systems/VulkanSimpleRenderSystem.cpp.i
+
+CMakeFiles/yttria.dir/src/backend/systems/VulkanSimpleRenderSystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/yttria.dir/src/backend/systems/VulkanSimpleRenderSystem.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alderson/Projects/Mine/yttria/src/backend/systems/VulkanSimpleRenderSystem.cpp -o CMakeFiles/yttria.dir/src/backend/systems/VulkanSimpleRenderSystem.cpp.s
 
 # Object files for target yttria
 yttria_OBJECTS = \
-"CMakeFiles/yttria.dir/src/backend/command_pool.cpp.o" \
-"CMakeFiles/yttria.dir/src/backend/instance.cpp.o" \
-"CMakeFiles/yttria.dir/src/backend/logical_device.cpp.o" \
-"CMakeFiles/yttria.dir/src/backend/physical_device.cpp.o" \
-"CMakeFiles/yttria.dir/src/backend/surface.cpp.o" \
-"CMakeFiles/yttria.dir/src/backend/window.cpp.o" \
-"CMakeFiles/yttria.dir/src/frontend/renderer.cpp.o"
+"CMakeFiles/yttria.dir/src/backend/VulkanBuffer.cpp.o" \
+"CMakeFiles/yttria.dir/src/backend/VulkanCamera.cpp.o" \
+"CMakeFiles/yttria.dir/src/backend/VulkanDescriptors.cpp.o" \
+"CMakeFiles/yttria.dir/src/backend/VulkanDevice.cpp.o" \
+"CMakeFiles/yttria.dir/src/backend/VulkanModel.cpp.o" \
+"CMakeFiles/yttria.dir/src/backend/VulkanMovementController.cpp.o" \
+"CMakeFiles/yttria.dir/src/backend/VulkanPipeline.cpp.o" \
+"CMakeFiles/yttria.dir/src/backend/VulkanRenderer.cpp.o" \
+"CMakeFiles/yttria.dir/src/backend/VulkanSceneObject.cpp.o" \
+"CMakeFiles/yttria.dir/src/backend/VulkanSwapChain.cpp.o" \
+"CMakeFiles/yttria.dir/src/backend/Window.cpp.o" \
+"CMakeFiles/yttria.dir/src/backend/systems/VulkanPointLightSystem.cpp.o" \
+"CMakeFiles/yttria.dir/src/backend/systems/VulkanSimpleRenderSystem.cpp.o"
 
 # External object files for target yttria
 yttria_EXTERNAL_OBJECTS =
 
-libyttria.a: CMakeFiles/yttria.dir/src/backend/command_pool.cpp.o
-libyttria.a: CMakeFiles/yttria.dir/src/backend/instance.cpp.o
-libyttria.a: CMakeFiles/yttria.dir/src/backend/logical_device.cpp.o
-libyttria.a: CMakeFiles/yttria.dir/src/backend/physical_device.cpp.o
-libyttria.a: CMakeFiles/yttria.dir/src/backend/surface.cpp.o
-libyttria.a: CMakeFiles/yttria.dir/src/backend/window.cpp.o
-libyttria.a: CMakeFiles/yttria.dir/src/frontend/renderer.cpp.o
+libyttria.a: CMakeFiles/yttria.dir/src/backend/VulkanBuffer.cpp.o
+libyttria.a: CMakeFiles/yttria.dir/src/backend/VulkanCamera.cpp.o
+libyttria.a: CMakeFiles/yttria.dir/src/backend/VulkanDescriptors.cpp.o
+libyttria.a: CMakeFiles/yttria.dir/src/backend/VulkanDevice.cpp.o
+libyttria.a: CMakeFiles/yttria.dir/src/backend/VulkanModel.cpp.o
+libyttria.a: CMakeFiles/yttria.dir/src/backend/VulkanMovementController.cpp.o
+libyttria.a: CMakeFiles/yttria.dir/src/backend/VulkanPipeline.cpp.o
+libyttria.a: CMakeFiles/yttria.dir/src/backend/VulkanRenderer.cpp.o
+libyttria.a: CMakeFiles/yttria.dir/src/backend/VulkanSceneObject.cpp.o
+libyttria.a: CMakeFiles/yttria.dir/src/backend/VulkanSwapChain.cpp.o
+libyttria.a: CMakeFiles/yttria.dir/src/backend/Window.cpp.o
+libyttria.a: CMakeFiles/yttria.dir/src/backend/systems/VulkanPointLightSystem.cpp.o
+libyttria.a: CMakeFiles/yttria.dir/src/backend/systems/VulkanSimpleRenderSystem.cpp.o
 libyttria.a: CMakeFiles/yttria.dir/build.make
 libyttria.a: CMakeFiles/yttria.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libyttria.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX static library libyttria.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/yttria.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/yttria.dir/link.txt --verbose=$(VERBOSE)
 

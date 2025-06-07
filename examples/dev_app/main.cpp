@@ -1,12 +1,18 @@
-#include <iostream>
-#include <memory>
+#include "MainApp.hpp"
 
-#include "yttria/backend/window.hpp"
-#include "yttria/frontend/rendered.hpp"
+#include <cstdlib>
+#include <iostream>
 
 int main() {
+    Application::MainApp app{};
 
-    auto rendered = yttria::frontend::Renderer();
+    try {
+        app.run();
+    } catch(const std::exception &e) {
+        std::cerr << e.what() << '\n';
+        return EXIT_FAILURE;
+    }
 
-
+    return EXIT_SUCCESS;
 }
+
