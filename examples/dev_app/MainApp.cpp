@@ -46,6 +46,10 @@ void MainApp::run() {
     auto globalSetLayout =
         DescriptorSetLayout::Builder(device)
             .addBinding(0, VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER, VK_SHADER_STAGE_ALL)
+
+            .addBinding(1, VK_DESCRIPTOR_TYPE_STORAGE_IMAGE, VK_SHADER_STAGE_COMPUTE_BIT)
+            .addBinding(2, VK_DESCRIPTOR_TYPE_COMBINED_IMAGE_SAMPLER, VK_SHADER_STAGE_COMPUTE_BIT)
+            .addBinding(3, VK_DESCRIPTOR_TYPE_STORAGE_IMAGE, VK_SHADER_STAGE_COMPUTE_BIT)
             .build();
 
     std::vector<VkDescriptorSet> globalDescriptorSets(SwapChain::MAX_FRAMES_IN_FLIGHT);
@@ -124,20 +128,6 @@ void MainApp::run() {
 };
 
 void MainApp::loadSceneObjects() {
-    std::shared_ptr<Model> model = Model::createModelFromFile(device, "examples/dev_app/models/smooth_vase.obj");
-    auto sceneObj = SceneObject::createSceneObject();
-    sceneObj.model = model;
-    sceneObj.transform.translation = {.0f, .5f, 1.f};
-    sceneObj.transform.scale = 10.f;
-    sceneObjects.emplace(sceneObj.getId(), std::move(sceneObj));
-
-    std::shared_ptr<Model> model2 = Model::createModelFromFile(device, "examples/dev_app/models/smooth_vase.obj");
-    auto sceneObj2 = SceneObject::createSceneObject();
-    sceneObj2.model = model2;
-    sceneObj2.transform.translation = {2.f, .1f, 1.f};
-    sceneObj2.transform.scale = 5.f;
-    sceneObjects.emplace(sceneObj2.getId(), std::move(sceneObj2));
-
     std::shared_ptr<Model> floor = Model::createModelFromFile(device, "examples/dev_app/models/quad.obj");
     auto floorObj = SceneObject::createSceneObject();
     floorObj.model = floor;

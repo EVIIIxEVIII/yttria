@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/yttria.dir/src/backend/descriptors.cpp.o.d"
   "CMakeFiles/yttria.dir/src/backend/device.cpp.o"
   "CMakeFiles/yttria.dir/src/backend/device.cpp.o.d"
+  "CMakeFiles/yttria.dir/src/backend/image.cpp.o"
+  "CMakeFiles/yttria.dir/src/backend/image.cpp.o.d"
   "CMakeFiles/yttria.dir/src/backend/model.cpp.o"
   "CMakeFiles/yttria.dir/src/backend/model.cpp.o.d"
   "CMakeFiles/yttria.dir/src/backend/movement_controller.cpp.o"

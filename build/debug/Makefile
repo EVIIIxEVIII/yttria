@@ -239,6 +239,30 @@ src/backend/device.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/device.cpp.s
 .PHONY : src/backend/device.cpp.s
 
+src/backend/image.o: src/backend/image.cpp.o
+.PHONY : src/backend/image.o
+
+# target to build an object file
+src/backend/image.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/image.cpp.o
+.PHONY : src/backend/image.cpp.o
+
+src/backend/image.i: src/backend/image.cpp.i
+.PHONY : src/backend/image.i
+
+# target to preprocess a source file
+src/backend/image.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/image.cpp.i
+.PHONY : src/backend/image.cpp.i
+
+src/backend/image.s: src/backend/image.cpp.s
+.PHONY : src/backend/image.s
+
+# target to generate assembly for a file
+src/backend/image.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/image.cpp.s
+.PHONY : src/backend/image.cpp.s
+
 src/backend/model.o: src/backend/model.cpp.o
 .PHONY : src/backend/model.o
 
@@ -477,6 +501,9 @@ help:
 	@echo "... src/backend/device.o"
 	@echo "... src/backend/device.i"
 	@echo "... src/backend/device.s"
+	@echo "... src/backend/image.o"
+	@echo "... src/backend/image.i"
+	@echo "... src/backend/image.s"
 	@echo "... src/backend/model.o"
 	@echo "... src/backend/model.i"
 	@echo "... src/backend/model.s"
