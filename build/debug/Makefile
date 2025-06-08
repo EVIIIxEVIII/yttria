@@ -143,317 +143,317 @@ dev_app/fast:
 	$(MAKE) $(MAKESILENT) -f examples/dev_app/CMakeFiles/dev_app.dir/build.make examples/dev_app/CMakeFiles/dev_app.dir/build
 .PHONY : dev_app/fast
 
-src/backend/VulkanBuffer.o: src/backend/VulkanBuffer.cpp.o
-.PHONY : src/backend/VulkanBuffer.o
+src/backend/buffer.o: src/backend/buffer.cpp.o
+.PHONY : src/backend/buffer.o
 
 # target to build an object file
-src/backend/VulkanBuffer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/VulkanBuffer.cpp.o
-.PHONY : src/backend/VulkanBuffer.cpp.o
+src/backend/buffer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/buffer.cpp.o
+.PHONY : src/backend/buffer.cpp.o
 
-src/backend/VulkanBuffer.i: src/backend/VulkanBuffer.cpp.i
-.PHONY : src/backend/VulkanBuffer.i
+src/backend/buffer.i: src/backend/buffer.cpp.i
+.PHONY : src/backend/buffer.i
 
 # target to preprocess a source file
-src/backend/VulkanBuffer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/VulkanBuffer.cpp.i
-.PHONY : src/backend/VulkanBuffer.cpp.i
+src/backend/buffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/buffer.cpp.i
+.PHONY : src/backend/buffer.cpp.i
 
-src/backend/VulkanBuffer.s: src/backend/VulkanBuffer.cpp.s
-.PHONY : src/backend/VulkanBuffer.s
+src/backend/buffer.s: src/backend/buffer.cpp.s
+.PHONY : src/backend/buffer.s
 
 # target to generate assembly for a file
-src/backend/VulkanBuffer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/VulkanBuffer.cpp.s
-.PHONY : src/backend/VulkanBuffer.cpp.s
+src/backend/buffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/buffer.cpp.s
+.PHONY : src/backend/buffer.cpp.s
 
-src/backend/VulkanCamera.o: src/backend/VulkanCamera.cpp.o
-.PHONY : src/backend/VulkanCamera.o
+src/backend/camera.o: src/backend/camera.cpp.o
+.PHONY : src/backend/camera.o
 
 # target to build an object file
-src/backend/VulkanCamera.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/VulkanCamera.cpp.o
-.PHONY : src/backend/VulkanCamera.cpp.o
+src/backend/camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/camera.cpp.o
+.PHONY : src/backend/camera.cpp.o
 
-src/backend/VulkanCamera.i: src/backend/VulkanCamera.cpp.i
-.PHONY : src/backend/VulkanCamera.i
+src/backend/camera.i: src/backend/camera.cpp.i
+.PHONY : src/backend/camera.i
 
 # target to preprocess a source file
-src/backend/VulkanCamera.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/VulkanCamera.cpp.i
-.PHONY : src/backend/VulkanCamera.cpp.i
+src/backend/camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/camera.cpp.i
+.PHONY : src/backend/camera.cpp.i
 
-src/backend/VulkanCamera.s: src/backend/VulkanCamera.cpp.s
-.PHONY : src/backend/VulkanCamera.s
+src/backend/camera.s: src/backend/camera.cpp.s
+.PHONY : src/backend/camera.s
 
 # target to generate assembly for a file
-src/backend/VulkanCamera.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/VulkanCamera.cpp.s
-.PHONY : src/backend/VulkanCamera.cpp.s
+src/backend/camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/camera.cpp.s
+.PHONY : src/backend/camera.cpp.s
 
-src/backend/VulkanDescriptors.o: src/backend/VulkanDescriptors.cpp.o
-.PHONY : src/backend/VulkanDescriptors.o
+src/backend/descriptors.o: src/backend/descriptors.cpp.o
+.PHONY : src/backend/descriptors.o
 
 # target to build an object file
-src/backend/VulkanDescriptors.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/VulkanDescriptors.cpp.o
-.PHONY : src/backend/VulkanDescriptors.cpp.o
+src/backend/descriptors.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/descriptors.cpp.o
+.PHONY : src/backend/descriptors.cpp.o
 
-src/backend/VulkanDescriptors.i: src/backend/VulkanDescriptors.cpp.i
-.PHONY : src/backend/VulkanDescriptors.i
+src/backend/descriptors.i: src/backend/descriptors.cpp.i
+.PHONY : src/backend/descriptors.i
 
 # target to preprocess a source file
-src/backend/VulkanDescriptors.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/VulkanDescriptors.cpp.i
-.PHONY : src/backend/VulkanDescriptors.cpp.i
+src/backend/descriptors.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/descriptors.cpp.i
+.PHONY : src/backend/descriptors.cpp.i
 
-src/backend/VulkanDescriptors.s: src/backend/VulkanDescriptors.cpp.s
-.PHONY : src/backend/VulkanDescriptors.s
+src/backend/descriptors.s: src/backend/descriptors.cpp.s
+.PHONY : src/backend/descriptors.s
 
 # target to generate assembly for a file
-src/backend/VulkanDescriptors.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/VulkanDescriptors.cpp.s
-.PHONY : src/backend/VulkanDescriptors.cpp.s
+src/backend/descriptors.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/descriptors.cpp.s
+.PHONY : src/backend/descriptors.cpp.s
 
-src/backend/VulkanDevice.o: src/backend/VulkanDevice.cpp.o
-.PHONY : src/backend/VulkanDevice.o
+src/backend/device.o: src/backend/device.cpp.o
+.PHONY : src/backend/device.o
 
 # target to build an object file
-src/backend/VulkanDevice.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/VulkanDevice.cpp.o
-.PHONY : src/backend/VulkanDevice.cpp.o
+src/backend/device.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/device.cpp.o
+.PHONY : src/backend/device.cpp.o
 
-src/backend/VulkanDevice.i: src/backend/VulkanDevice.cpp.i
-.PHONY : src/backend/VulkanDevice.i
+src/backend/device.i: src/backend/device.cpp.i
+.PHONY : src/backend/device.i
 
 # target to preprocess a source file
-src/backend/VulkanDevice.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/VulkanDevice.cpp.i
-.PHONY : src/backend/VulkanDevice.cpp.i
+src/backend/device.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/device.cpp.i
+.PHONY : src/backend/device.cpp.i
 
-src/backend/VulkanDevice.s: src/backend/VulkanDevice.cpp.s
-.PHONY : src/backend/VulkanDevice.s
+src/backend/device.s: src/backend/device.cpp.s
+.PHONY : src/backend/device.s
 
 # target to generate assembly for a file
-src/backend/VulkanDevice.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/VulkanDevice.cpp.s
-.PHONY : src/backend/VulkanDevice.cpp.s
+src/backend/device.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/device.cpp.s
+.PHONY : src/backend/device.cpp.s
 
-src/backend/VulkanModel.o: src/backend/VulkanModel.cpp.o
-.PHONY : src/backend/VulkanModel.o
+src/backend/model.o: src/backend/model.cpp.o
+.PHONY : src/backend/model.o
 
 # target to build an object file
-src/backend/VulkanModel.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/VulkanModel.cpp.o
-.PHONY : src/backend/VulkanModel.cpp.o
+src/backend/model.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/model.cpp.o
+.PHONY : src/backend/model.cpp.o
 
-src/backend/VulkanModel.i: src/backend/VulkanModel.cpp.i
-.PHONY : src/backend/VulkanModel.i
+src/backend/model.i: src/backend/model.cpp.i
+.PHONY : src/backend/model.i
 
 # target to preprocess a source file
-src/backend/VulkanModel.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/VulkanModel.cpp.i
-.PHONY : src/backend/VulkanModel.cpp.i
+src/backend/model.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/model.cpp.i
+.PHONY : src/backend/model.cpp.i
 
-src/backend/VulkanModel.s: src/backend/VulkanModel.cpp.s
-.PHONY : src/backend/VulkanModel.s
+src/backend/model.s: src/backend/model.cpp.s
+.PHONY : src/backend/model.s
 
 # target to generate assembly for a file
-src/backend/VulkanModel.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/VulkanModel.cpp.s
-.PHONY : src/backend/VulkanModel.cpp.s
+src/backend/model.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/model.cpp.s
+.PHONY : src/backend/model.cpp.s
 
-src/backend/VulkanMovementController.o: src/backend/VulkanMovementController.cpp.o
-.PHONY : src/backend/VulkanMovementController.o
+src/backend/movement_controller.o: src/backend/movement_controller.cpp.o
+.PHONY : src/backend/movement_controller.o
 
 # target to build an object file
-src/backend/VulkanMovementController.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/VulkanMovementController.cpp.o
-.PHONY : src/backend/VulkanMovementController.cpp.o
+src/backend/movement_controller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/movement_controller.cpp.o
+.PHONY : src/backend/movement_controller.cpp.o
 
-src/backend/VulkanMovementController.i: src/backend/VulkanMovementController.cpp.i
-.PHONY : src/backend/VulkanMovementController.i
+src/backend/movement_controller.i: src/backend/movement_controller.cpp.i
+.PHONY : src/backend/movement_controller.i
 
 # target to preprocess a source file
-src/backend/VulkanMovementController.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/VulkanMovementController.cpp.i
-.PHONY : src/backend/VulkanMovementController.cpp.i
+src/backend/movement_controller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/movement_controller.cpp.i
+.PHONY : src/backend/movement_controller.cpp.i
 
-src/backend/VulkanMovementController.s: src/backend/VulkanMovementController.cpp.s
-.PHONY : src/backend/VulkanMovementController.s
+src/backend/movement_controller.s: src/backend/movement_controller.cpp.s
+.PHONY : src/backend/movement_controller.s
 
 # target to generate assembly for a file
-src/backend/VulkanMovementController.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/VulkanMovementController.cpp.s
-.PHONY : src/backend/VulkanMovementController.cpp.s
+src/backend/movement_controller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/movement_controller.cpp.s
+.PHONY : src/backend/movement_controller.cpp.s
 
-src/backend/VulkanPipeline.o: src/backend/VulkanPipeline.cpp.o
-.PHONY : src/backend/VulkanPipeline.o
+src/backend/pipeline.o: src/backend/pipeline.cpp.o
+.PHONY : src/backend/pipeline.o
 
 # target to build an object file
-src/backend/VulkanPipeline.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/VulkanPipeline.cpp.o
-.PHONY : src/backend/VulkanPipeline.cpp.o
+src/backend/pipeline.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/pipeline.cpp.o
+.PHONY : src/backend/pipeline.cpp.o
 
-src/backend/VulkanPipeline.i: src/backend/VulkanPipeline.cpp.i
-.PHONY : src/backend/VulkanPipeline.i
+src/backend/pipeline.i: src/backend/pipeline.cpp.i
+.PHONY : src/backend/pipeline.i
 
 # target to preprocess a source file
-src/backend/VulkanPipeline.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/VulkanPipeline.cpp.i
-.PHONY : src/backend/VulkanPipeline.cpp.i
+src/backend/pipeline.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/pipeline.cpp.i
+.PHONY : src/backend/pipeline.cpp.i
 
-src/backend/VulkanPipeline.s: src/backend/VulkanPipeline.cpp.s
-.PHONY : src/backend/VulkanPipeline.s
+src/backend/pipeline.s: src/backend/pipeline.cpp.s
+.PHONY : src/backend/pipeline.s
 
 # target to generate assembly for a file
-src/backend/VulkanPipeline.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/VulkanPipeline.cpp.s
-.PHONY : src/backend/VulkanPipeline.cpp.s
+src/backend/pipeline.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/pipeline.cpp.s
+.PHONY : src/backend/pipeline.cpp.s
 
-src/backend/VulkanRenderer.o: src/backend/VulkanRenderer.cpp.o
-.PHONY : src/backend/VulkanRenderer.o
+src/backend/renderer.o: src/backend/renderer.cpp.o
+.PHONY : src/backend/renderer.o
 
 # target to build an object file
-src/backend/VulkanRenderer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/VulkanRenderer.cpp.o
-.PHONY : src/backend/VulkanRenderer.cpp.o
+src/backend/renderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/renderer.cpp.o
+.PHONY : src/backend/renderer.cpp.o
 
-src/backend/VulkanRenderer.i: src/backend/VulkanRenderer.cpp.i
-.PHONY : src/backend/VulkanRenderer.i
+src/backend/renderer.i: src/backend/renderer.cpp.i
+.PHONY : src/backend/renderer.i
 
 # target to preprocess a source file
-src/backend/VulkanRenderer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/VulkanRenderer.cpp.i
-.PHONY : src/backend/VulkanRenderer.cpp.i
+src/backend/renderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/renderer.cpp.i
+.PHONY : src/backend/renderer.cpp.i
 
-src/backend/VulkanRenderer.s: src/backend/VulkanRenderer.cpp.s
-.PHONY : src/backend/VulkanRenderer.s
+src/backend/renderer.s: src/backend/renderer.cpp.s
+.PHONY : src/backend/renderer.s
 
 # target to generate assembly for a file
-src/backend/VulkanRenderer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/VulkanRenderer.cpp.s
-.PHONY : src/backend/VulkanRenderer.cpp.s
+src/backend/renderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/renderer.cpp.s
+.PHONY : src/backend/renderer.cpp.s
 
-src/backend/VulkanSceneObject.o: src/backend/VulkanSceneObject.cpp.o
-.PHONY : src/backend/VulkanSceneObject.o
+src/backend/scene_object.o: src/backend/scene_object.cpp.o
+.PHONY : src/backend/scene_object.o
 
 # target to build an object file
-src/backend/VulkanSceneObject.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/VulkanSceneObject.cpp.o
-.PHONY : src/backend/VulkanSceneObject.cpp.o
+src/backend/scene_object.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/scene_object.cpp.o
+.PHONY : src/backend/scene_object.cpp.o
 
-src/backend/VulkanSceneObject.i: src/backend/VulkanSceneObject.cpp.i
-.PHONY : src/backend/VulkanSceneObject.i
+src/backend/scene_object.i: src/backend/scene_object.cpp.i
+.PHONY : src/backend/scene_object.i
 
 # target to preprocess a source file
-src/backend/VulkanSceneObject.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/VulkanSceneObject.cpp.i
-.PHONY : src/backend/VulkanSceneObject.cpp.i
+src/backend/scene_object.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/scene_object.cpp.i
+.PHONY : src/backend/scene_object.cpp.i
 
-src/backend/VulkanSceneObject.s: src/backend/VulkanSceneObject.cpp.s
-.PHONY : src/backend/VulkanSceneObject.s
+src/backend/scene_object.s: src/backend/scene_object.cpp.s
+.PHONY : src/backend/scene_object.s
 
 # target to generate assembly for a file
-src/backend/VulkanSceneObject.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/VulkanSceneObject.cpp.s
-.PHONY : src/backend/VulkanSceneObject.cpp.s
+src/backend/scene_object.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/scene_object.cpp.s
+.PHONY : src/backend/scene_object.cpp.s
 
-src/backend/VulkanSwapChain.o: src/backend/VulkanSwapChain.cpp.o
-.PHONY : src/backend/VulkanSwapChain.o
+src/backend/swap_chain.o: src/backend/swap_chain.cpp.o
+.PHONY : src/backend/swap_chain.o
 
 # target to build an object file
-src/backend/VulkanSwapChain.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/VulkanSwapChain.cpp.o
-.PHONY : src/backend/VulkanSwapChain.cpp.o
+src/backend/swap_chain.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/swap_chain.cpp.o
+.PHONY : src/backend/swap_chain.cpp.o
 
-src/backend/VulkanSwapChain.i: src/backend/VulkanSwapChain.cpp.i
-.PHONY : src/backend/VulkanSwapChain.i
+src/backend/swap_chain.i: src/backend/swap_chain.cpp.i
+.PHONY : src/backend/swap_chain.i
 
 # target to preprocess a source file
-src/backend/VulkanSwapChain.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/VulkanSwapChain.cpp.i
-.PHONY : src/backend/VulkanSwapChain.cpp.i
+src/backend/swap_chain.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/swap_chain.cpp.i
+.PHONY : src/backend/swap_chain.cpp.i
 
-src/backend/VulkanSwapChain.s: src/backend/VulkanSwapChain.cpp.s
-.PHONY : src/backend/VulkanSwapChain.s
+src/backend/swap_chain.s: src/backend/swap_chain.cpp.s
+.PHONY : src/backend/swap_chain.s
 
 # target to generate assembly for a file
-src/backend/VulkanSwapChain.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/VulkanSwapChain.cpp.s
-.PHONY : src/backend/VulkanSwapChain.cpp.s
+src/backend/swap_chain.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/swap_chain.cpp.s
+.PHONY : src/backend/swap_chain.cpp.s
 
-src/backend/Window.o: src/backend/Window.cpp.o
-.PHONY : src/backend/Window.o
+src/backend/systems/point_light_system.o: src/backend/systems/point_light_system.cpp.o
+.PHONY : src/backend/systems/point_light_system.o
 
 # target to build an object file
-src/backend/Window.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/Window.cpp.o
-.PHONY : src/backend/Window.cpp.o
+src/backend/systems/point_light_system.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/systems/point_light_system.cpp.o
+.PHONY : src/backend/systems/point_light_system.cpp.o
 
-src/backend/Window.i: src/backend/Window.cpp.i
-.PHONY : src/backend/Window.i
+src/backend/systems/point_light_system.i: src/backend/systems/point_light_system.cpp.i
+.PHONY : src/backend/systems/point_light_system.i
 
 # target to preprocess a source file
-src/backend/Window.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/Window.cpp.i
-.PHONY : src/backend/Window.cpp.i
+src/backend/systems/point_light_system.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/systems/point_light_system.cpp.i
+.PHONY : src/backend/systems/point_light_system.cpp.i
 
-src/backend/Window.s: src/backend/Window.cpp.s
-.PHONY : src/backend/Window.s
+src/backend/systems/point_light_system.s: src/backend/systems/point_light_system.cpp.s
+.PHONY : src/backend/systems/point_light_system.s
 
 # target to generate assembly for a file
-src/backend/Window.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/Window.cpp.s
-.PHONY : src/backend/Window.cpp.s
+src/backend/systems/point_light_system.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/systems/point_light_system.cpp.s
+.PHONY : src/backend/systems/point_light_system.cpp.s
 
-src/backend/systems/VulkanPointLightSystem.o: src/backend/systems/VulkanPointLightSystem.cpp.o
-.PHONY : src/backend/systems/VulkanPointLightSystem.o
+src/backend/systems/simple_render_system.o: src/backend/systems/simple_render_system.cpp.o
+.PHONY : src/backend/systems/simple_render_system.o
 
 # target to build an object file
-src/backend/systems/VulkanPointLightSystem.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/systems/VulkanPointLightSystem.cpp.o
-.PHONY : src/backend/systems/VulkanPointLightSystem.cpp.o
+src/backend/systems/simple_render_system.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/systems/simple_render_system.cpp.o
+.PHONY : src/backend/systems/simple_render_system.cpp.o
 
-src/backend/systems/VulkanPointLightSystem.i: src/backend/systems/VulkanPointLightSystem.cpp.i
-.PHONY : src/backend/systems/VulkanPointLightSystem.i
+src/backend/systems/simple_render_system.i: src/backend/systems/simple_render_system.cpp.i
+.PHONY : src/backend/systems/simple_render_system.i
 
 # target to preprocess a source file
-src/backend/systems/VulkanPointLightSystem.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/systems/VulkanPointLightSystem.cpp.i
-.PHONY : src/backend/systems/VulkanPointLightSystem.cpp.i
+src/backend/systems/simple_render_system.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/systems/simple_render_system.cpp.i
+.PHONY : src/backend/systems/simple_render_system.cpp.i
 
-src/backend/systems/VulkanPointLightSystem.s: src/backend/systems/VulkanPointLightSystem.cpp.s
-.PHONY : src/backend/systems/VulkanPointLightSystem.s
+src/backend/systems/simple_render_system.s: src/backend/systems/simple_render_system.cpp.s
+.PHONY : src/backend/systems/simple_render_system.s
 
 # target to generate assembly for a file
-src/backend/systems/VulkanPointLightSystem.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/systems/VulkanPointLightSystem.cpp.s
-.PHONY : src/backend/systems/VulkanPointLightSystem.cpp.s
+src/backend/systems/simple_render_system.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/systems/simple_render_system.cpp.s
+.PHONY : src/backend/systems/simple_render_system.cpp.s
 
-src/backend/systems/VulkanSimpleRenderSystem.o: src/backend/systems/VulkanSimpleRenderSystem.cpp.o
-.PHONY : src/backend/systems/VulkanSimpleRenderSystem.o
+src/backend/window.o: src/backend/window.cpp.o
+.PHONY : src/backend/window.o
 
 # target to build an object file
-src/backend/systems/VulkanSimpleRenderSystem.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/systems/VulkanSimpleRenderSystem.cpp.o
-.PHONY : src/backend/systems/VulkanSimpleRenderSystem.cpp.o
+src/backend/window.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/window.cpp.o
+.PHONY : src/backend/window.cpp.o
 
-src/backend/systems/VulkanSimpleRenderSystem.i: src/backend/systems/VulkanSimpleRenderSystem.cpp.i
-.PHONY : src/backend/systems/VulkanSimpleRenderSystem.i
+src/backend/window.i: src/backend/window.cpp.i
+.PHONY : src/backend/window.i
 
 # target to preprocess a source file
-src/backend/systems/VulkanSimpleRenderSystem.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/systems/VulkanSimpleRenderSystem.cpp.i
-.PHONY : src/backend/systems/VulkanSimpleRenderSystem.cpp.i
+src/backend/window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/window.cpp.i
+.PHONY : src/backend/window.cpp.i
 
-src/backend/systems/VulkanSimpleRenderSystem.s: src/backend/systems/VulkanSimpleRenderSystem.cpp.s
-.PHONY : src/backend/systems/VulkanSimpleRenderSystem.s
+src/backend/window.s: src/backend/window.cpp.s
+.PHONY : src/backend/window.s
 
 # target to generate assembly for a file
-src/backend/systems/VulkanSimpleRenderSystem.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/systems/VulkanSimpleRenderSystem.cpp.s
-.PHONY : src/backend/systems/VulkanSimpleRenderSystem.cpp.s
+src/backend/window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/window.cpp.s
+.PHONY : src/backend/window.cpp.s
 
 # Help Target
 help:
@@ -465,45 +465,45 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... dev_app"
 	@echo "... yttria"
-	@echo "... src/backend/VulkanBuffer.o"
-	@echo "... src/backend/VulkanBuffer.i"
-	@echo "... src/backend/VulkanBuffer.s"
-	@echo "... src/backend/VulkanCamera.o"
-	@echo "... src/backend/VulkanCamera.i"
-	@echo "... src/backend/VulkanCamera.s"
-	@echo "... src/backend/VulkanDescriptors.o"
-	@echo "... src/backend/VulkanDescriptors.i"
-	@echo "... src/backend/VulkanDescriptors.s"
-	@echo "... src/backend/VulkanDevice.o"
-	@echo "... src/backend/VulkanDevice.i"
-	@echo "... src/backend/VulkanDevice.s"
-	@echo "... src/backend/VulkanModel.o"
-	@echo "... src/backend/VulkanModel.i"
-	@echo "... src/backend/VulkanModel.s"
-	@echo "... src/backend/VulkanMovementController.o"
-	@echo "... src/backend/VulkanMovementController.i"
-	@echo "... src/backend/VulkanMovementController.s"
-	@echo "... src/backend/VulkanPipeline.o"
-	@echo "... src/backend/VulkanPipeline.i"
-	@echo "... src/backend/VulkanPipeline.s"
-	@echo "... src/backend/VulkanRenderer.o"
-	@echo "... src/backend/VulkanRenderer.i"
-	@echo "... src/backend/VulkanRenderer.s"
-	@echo "... src/backend/VulkanSceneObject.o"
-	@echo "... src/backend/VulkanSceneObject.i"
-	@echo "... src/backend/VulkanSceneObject.s"
-	@echo "... src/backend/VulkanSwapChain.o"
-	@echo "... src/backend/VulkanSwapChain.i"
-	@echo "... src/backend/VulkanSwapChain.s"
-	@echo "... src/backend/Window.o"
-	@echo "... src/backend/Window.i"
-	@echo "... src/backend/Window.s"
-	@echo "... src/backend/systems/VulkanPointLightSystem.o"
-	@echo "... src/backend/systems/VulkanPointLightSystem.i"
-	@echo "... src/backend/systems/VulkanPointLightSystem.s"
-	@echo "... src/backend/systems/VulkanSimpleRenderSystem.o"
-	@echo "... src/backend/systems/VulkanSimpleRenderSystem.i"
-	@echo "... src/backend/systems/VulkanSimpleRenderSystem.s"
+	@echo "... src/backend/buffer.o"
+	@echo "... src/backend/buffer.i"
+	@echo "... src/backend/buffer.s"
+	@echo "... src/backend/camera.o"
+	@echo "... src/backend/camera.i"
+	@echo "... src/backend/camera.s"
+	@echo "... src/backend/descriptors.o"
+	@echo "... src/backend/descriptors.i"
+	@echo "... src/backend/descriptors.s"
+	@echo "... src/backend/device.o"
+	@echo "... src/backend/device.i"
+	@echo "... src/backend/device.s"
+	@echo "... src/backend/model.o"
+	@echo "... src/backend/model.i"
+	@echo "... src/backend/model.s"
+	@echo "... src/backend/movement_controller.o"
+	@echo "... src/backend/movement_controller.i"
+	@echo "... src/backend/movement_controller.s"
+	@echo "... src/backend/pipeline.o"
+	@echo "... src/backend/pipeline.i"
+	@echo "... src/backend/pipeline.s"
+	@echo "... src/backend/renderer.o"
+	@echo "... src/backend/renderer.i"
+	@echo "... src/backend/renderer.s"
+	@echo "... src/backend/scene_object.o"
+	@echo "... src/backend/scene_object.i"
+	@echo "... src/backend/scene_object.s"
+	@echo "... src/backend/swap_chain.o"
+	@echo "... src/backend/swap_chain.i"
+	@echo "... src/backend/swap_chain.s"
+	@echo "... src/backend/systems/point_light_system.o"
+	@echo "... src/backend/systems/point_light_system.i"
+	@echo "... src/backend/systems/point_light_system.s"
+	@echo "... src/backend/systems/simple_render_system.o"
+	@echo "... src/backend/systems/simple_render_system.i"
+	@echo "... src/backend/systems/simple_render_system.s"
+	@echo "... src/backend/window.o"
+	@echo "... src/backend/window.i"
+	@echo "... src/backend/window.s"
 .PHONY : help
 
 

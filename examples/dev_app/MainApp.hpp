@@ -1,10 +1,10 @@
 #pragma once
 
-#include "yttria/backend/Window.hpp"
-#include "yttria/backend/VulkanDevice.hpp"
-#include "yttria/backend/VulkanRenderer.hpp"
-#include "yttria/backend/VulkanSceneObject.hpp"
-#include "yttria/backend/VulkanDescriptors.hpp"
+#include "yttria/backend/window.hpp"
+#include "yttria/backend/device.hpp"
+#include "yttria/backend/renderer.hpp"
+#include "yttria/backend/scene_object.hpp"
+#include "yttria/backend/descriptors.hpp"
 
 using namespace yttria::backend;
 

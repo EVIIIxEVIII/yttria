@@ -2,7 +2,7 @@ examples/dev_app/CMakeFiles/dev_app.dir/MainApp.cpp.o: \
  /home/alderson/Projects/Mine/yttria/examples/dev_app/MainApp.cpp \
  /usr/include/stdc-predef.h \
  /home/alderson/Projects/Mine/yttria/examples/dev_app/MainApp.hpp \
- /home/alderson/Projects/Mine/yttria/include/yttria/backend/Window.hpp \
+ /home/alderson/Projects/Mine/yttria/include/yttria/backend/window.hpp \
  /usr/include/GLFW/glfw3.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
@@ -137,12 +137,12 @@ examples/dev_app/CMakeFiles/dev_app.dir/MainApp.cpp.o: \
  /usr/include/c++/13/bits/memory_resource.h /usr/include/c++/13/cstddef \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
- /home/alderson/Projects/Mine/yttria/include/yttria/backend/VulkanDevice.hpp \
+ /home/alderson/Projects/Mine/yttria/include/yttria/backend/device.hpp \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /home/alderson/Projects/Mine/yttria/include/yttria/backend/VulkanRenderer.hpp \
+ /home/alderson/Projects/Mine/yttria/include/yttria/backend/renderer.hpp \
  /usr/include/c++/13/memory /usr/include/c++/13/bits/stl_tempbuf.h \
  /usr/include/c++/13/bits/stl_raw_storage_iter.h \
  /usr/include/c++/13/bits/align.h /usr/include/c++/13/bits/unique_ptr.h \
@@ -178,10 +178,10 @@ examples/dev_app/CMakeFiles/dev_app.dir/MainApp.cpp.o: \
  /usr/include/c++/13/pstl/execution_defs.h \
  /usr/include/vulkan/vulkan_core.h /usr/include/c++/13/cassert \
  /usr/include/assert.h \
- /home/alderson/Projects/Mine/yttria/include/yttria/backend/VulkanSwapChain.hpp \
- /home/alderson/Projects/Mine/yttria/include/yttria/backend/VulkanSceneObject.hpp \
- /home/alderson/Projects/Mine/yttria/include/yttria/backend/VulkanModel.hpp \
- /home/alderson/Projects/Mine/yttria/include/yttria/backend/VulkanBuffer.hpp \
+ /home/alderson/Projects/Mine/yttria/include/yttria/backend/swap_chain.hpp \
+ /home/alderson/Projects/Mine/yttria/include/yttria/backend/scene_object.hpp \
+ /home/alderson/Projects/Mine/yttria/include/yttria/backend/model.hpp \
+ /home/alderson/Projects/Mine/yttria/include/yttria/backend/buffer.hpp \
  /usr/include/glm/glm.hpp /usr/include/glm/detail/_fixes.hpp \
  /usr/include/c++/13/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
@@ -347,13 +347,13 @@ examples/dev_app/CMakeFiles/dev_app.dir/MainApp.cpp.o: \
  /usr/include/c++/13/bits/enable_special_members.h \
  /usr/include/c++/13/bits/node_handle.h \
  /usr/include/c++/13/bits/erase_if.h \
- /home/alderson/Projects/Mine/yttria/include/yttria/backend/VulkanDescriptors.hpp \
- /home/alderson/Projects/Mine/yttria/include/yttria/backend/VulkanCamera.hpp \
- /home/alderson/Projects/Mine/yttria/include/yttria/backend/VulkanMovementController.hpp \
- /home/alderson/Projects/Mine/yttria/include/yttria/backend/systems/VulkanSimpleRenderSystem.hpp \
- /home/alderson/Projects/Mine/yttria/include/yttria/backend/systems/../VulkanPipeline.hpp \
- /home/alderson/Projects/Mine/yttria/include/yttria/backend/systems/../VulkanFrameInfo.hpp \
- /home/alderson/Projects/Mine/yttria/include/yttria/backend/systems/VulkanPointLightSystem.hpp \
+ /home/alderson/Projects/Mine/yttria/include/yttria/backend/descriptors.hpp \
+ /home/alderson/Projects/Mine/yttria/include/yttria/backend/systems/simple_render_system.hpp \
+ /home/alderson/Projects/Mine/yttria/include/yttria/backend/pipeline.hpp \
+ /home/alderson/Projects/Mine/yttria/include/yttria/backend/frame_info.hpp \
+ /home/alderson/Projects/Mine/yttria/include/yttria/backend/camera.hpp \
+ /home/alderson/Projects/Mine/yttria/include/yttria/backend/systems/point_light_system.hpp \
+ /home/alderson/Projects/Mine/yttria/include/yttria/backend/movement_controller.hpp \
  /usr/include/c++/13/chrono /usr/include/c++/13/bits/chrono.h \
  /usr/include/c++/13/ratio /usr/include/c++/13/ctime \
  /usr/include/c++/13/bits/parse_numbers.h

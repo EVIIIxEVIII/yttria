@@ -1,13 +1,8 @@
 #include "MainApp.hpp"
-#include "yttria/backend/VulkanDescriptors.hpp"
-#include "yttria/backend/VulkanSceneObject.hpp"
-#include "yttria/backend/VulkanCamera.hpp"
-#include "yttria/backend/VulkanMovementController.hpp"
-#include "yttria/backend/VulkanBuffer.hpp"
-#include "yttria/backend/VulkanSwapChain.hpp"
 
-#include "yttria/backend/systems/VulkanSimpleRenderSystem.hpp"
-#include "yttria/backend/systems/VulkanPointLightSystem.hpp"
+#include "yttria/backend/systems/simple_render_system.hpp"
+#include "yttria/backend/systems/point_light_system.hpp"
+#include "yttria/backend/movement_controller.hpp"
 
 #include <GLFW/glfw3.h>
 #include <glm/ext/matrix_float2x2.hpp>
@@ -41,8 +36,8 @@ void MainApp::run() {
             sizeof(GlobalUbo),
             1,
             VK_BUFFER_USAGE_UNIFORM_BUFFER_BIT,
-            VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT,
-            device.properties.limits.minUniformBufferOffsetAlignment
+            VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT | VK_MEMORY_PROPERTY_HOST_COHERENT_BIT,
+            device.getProperties().limits.minUniformBufferOffsetAlignment
         );
 
         uboBuffers[i]->map();
@@ -109,7 +104,6 @@ void MainApp::run() {
                 sceneObjects
             };
 
-            // update data
             GlobalUbo ubo{};
             ubo.projection = camera.getProjection();
             ubo.view = camera.getView();
@@ -118,7 +112,6 @@ void MainApp::run() {
             uboBuffers[static_cast<size_t>(frameIndex)]->writeToBuffer((void*)&ubo);
             uboBuffers[static_cast<size_t>(frameIndex)]->flush();
 
-            // render
             renderer.beginSwapChainRenderPass(commandBuffer);
             simpleRenderSystem.renderSceneObjects(frameInfo);
             pointLightSystem.render(frameInfo);
