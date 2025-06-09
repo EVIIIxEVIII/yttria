@@ -8,6 +8,8 @@ examples/dev_app/CMakeFiles/dev_app.dir/MainApp.cpp.o: /home/alderson/Projects/M
   /home/alderson/Projects/Mine/yttria/include/yttria/backend/descriptors.hpp \
   /home/alderson/Projects/Mine/yttria/include/yttria/backend/device.hpp \
   /home/alderson/Projects/Mine/yttria/include/yttria/backend/frame_info.hpp \
+  /home/alderson/Projects/Mine/yttria/include/yttria/backend/image.hpp \
+  /home/alderson/Projects/Mine/yttria/include/yttria/backend/linear_clamp_sampler.hpp \
   /home/alderson/Projects/Mine/yttria/include/yttria/backend/model.hpp \
   /home/alderson/Projects/Mine/yttria/include/yttria/backend/movement_controller.hpp \
   /home/alderson/Projects/Mine/yttria/include/yttria/backend/pipeline.hpp \
@@ -1053,6 +1055,8 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 
 /usr/include/glm/ext/vector_float4_precision.hpp:
 
+/usr/include/glm/ext/vector_float4.hpp:
+
 /usr/include/c++/13/pstl/pstl_config.h:
 
 /usr/include/c++/13/pstl/execution_defs.h:
@@ -1080,6 +1084,10 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 /usr/include/c++/13/cctype:
 
 /usr/include/c++/13/tr1/gamma.tcc:
+
+/usr/include/glm/ext/vector_float3_precision.hpp:
+
+/usr/include/c++/13/debug/assertions.h:
 
 /usr/include/c++/13/ctime:
 
@@ -1155,17 +1163,11 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 
 /usr/include/asm-generic/errno.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
-/usr/include/c++/13/string:
-
 /usr/include/vk_video/vulkan_video_codec_h265std.h:
 
 /usr/include/glm/geometric.hpp:
 
 /usr/include/c++/13/bits/functexcept.h:
-
-/usr/include/c++/13/bits/stl_construct.h:
 
 /usr/include/c++/13/bits/stl_bvector.h:
 
@@ -1211,11 +1213,11 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 
 /usr/include/c++/13/new:
 
-/usr/include/c++/13/ext/alloc_traits.h:
-
 /usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
 
 /home/alderson/Projects/Mine/yttria/include/yttria/backend/scene_object.hpp:
+
+/usr/include/c++/13/ext/alloc_traits.h:
 
 /usr/include/c++/13/bits/std_abs.h:
 
@@ -1229,17 +1231,13 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 
 /usr/include/c++/13/bits/ostream_insert.h:
 
-/usr/include/c++/13/bits/predefined_ops.h:
-
 /usr/include/c++/13/iosfwd:
+
+/usr/include/c++/13/bits/predefined_ops.h:
 
 /usr/include/stdc-predef.h:
 
 /usr/include/glm/ext/matrix_float2x2_precision.hpp:
-
-/usr/include/c++/13/bits/stringfwd.h:
-
-/usr/include/c++/13/backward/binders.h:
 
 /usr/include/c++/13/bits/streambuf_iterator.h:
 
@@ -1265,21 +1263,19 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 
 /usr/include/c++/13/bits/move.h:
 
+/usr/include/c++/13/bits/stl_construct.h:
+
+/home/alderson/Projects/Mine/yttria/include/yttria/backend/linear_clamp_sampler.hpp:
+
+/usr/include/c++/13/bits/functional_hash.h:
+
+/usr/include/errno.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
 /usr/include/glm/mat2x4.hpp:
 
 /usr/include/c++/13/bits/hashtable.h:
-
-/usr/include/c++/13/bits/alloc_traits.h:
-
-/usr/include/c++/13/bits/concept_check.h:
-
-/usr/include/glm/ext/matrix_double3x3_precision.hpp:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
-/usr/include/c++/13/bits/node_handle.h:
 
 /home/alderson/Projects/Mine/yttria/include/yttria/backend/descriptors.hpp:
 
@@ -1307,8 +1303,6 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 
 /usr/include/c++/13/cstddef:
 
-/usr/include/glm/ext/vector_float4.hpp:
-
 /usr/include/c++/13/bits/stl_algobase.h:
 
 /usr/include/c++/13/bits/stl_function.h:
@@ -1327,9 +1321,19 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 
 /home/alderson/Projects/Mine/yttria/include/yttria/backend/systems/point_light_system.hpp:
 
+/usr/include/c++/13/bits/stringfwd.h:
+
+/usr/include/c++/13/backward/binders.h:
+
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
 
 /home/alderson/Projects/Mine/yttria/include/yttria/backend/swap_chain.hpp:
+
+/usr/include/c++/13/bits/concept_check.h:
+
+/usr/include/c++/13/bits/alloc_traits.h:
+
+/usr/include/glm/ext/matrix_double3x3_precision.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
@@ -1337,13 +1341,17 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 
 /usr/include/c++/13/ext/numeric_traits.h:
 
-/usr/include/linux/limits.h:
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
 
-/usr/include/c++/13/ratio:
+/usr/include/c++/13/bits/chrono.h:
 
-/usr/include/c++/13/bits/refwrap.h:
+/home/alderson/Projects/Mine/yttria/include/yttria/backend/buffer.hpp:
 
-/usr/include/glm/ext/matrix_float3x2_precision.hpp:
+/usr/include/glm/ext/vector_uint4_sized.hpp:
+
+/home/alderson/Projects/Mine/yttria/include/yttria/backend/window.hpp:
+
+/usr/include/glm/detail/type_mat3x3.inl:
 
 /usr/include/c++/13/clocale:
 
@@ -1363,17 +1371,9 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 
 /usr/include/glm/detail/type_mat2x2.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
-/usr/include/c++/13/bits/chrono.h:
-
-/home/alderson/Projects/Mine/yttria/include/yttria/backend/buffer.hpp:
-
-/usr/include/glm/ext/vector_uint4_sized.hpp:
-
-/home/alderson/Projects/Mine/yttria/include/yttria/backend/window.hpp:
-
-/usr/include/glm/detail/type_mat3x3.inl:
+/usr/include/c++/13/bits/node_handle.h:
 
 /usr/include/c++/13/ext/aligned_buffer.h:
 
@@ -1407,6 +1407,10 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 
 /usr/include/glm/exponential.hpp:
 
+/home/alderson/Projects/Mine/yttria/include/yttria/backend/image.hpp:
+
+/usr/include/glm/detail/type_half.inl:
+
 /usr/include/c++/13/bits/localefwd.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
@@ -1435,10 +1439,6 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 
 /usr/include/c++/13/bits/exception_ptr.h:
 
-/usr/include/c++/13/bits/functional_hash.h:
-
-/usr/include/errno.h:
-
 /usr/include/c++/13/bits/invoke.h:
 
 /usr/include/c++/13/streambuf:
@@ -1448,6 +1448,18 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 /usr/include/locale.h:
 
 /usr/include/glm/detail/type_vec4.hpp:
+
+/usr/include/linux/limits.h:
+
+/usr/include/c++/13/ratio:
+
+/usr/include/c++/13/bits/refwrap.h:
+
+/usr/include/glm/ext/matrix_float3x2_precision.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+
+/usr/include/c++/13/string:
 
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
@@ -1558,8 +1570,6 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 /usr/include/c++/13/bits/shared_ptr.h:
 
 /usr/include/glm/detail/type_half.hpp:
-
-/usr/include/glm/detail/type_half.inl:
 
 /usr/include/c++/13/exception:
 
@@ -1726,7 +1736,3 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 /usr/include/glm/ext/vector_double4.hpp:
 
 /usr/include/glm/ext/vector_float2_precision.hpp:
-
-/usr/include/c++/13/debug/assertions.h:
-
-/usr/include/glm/ext/vector_float3_precision.hpp:

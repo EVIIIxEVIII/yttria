@@ -263,6 +263,30 @@ src/backend/image.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/image.cpp.s
 .PHONY : src/backend/image.cpp.s
 
+src/backend/linear_clamp_sampler.o: src/backend/linear_clamp_sampler.cpp.o
+.PHONY : src/backend/linear_clamp_sampler.o
+
+# target to build an object file
+src/backend/linear_clamp_sampler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/linear_clamp_sampler.cpp.o
+.PHONY : src/backend/linear_clamp_sampler.cpp.o
+
+src/backend/linear_clamp_sampler.i: src/backend/linear_clamp_sampler.cpp.i
+.PHONY : src/backend/linear_clamp_sampler.i
+
+# target to preprocess a source file
+src/backend/linear_clamp_sampler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/linear_clamp_sampler.cpp.i
+.PHONY : src/backend/linear_clamp_sampler.cpp.i
+
+src/backend/linear_clamp_sampler.s: src/backend/linear_clamp_sampler.cpp.s
+.PHONY : src/backend/linear_clamp_sampler.s
+
+# target to generate assembly for a file
+src/backend/linear_clamp_sampler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/linear_clamp_sampler.cpp.s
+.PHONY : src/backend/linear_clamp_sampler.cpp.s
+
 src/backend/model.o: src/backend/model.cpp.o
 .PHONY : src/backend/model.o
 
@@ -504,6 +528,9 @@ help:
 	@echo "... src/backend/image.o"
 	@echo "... src/backend/image.i"
 	@echo "... src/backend/image.s"
+	@echo "... src/backend/linear_clamp_sampler.o"
+	@echo "... src/backend/linear_clamp_sampler.i"
+	@echo "... src/backend/linear_clamp_sampler.s"
 	@echo "... src/backend/model.o"
 	@echo "... src/backend/model.i"
 	@echo "... src/backend/model.s"

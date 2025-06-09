@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/alderson/Projects/Mine/yttria/src/backend/descriptors.cpp" "CMakeFiles/yttria.dir/src/backend/descriptors.cpp.o" "gcc" "CMakeFiles/yttria.dir/src/backend/descriptors.cpp.o.d"
   "/home/alderson/Projects/Mine/yttria/src/backend/device.cpp" "CMakeFiles/yttria.dir/src/backend/device.cpp.o" "gcc" "CMakeFiles/yttria.dir/src/backend/device.cpp.o.d"
   "/home/alderson/Projects/Mine/yttria/src/backend/image.cpp" "CMakeFiles/yttria.dir/src/backend/image.cpp.o" "gcc" "CMakeFiles/yttria.dir/src/backend/image.cpp.o.d"
+  "/home/alderson/Projects/Mine/yttria/src/backend/linear_clamp_sampler.cpp" "CMakeFiles/yttria.dir/src/backend/linear_clamp_sampler.cpp.o" "gcc" "CMakeFiles/yttria.dir/src/backend/linear_clamp_sampler.cpp.o.d"
   "/home/alderson/Projects/Mine/yttria/src/backend/model.cpp" "CMakeFiles/yttria.dir/src/backend/model.cpp.o" "gcc" "CMakeFiles/yttria.dir/src/backend/model.cpp.o.d"
   "/home/alderson/Projects/Mine/yttria/src/backend/movement_controller.cpp" "CMakeFiles/yttria.dir/src/backend/movement_controller.cpp.o" "gcc" "CMakeFiles/yttria.dir/src/backend/movement_controller.cpp.o.d"
   "/home/alderson/Projects/Mine/yttria/src/backend/pipeline.cpp" "CMakeFiles/yttria.dir/src/backend/pipeline.cpp.o" "gcc" "CMakeFiles/yttria.dir/src/backend/pipeline.cpp.o.d"

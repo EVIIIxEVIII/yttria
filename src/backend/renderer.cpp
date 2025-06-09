@@ -44,14 +44,13 @@ void Renderer::recreateSwapChain() {
 void Renderer::createCommandBuffers() {
     commandBuffers_.resize(SwapChain::MAX_FRAMES_IN_FLIGHT);
 
-   VkCommandBufferAllocateInfo allocInfo{};
+    VkCommandBufferAllocateInfo allocInfo{};
     allocInfo.sType = VK_STRUCTURE_TYPE_COMMAND_BUFFER_ALLOCATE_INFO;
     allocInfo.level = VK_COMMAND_BUFFER_LEVEL_PRIMARY;
     allocInfo.commandPool = device_.getCommandPool();
     allocInfo.commandBufferCount = static_cast<uint32_t>(commandBuffers_.size());
 
-    if (vkAllocateCommandBuffers(device_.device(), &allocInfo, commandBuffers_.data()) !=
-      VK_SUCCESS) {
+    if (vkAllocateCommandBuffers(device_.device(), &allocInfo, commandBuffers_.data()) != VK_SUCCESS) {
         throw std::runtime_error("failed to allocate command buffers!");
     }
 }

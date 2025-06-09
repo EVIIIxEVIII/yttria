@@ -11,17 +11,30 @@ Image::Image(
     VkImageUsageFlags usage,
     VkImageAspectFlags aspectFlags,
     VkImageTiling tiling,
-    VkMemoryPropertyFlags memoryProperties
-): device_{device}
+    VkMemoryPropertyFlags memoryProperties,
+    VkImageLayout targetLayout
+): device_{device}, layout_{targetLayout}
 {
     createImage(width, height, depth, format, usage, tiling, memoryProperties);
     createImageView(format, aspectFlags);
+    transitionImage(
+        VK_IMAGE_LAYOUT_UNDEFINED,
+        targetLayout,
+        aspectFlags,
+        1
+    );
 }
 
 Image::~Image() {
     if (imageView_) vkDestroyImageView(device_.device(), imageView_, nullptr);
     if (image_) vkDestroyImage(device_.device(), image_, nullptr);
     if (memory_) vkFreeMemory(device_.device(), memory_, nullptr);
+}
+
+VkDescriptorImageInfo Image::descriptorInfo(VkSampler sampler) {
+    return VkDescriptorImageInfo {
+        sampler, imageView_, layout_
+    };
 }
 
 void Image::createImage(

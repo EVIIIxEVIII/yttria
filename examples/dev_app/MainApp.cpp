@@ -3,6 +3,8 @@
 #include "yttria/backend/systems/simple_render_system.hpp"
 #include "yttria/backend/systems/point_light_system.hpp"
 #include "yttria/backend/movement_controller.hpp"
+#include "yttria/backend/image.hpp"
+#include "yttria/backend/linear_clamp_sampler.hpp"
 
 #include <GLFW/glfw3.h>
 #include <glm/ext/matrix_float2x2.hpp>
@@ -21,6 +23,8 @@ MainApp::MainApp() {
     globalPool = DescriptorPool::Builder(device)
         .setMaxSets(SwapChain::MAX_FRAMES_IN_FLIGHT)
         .addPoolSize(VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER, SwapChain::MAX_FRAMES_IN_FLIGHT)
+        .addPoolSize(VK_DESCRIPTOR_TYPE_COMBINED_IMAGE_SAMPLER, SwapChain::MAX_FRAMES_IN_FLIGHT)
+        .addPoolSize(VK_DESCRIPTOR_TYPE_STORAGE_IMAGE, SwapChain::MAX_FRAMES_IN_FLIGHT * 2)
         .build();
 
     loadSceneObjects();
@@ -43,6 +47,40 @@ void MainApp::run() {
         uboBuffers[i]->map();
     }
 
+    auto linearClampSampler = std::make_unique<LinearClampSampler>(device);
+    auto velocityImage = std::make_unique<Image>(
+        device,
+        256, 256, 256,
+        VK_FORMAT_R16G16B16A16_SFLOAT,
+        VK_IMAGE_USAGE_STORAGE_BIT | VK_IMAGE_USAGE_SAMPLED_BIT | VK_IMAGE_USAGE_TRANSFER_DST_BIT,
+        VK_IMAGE_ASPECT_COLOR_BIT,
+        VK_IMAGE_TILING_OPTIMAL,
+        VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT,
+        VK_IMAGE_LAYOUT_GENERAL
+    );
+
+    auto currentDye = std::make_unique<Image>(
+        device,
+        256, 256, 256,
+        VK_FORMAT_R16_SFLOAT,
+        VK_IMAGE_USAGE_STORAGE_BIT | VK_IMAGE_USAGE_SAMPLED_BIT | VK_IMAGE_USAGE_TRANSFER_DST_BIT,
+        VK_IMAGE_ASPECT_COLOR_BIT,
+        VK_IMAGE_TILING_OPTIMAL,
+        VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT,
+        VK_IMAGE_LAYOUT_GENERAL
+    );
+
+    auto nextDye = std::make_unique<Image>(
+        device,
+        256, 256, 256,
+        VK_FORMAT_R16_SFLOAT,
+        VK_IMAGE_USAGE_STORAGE_BIT | VK_IMAGE_USAGE_TRANSFER_DST_BIT,
+        VK_IMAGE_ASPECT_COLOR_BIT,
+        VK_IMAGE_TILING_OPTIMAL,
+        VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT,
+        VK_IMAGE_LAYOUT_GENERAL
+    );
+
     auto globalSetLayout =
         DescriptorSetLayout::Builder(device)
             .addBinding(0, VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER, VK_SHADER_STAGE_ALL)
@@ -55,8 +93,15 @@ void MainApp::run() {
     std::vector<VkDescriptorSet> globalDescriptorSets(SwapChain::MAX_FRAMES_IN_FLIGHT);
     for (size_t i = 0; i < globalDescriptorSets.size(); i++) {
         auto bufferInfo = uboBuffers[i]->descriptorInfo();
+        auto velocityImageInfo = velocityImage->descriptorInfo(linearClampSampler->sampler());
+        auto currentDyeInfo = currentDye->descriptorInfo(linearClampSampler->sampler());
+        auto nextDyeInfo = nextDye->descriptorInfo(linearClampSampler->sampler());
+
         DescriptorWriter(*globalSetLayout, *globalPool)
             .writeBuffer(0, &bufferInfo)
+            .writeImage(1, &velocityImageInfo)
+            .writeImage(2, &currentDyeInfo)
+            .writeImage(3, &nextDyeInfo)
             .build(globalDescriptorSets[i]);
     }
 

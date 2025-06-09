@@ -354,6 +354,8 @@ examples/dev_app/CMakeFiles/dev_app.dir/MainApp.cpp.o: \
  /home/alderson/Projects/Mine/yttria/include/yttria/backend/camera.hpp \
  /home/alderson/Projects/Mine/yttria/include/yttria/backend/systems/point_light_system.hpp \
  /home/alderson/Projects/Mine/yttria/include/yttria/backend/movement_controller.hpp \
+ /home/alderson/Projects/Mine/yttria/include/yttria/backend/image.hpp \
+ /home/alderson/Projects/Mine/yttria/include/yttria/backend/linear_clamp_sampler.hpp \
  /usr/include/c++/13/chrono /usr/include/c++/13/bits/chrono.h \
  /usr/include/c++/13/ratio /usr/include/c++/13/ctime \
  /usr/include/c++/13/bits/parse_numbers.h
