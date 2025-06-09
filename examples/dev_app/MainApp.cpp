@@ -15,6 +15,8 @@
 #include <vulkan/vulkan_core.h>
 #include <glm/gtc/constants.hpp>
 #include <chrono>
+#include <array>
+#include <iostream>
 
 namespace Application {
 
@@ -126,6 +128,10 @@ void MainApp::run() {
 
     MovementController cameraController{};
 
+    constexpr size_t NUM_FRAMES = 1000;
+    std::array<float, NUM_FRAMES> frameTimes{};
+    size_t frameNum = 0;
+
     auto currentTime = std::chrono::high_resolution_clock::now();
 
     while (!window.shouldClose()) {
@@ -135,11 +141,25 @@ void MainApp::run() {
         float frameTime = std::chrono::duration<float, std::chrono::seconds::period>(newTime - currentTime).count();
         currentTime = newTime;
 
+        frameTimes[frameNum % NUM_FRAMES] = frameTime;
+        frameNum++;
+
+        size_t count = std::min(frameNum, NUM_FRAMES);
+        float total = 0.0f;
+        for (size_t i = 0; i < count; ++i) {
+            total += frameTimes[i];
+        }
+        float avgFrameTime = total / static_cast<float>(count);
+        float avgFPS = 1.0f / avgFrameTime;
+
+        if (frameNum % 100 == 0) {
+            std::cout << "Average FPS (last " << count << " frames): " << avgFPS << std::endl;
+        }
+
         cameraController.moveInPlaneXZ(window.getGLFWWindow(), frameTime, viewerObject);
         camera.setViewYXZ(viewerObject.transform.translation, viewerObject.transform.rotation);
 
         float aspect = renderer.getAspectRatio();
-        // camera.setOrthographicProjection(-aspect, aspect, -1, 1, -1, 1);
         camera.setPerspectiveProjection(glm::radians(90.f), aspect, 0.1f, 100.f);
 
         if (auto commandBuffer = renderer.beginFrame()) {

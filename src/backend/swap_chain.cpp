@@ -392,7 +392,7 @@ VkSurfaceFormatKHR SwapChain::chooseSwapSurfaceFormat(
 VkPresentModeKHR SwapChain::chooseSwapPresentMode(
     const std::vector<VkPresentModeKHR> &availablePresentModes) {
     for (const auto &availablePresentMode : availablePresentModes) {
-        if (availablePresentMode == VK_PRESENT_MODE_MAILBOX_KHR) {
+        if (availablePresentMode == VK_PRESENT_MODE_IMMEDIATE_KHR) {
             std::cout << "Present mode: Mailbox" << std::endl;
             return availablePresentMode;
         }

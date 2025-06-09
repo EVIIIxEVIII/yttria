@@ -27,6 +27,7 @@ examples/dev_app/CMakeFiles/dev_app.dir/MainApp.cpp.o: /home/alderson/Projects/M
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/assert.h \
+  /usr/include/c++/13/array \
   /usr/include/c++/13/backward/auto_ptr.h \
   /usr/include/c++/13/backward/binders.h \
   /usr/include/c++/13/bit \
@@ -36,6 +37,8 @@ examples/dev_app/CMakeFiles/dev_app.dir/MainApp.cpp.o: /home/alderson/Projects/M
   /usr/include/c++/13/bits/allocator.h \
   /usr/include/c++/13/bits/atomic_base.h \
   /usr/include/c++/13/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/13/bits/basic_ios.h \
+  /usr/include/c++/13/bits/basic_ios.tcc \
   /usr/include/c++/13/bits/basic_string.h \
   /usr/include/c++/13/bits/basic_string.tcc \
   /usr/include/c++/13/bits/char_traits.h \
@@ -56,6 +59,12 @@ examples/dev_app/CMakeFiles/dev_app.dir/MainApp.cpp.o: /home/alderson/Projects/M
   /usr/include/c++/13/bits/hashtable.h \
   /usr/include/c++/13/bits/hashtable_policy.h \
   /usr/include/c++/13/bits/invoke.h \
+  /usr/include/c++/13/bits/ios_base.h \
+  /usr/include/c++/13/bits/istream.tcc \
+  /usr/include/c++/13/bits/locale_classes.h \
+  /usr/include/c++/13/bits/locale_classes.tcc \
+  /usr/include/c++/13/bits/locale_facets.h \
+  /usr/include/c++/13/bits/locale_facets.tcc \
   /usr/include/c++/13/bits/localefwd.h \
   /usr/include/c++/13/bits/memory_resource.h \
   /usr/include/c++/13/bits/memoryfwd.h \
@@ -63,6 +72,7 @@ examples/dev_app/CMakeFiles/dev_app.dir/MainApp.cpp.o: /home/alderson/Projects/M
   /usr/include/c++/13/bits/nested_exception.h \
   /usr/include/c++/13/bits/new_allocator.h \
   /usr/include/c++/13/bits/node_handle.h \
+  /usr/include/c++/13/bits/ostream.tcc \
   /usr/include/c++/13/bits/ostream_insert.h \
   /usr/include/c++/13/bits/parse_numbers.h \
   /usr/include/c++/13/bits/postypes.h \
@@ -88,6 +98,8 @@ examples/dev_app/CMakeFiles/dev_app.dir/MainApp.cpp.o: /home/alderson/Projects/M
   /usr/include/c++/13/bits/stl_tempbuf.h \
   /usr/include/c++/13/bits/stl_uninitialized.h \
   /usr/include/c++/13/bits/stl_vector.h \
+  /usr/include/c++/13/bits/streambuf.tcc \
+  /usr/include/c++/13/bits/streambuf_iterator.h \
   /usr/include/c++/13/bits/string_view.tcc \
   /usr/include/c++/13/bits/stringfwd.h \
   /usr/include/c++/13/bits/unique_ptr.h \
@@ -104,12 +116,14 @@ examples/dev_app/CMakeFiles/dev_app.dir/MainApp.cpp.o: /home/alderson/Projects/M
   /usr/include/c++/13/climits \
   /usr/include/c++/13/clocale \
   /usr/include/c++/13/cmath \
+  /usr/include/c++/13/compare \
   /usr/include/c++/13/cstddef \
   /usr/include/c++/13/cstdint \
   /usr/include/c++/13/cstdio \
   /usr/include/c++/13/cstdlib \
   /usr/include/c++/13/ctime \
   /usr/include/c++/13/cwchar \
+  /usr/include/c++/13/cwctype \
   /usr/include/c++/13/debug/assertions.h \
   /usr/include/c++/13/debug/debug.h \
   /usr/include/c++/13/exception \
@@ -121,16 +135,23 @@ examples/dev_app/CMakeFiles/dev_app.dir/MainApp.cpp.o: /home/alderson/Projects/M
   /usr/include/c++/13/ext/string_conversions.h \
   /usr/include/c++/13/ext/type_traits.h \
   /usr/include/c++/13/initializer_list \
+  /usr/include/c++/13/ios \
   /usr/include/c++/13/iosfwd \
+  /usr/include/c++/13/iostream \
+  /usr/include/c++/13/istream \
   /usr/include/c++/13/limits \
   /usr/include/c++/13/memory \
   /usr/include/c++/13/new \
+  /usr/include/c++/13/ostream \
   /usr/include/c++/13/pstl/execution_defs.h \
   /usr/include/c++/13/pstl/glue_memory_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/ratio \
+  /usr/include/c++/13/stdexcept \
+  /usr/include/c++/13/streambuf \
   /usr/include/c++/13/string \
   /usr/include/c++/13/string_view \
+  /usr/include/c++/13/system_error \
   /usr/include/c++/13/tr1/bessel_function.tcc \
   /usr/include/c++/13/tr1/beta_function.tcc \
   /usr/include/c++/13/tr1/ell_integral.tcc \
@@ -324,6 +345,7 @@ examples/dev_app/CMakeFiles/dev_app.dir/MainApp.cpp.o: /home/alderson/Projects/M
   /usr/include/vulkan/vulkan.h \
   /usr/include/vulkan/vulkan_core.h \
   /usr/include/wchar.h \
+  /usr/include/wctype.h \
   /usr/include/x86_64-linux-gnu/asm/errno.h \
   /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap.h \
@@ -397,6 +419,7 @@ examples/dev_app/CMakeFiles/dev_app.dir/MainApp.cpp.o: /home/alderson/Projects/M
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
@@ -404,6 +427,9 @@ examples/dev_app/CMakeFiles/dev_app.dir/MainApp.cpp.o: /home/alderson/Projects/M
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -851,28 +877,6 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
   /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h
 
 
-/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
-
-/usr/include/c++/13/stdexcept:
-
-/usr/include/c++/13/istream:
-
-/usr/include/c++/13/iostream:
-
-/usr/include/c++/13/ios:
-
-/usr/include/c++/13/bits/locale_facets.tcc:
-
-/usr/include/c++/13/bits/locale_facets.h:
-
-/usr/include/c++/13/bits/locale_classes.tcc:
-
-/usr/include/c++/13/bits/istream.tcc:
-
-/usr/include/c++/13/bits/ios_base.h:
-
-/usr/include/c++/13/bits/basic_ios.tcc:
-
 /home/alderson/Projects/Mine/yttria/examples/dev_app/main.cpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
@@ -890,6 +894,8 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
+
+/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
@@ -916,10 +922,6 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
-
-/usr/include/c++/13/bits/locale_classes.h:
-
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
@@ -978,10 +980,6 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 /usr/include/vk_video/vulkan_video_codec_av1std_encode.h:
 
 /usr/include/vk_video/vulkan_video_codec_av1std_decode.h:
-
-/usr/include/c++/13/ostream:
-
-/usr/include/vk_video/vulkan_video_codec_av1std.h:
 
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
@@ -1047,49 +1045,65 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 
 /usr/include/glm/ext/vector_int2_sized.hpp:
 
-/usr/include/c++/13/system_error:
-
-/usr/include/glm/ext/vector_int2.hpp:
-
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
 /usr/include/glm/ext/vector_float4_precision.hpp:
 
 /usr/include/glm/ext/vector_float4.hpp:
 
-/usr/include/c++/13/pstl/pstl_config.h:
+/usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h:
 
-/usr/include/c++/13/pstl/execution_defs.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
-/usr/include/glm/vec4.hpp:
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
-/usr/include/glm/ext/matrix_double2x4_precision.hpp:
+/usr/include/glm/ext/vector_float3.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+/usr/include/glm/ext/vector_float2_precision.hpp:
 
-/usr/include/c++/13/limits:
+/usr/include/glm/ext/vector_float2.hpp:
 
-/usr/include/c++/13/ext/type_traits.h:
+/usr/include/glm/ext/vector_double4_precision.hpp:
 
-/usr/include/c++/13/ext/string_conversions.h:
+/usr/include/glm/ext/vector_double3.hpp:
 
-/usr/include/vk_video/vulkan_video_codecs_common.h:
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
-/usr/include/c++/13/ext/concurrence.h:
+/usr/include/glm/ext/vector_double2.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
-/usr/include/c++/13/ext/atomicity.h:
+/usr/include/glm/ext/vector_bool4.hpp:
 
-/usr/include/c++/13/cctype:
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
-/usr/include/c++/13/tr1/gamma.tcc:
+/usr/include/glm/matrix.hpp:
+
+/usr/include/glm/ext/vector_bool3.hpp:
+
+/usr/include/glm/ext/vector_bool2_precision.hpp:
+
+/usr/include/glm/ext/vector_bool2.hpp:
+
+/usr/include/glm/ext/scalar_uint_sized.hpp:
+
+/usr/include/glm/ext/scalar_int_sized.hpp:
+
+/usr/include/glm/ext/scalar_constants.inl:
 
 /usr/include/glm/ext/vector_float3_precision.hpp:
 
 /usr/include/c++/13/debug/assertions.h:
 
 /usr/include/c++/13/ctime:
+
+/usr/include/glm/ext/vector_bool3_precision.hpp:
+
+/usr/include/c++/13/cstdlib:
+
+/usr/include/glm/ext/matrix_transform.hpp:
+
+/usr/include/c++/13/cstdint:
 
 /usr/include/c++/13/cstdio:
 
@@ -1109,9 +1123,23 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 
 /usr/include/c++/13/chrono:
 
+/usr/include/c++/13/bits/locale_facets.h:
+
 /usr/include/c++/13/cerrno:
 
+/usr/include/c++/13/cctype:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/include/c++/13/ext/atomicity.h:
+
+/usr/include/c++/13/tr1/gamma.tcc:
+
 /usr/include/c++/13/tr1/poly_hermite.tcc:
+
+/usr/include/glm/ext/matrix_transform.inl:
+
+/usr/include/glm/ext/matrix_float3x3.hpp:
 
 /usr/include/c++/13/bits/vector.tcc:
 
@@ -1139,7 +1167,9 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 
 /usr/include/glm/detail/func_matrix.inl:
 
-/usr/include/c++/13/memory:
+/usr/include/stdint.h:
+
+/usr/include/endian.h:
 
 /usr/include/c++/13/bits/unordered_map.h:
 
@@ -1159,6 +1189,8 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 
 /usr/include/c++/13/bits/stl_iterator_base_types.h:
 
+/usr/include/glm/ext/matrix_double3x4.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
 /usr/include/asm-generic/errno.h:
@@ -1173,35 +1205,13 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 
 /usr/include/glm/ext/matrix_float2x4.hpp:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
-
-/usr/include/glm/ext/vector_float3.hpp:
-
-/usr/include/wchar.h:
-
-/usr/include/glm/mat3x2.hpp:
-
-/usr/include/c++/13/bits/shared_ptr_base.h:
-
 /usr/include/c++/13/bits/shared_ptr_atomic.h:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
 /usr/include/c++/13/bits/string_view.tcc:
 
-/usr/include/c++/13/cstdint:
-
-/usr/include/glm/ext/matrix_transform.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/usr/include/GL/gl.h:
-
-/usr/include/c++/13/bits/requires_hosted.h:
+/usr/include/c++/13/bits/locale_facets.tcc:
 
 /usr/include/linux/errno.h:
 
@@ -1209,15 +1219,13 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 
 /usr/include/glm/ext/matrix_double4x2_precision.hpp:
 
+/usr/include/glm/ext/vector_int2.hpp:
+
+/usr/include/c++/13/compare:
+
+/usr/include/c++/13/system_error:
+
 /usr/include/c++/13/bits/ptr_traits.h:
-
-/usr/include/c++/13/new:
-
-/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
-
-/home/alderson/Projects/Mine/yttria/include/yttria/backend/scene_object.hpp:
-
-/usr/include/c++/13/ext/alloc_traits.h:
 
 /usr/include/c++/13/bits/std_abs.h:
 
@@ -1231,21 +1239,37 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 
 /usr/include/c++/13/bits/ostream_insert.h:
 
-/usr/include/c++/13/iosfwd:
+/usr/include/glm/ext/vector_double2_precision.hpp:
 
-/usr/include/c++/13/bits/predefined_ops.h:
+/usr/include/c++/13/cwctype:
+
+/usr/include/linux/limits.h:
+
+/usr/include/c++/13/ratio:
+
+/usr/include/c++/13/bits/refwrap.h:
+
+/usr/include/glm/ext/matrix_float3x2_precision.hpp:
+
+/usr/include/c++/13/bits/move.h:
+
+/usr/include/glm/detail/type_mat2x2.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+/usr/include/c++/13/bits/locale_classes.h:
+
+/usr/include/glm/detail/type_mat3x4.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
+
+/usr/include/glm/ext/scalar_constants.hpp:
+
+/usr/include/c++/13/bits/enable_special_members.h:
 
 /usr/include/stdc-predef.h:
 
 /usr/include/glm/ext/matrix_float2x2_precision.hpp:
-
-/usr/include/c++/13/bits/streambuf_iterator.h:
-
-/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
-
-/usr/include/GLFW/glfw3.h:
-
-/usr/include/glm/detail/type_mat3x4.hpp:
 
 /usr/include/c++/13/backward/auto_ptr.h:
 
@@ -1257,11 +1281,19 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 
 /usr/include/c++/13/cwchar:
 
-/usr/include/glm/ext/matrix_float3x3.hpp:
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
-/usr/include/glm/ext/matrix_transform.inl:
+/usr/include/c++/13/bits/requires_hosted.h:
 
-/usr/include/c++/13/bits/move.h:
+/usr/include/GL/gl.h:
+
+/usr/include/c++/13/bits/basic_ios.tcc:
+
+/usr/include/c++/13/pstl/execution_defs.h:
+
+/usr/include/glm/vec4.hpp:
+
+/usr/include/glm/ext/matrix_double2x4_precision.hpp:
 
 /usr/include/c++/13/bits/stl_construct.h:
 
@@ -1277,10 +1309,6 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 
 /usr/include/c++/13/bits/hashtable.h:
 
-/home/alderson/Projects/Mine/yttria/include/yttria/backend/descriptors.hpp:
-
-/usr/include/glm/ext/matrix_float3x3_precision.hpp:
-
 /usr/include/glm/detail/type_mat4x2.hpp:
 
 /usr/include/glm/detail/type_mat4x2.inl:
@@ -1290,6 +1318,18 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 /usr/include/c++/13/bits/streambuf.tcc:
 
 /usr/include/c++/13/bits/specfun.h:
+
+/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
+
+/usr/include/GLFW/glfw3.h:
+
+/usr/include/c++/13/bits/streambuf_iterator.h:
+
+/usr/include/vk_video/vulkan_video_codec_av1std.h:
+
+/usr/include/c++/13/ostream:
+
+/usr/include/c++/13/tr1/riemann_zeta.tcc:
 
 /usr/include/c++/13/cassert:
 
@@ -1309,12 +1349,6 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 
 /home/alderson/Projects/Mine/yttria/include/yttria/backend/model.hpp:
 
-/usr/include/limits.h:
-
-/usr/include/c++/13/tr1/bessel_function.tcc:
-
-/usr/include/c++/13/initializer_list:
-
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
 
 /usr/include/vk_video/vulkan_video_codec_h264std_decode.h:
@@ -1324,6 +1358,16 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 /usr/include/c++/13/bits/stringfwd.h:
 
 /usr/include/c++/13/backward/binders.h:
+
+/usr/include/glm/ext/vector_double4.hpp:
+
+/usr/include/c++/13/bits/erase_if.h:
+
+/usr/include/glm/ext/matrix_float4x2_precision.hpp:
+
+/usr/include/c++/13/bits/locale_classes.tcc:
+
+/usr/include/glm/detail/type_vec3.inl:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
 
@@ -1335,11 +1379,15 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 
 /usr/include/glm/ext/matrix_double3x3_precision.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+/usr/include/c++/13/bits/ios_base.h:
 
-/usr/include/c++/13/bits/stl_iterator.h:
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
 
-/usr/include/c++/13/ext/numeric_traits.h:
+/home/alderson/Projects/Mine/yttria/include/yttria/backend/scene_object.hpp:
+
+/usr/include/c++/13/ext/alloc_traits.h:
+
+/usr/include/c++/13/new:
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
@@ -1353,6 +1401,8 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 
 /usr/include/glm/detail/type_mat3x3.inl:
 
+/usr/include/glm/ext/matrix_double2x3.hpp:
+
 /usr/include/c++/13/clocale:
 
 /home/alderson/Projects/Mine/yttria/include/yttria/backend/renderer.hpp:
@@ -1363,13 +1413,19 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 
 /usr/include/glm/ext/matrix_float4x3_precision.hpp:
 
+/usr/include/c++/13/bits/ostream.tcc:
+
+/usr/include/glm/ext/matrix_double4x2.hpp:
+
 /usr/include/c++/13/bits/stl_iterator_base_funcs.h:
 
 /usr/include/asm-generic/errno-base.h:
 
 /usr/include/c++/13/bits/hash_bytes.h:
 
-/usr/include/glm/detail/type_mat2x2.hpp:
+/usr/include/c++/13/bits/predefined_ops.h:
+
+/usr/include/c++/13/iosfwd:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
@@ -1381,11 +1437,17 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 
 /home/alderson/Projects/Mine/yttria/examples/dev_app/MainApp.cpp:
 
-/usr/include/glm/ext/vector_double4_precision.hpp:
-
 /usr/include/glm/ext/vector_double3_precision.hpp:
 
 /usr/include/c++/13/bits/basic_string.tcc:
+
+/usr/include/wchar.h:
+
+/usr/include/glm/mat3x2.hpp:
+
+/usr/include/c++/13/bits/shared_ptr_base.h:
+
+/usr/include/glm/detail/type_vec3.hpp:
 
 /usr/include/c++/13/bits/basic_string.h:
 
@@ -1395,7 +1457,19 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 
 /usr/include/glm/ext/matrix_float4x3.hpp:
 
-/usr/include/glm/ext/vector_bool2.hpp:
+/usr/include/locale.h:
+
+/usr/include/glm/detail/type_vec4.hpp:
+
+/usr/include/c++/13/bits/invoke.h:
+
+/usr/include/glm/ext/vector_bool4_precision.hpp:
+
+/usr/include/alloca.h:
+
+/usr/include/c++/13/bits/istream.tcc:
+
+/usr/include/c++/13/bits/exception_ptr.h:
 
 /usr/include/c++/13/bits/hashtable_policy.h:
 
@@ -1407,15 +1481,15 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 
 /usr/include/glm/exponential.hpp:
 
-/home/alderson/Projects/Mine/yttria/include/yttria/backend/image.hpp:
-
-/usr/include/glm/detail/type_half.inl:
-
 /usr/include/c++/13/bits/localefwd.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
 
 /usr/include/glm/ext/matrix_float4x4.hpp:
+
+/home/alderson/Projects/Mine/yttria/include/yttria/backend/image.hpp:
+
+/usr/include/glm/detail/type_half.inl:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
@@ -1429,33 +1503,57 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 
 /usr/include/c++/13/bits/exception.h:
 
+/usr/include/c++/13/bits/memory_resource.h:
+
+/usr/include/c++/13/streambuf:
+
 /usr/include/glm/detail/func_trigonometric.inl:
 
 /usr/include/glm/ext/matrix_double2x2.hpp:
 
-/usr/include/c++/13/cstdlib:
+/usr/include/vk_video/vulkan_video_codecs_common.h:
 
-/usr/include/glm/ext/vector_bool3_precision.hpp:
+/usr/include/c++/13/ext/concurrence.h:
 
-/usr/include/c++/13/bits/exception_ptr.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
-/usr/include/c++/13/bits/invoke.h:
+/usr/include/c++/13/bits/stl_iterator.h:
 
-/usr/include/c++/13/streambuf:
+/usr/include/c++/13/ext/numeric_traits.h:
 
-/usr/include/c++/13/bits/memory_resource.h:
+/usr/include/c++/13/ext/string_conversions.h:
 
-/usr/include/locale.h:
+/usr/include/c++/13/ext/type_traits.h:
 
-/usr/include/glm/detail/type_vec4.hpp:
+/usr/include/limits.h:
 
-/usr/include/linux/limits.h:
+/usr/include/c++/13/tr1/bessel_function.tcc:
 
-/usr/include/c++/13/ratio:
+/usr/include/c++/13/initializer_list:
 
-/usr/include/c++/13/bits/refwrap.h:
+/usr/include/c++/13/ios:
 
-/usr/include/glm/ext/matrix_float3x2_precision.hpp:
+/usr/include/c++/13/iostream:
+
+/usr/include/x86_64-linux-gnu/bits/local_lim.h:
+
+/usr/include/glm/ext/matrix_double3x3.hpp:
+
+/usr/include/c++/13/istream:
+
+/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+
+/usr/include/c++/13/limits:
+
+/usr/include/c++/13/memory:
+
+/home/alderson/Projects/Mine/yttria/include/yttria/backend/descriptors.hpp:
+
+/usr/include/glm/ext/matrix_float3x3_precision.hpp:
+
+/usr/include/c++/13/pstl/pstl_config.h:
+
+/usr/include/c++/13/stdexcept:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
@@ -1487,13 +1585,7 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 
 /usr/include/c++/13/tr1/modified_bessel_func.tcc:
 
-/usr/include/c++/13/tr1/riemann_zeta.tcc:
-
 /usr/include/c++/13/tr1/special_function_util.h:
-
-/usr/include/glm/ext/scalar_uint_sized.hpp:
-
-/usr/include/glm/ext/vector_float2.hpp:
 
 /usr/include/c++/13/cfloat:
 
@@ -1524,12 +1616,6 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 /usr/include/c++/13/bits/char_traits.h:
 
 /usr/include/glm/ext/matrix_projection.hpp:
-
-/usr/include/glm/ext/scalar_int_sized.hpp:
-
-/usr/include/stdint.h:
-
-/usr/include/endian.h:
 
 /usr/include/features.h:
 
@@ -1579,6 +1665,8 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 
 /usr/include/glm/gtc/matrix_transform.inl:
 
+/usr/include/c++/13/array:
+
 /usr/include/glm/detail/qualifier.hpp:
 
 /usr/include/glm/detail/type_mat2x3.hpp:
@@ -1592,10 +1680,6 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
 
 /usr/include/glm/detail/type_mat2x4.inl:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
-
-/usr/include/glm/ext/vector_bool4.hpp:
 
 /usr/include/glm/detail/type_mat3x2.hpp:
 
@@ -1633,12 +1717,6 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 
 /usr/include/glm/detail/type_mat4x4.inl:
 
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
-
-/usr/include/glm/matrix.hpp:
-
-/usr/include/glm/ext/vector_bool3.hpp:
-
 /usr/include/c++/13/bits/uses_allocator_args.h:
 
 /home/alderson/Projects/Mine/yttria/include/yttria/backend/device.hpp:
@@ -1663,12 +1741,6 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 
 /usr/include/glm/detail/type_vec2.inl:
 
-/usr/include/glm/detail/type_vec3.hpp:
-
-/usr/include/glm/detail/type_vec3.inl:
-
-/usr/include/glm/ext/matrix_double2x3.hpp:
-
 /usr/include/c++/13/climits:
 
 /usr/include/glm/ext/matrix_double2x4.hpp:
@@ -1677,23 +1749,7 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 
 /usr/include/glm/ext/matrix_double3x2.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/local_lim.h:
-
-/usr/include/glm/ext/matrix_double3x3.hpp:
-
-/usr/include/glm/ext/matrix_double3x4.hpp:
-
 /usr/include/glm/ext/matrix_double3x4_precision.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
-
-/usr/include/c++/13/bits/enable_special_members.h:
-
-/usr/include/glm/ext/scalar_constants.hpp:
-
-/usr/include/c++/13/bits/ostream.tcc:
-
-/usr/include/glm/ext/matrix_double4x2.hpp:
 
 /usr/include/KHR/khrplatform.h:
 
@@ -1710,29 +1766,3 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 /usr/include/c++/13/bits/basic_ios.h:
 
 /usr/include/glm/ext/matrix_float3x2.hpp:
-
-/usr/include/glm/ext/scalar_constants.inl:
-
-/usr/include/glm/ext/vector_bool2_precision.hpp:
-
-/usr/include/alloca.h:
-
-/usr/include/glm/ext/vector_bool4_precision.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
-/usr/include/glm/ext/vector_double2.hpp:
-
-/usr/include/c++/13/cwctype:
-
-/usr/include/glm/ext/vector_double2_precision.hpp:
-
-/usr/include/glm/ext/vector_double3.hpp:
-
-/usr/include/c++/13/bits/erase_if.h:
-
-/usr/include/glm/ext/matrix_float4x2_precision.hpp:
-
-/usr/include/glm/ext/vector_double4.hpp:
-
-/usr/include/glm/ext/vector_float2_precision.hpp:
