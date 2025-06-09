@@ -25,6 +25,18 @@
 },
 {
   "directory": "/home/alderson/Projects/Mine/yttria/build/debug",
+  "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/image.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/image.cpp",
+  "file": "/home/alderson/Projects/Mine/yttria/src/backend/image.cpp",
+  "output": "CMakeFiles/yttria.dir/src/backend/image.cpp.o"
+},
+{
+  "directory": "/home/alderson/Projects/Mine/yttria/build/debug",
+  "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/linear_clamp_sampler.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/linear_clamp_sampler.cpp",
+  "file": "/home/alderson/Projects/Mine/yttria/src/backend/linear_clamp_sampler.cpp",
+  "output": "CMakeFiles/yttria.dir/src/backend/linear_clamp_sampler.cpp.o"
+},
+{
+  "directory": "/home/alderson/Projects/Mine/yttria/build/debug",
   "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/model.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/model.cpp",
   "file": "/home/alderson/Projects/Mine/yttria/src/backend/model.cpp",
   "output": "CMakeFiles/yttria.dir/src/backend/model.cpp.o"

@@ -3,6 +3,8 @@
 #include "yttria/backend/systems/simple_render_system.hpp"
 #include "yttria/backend/systems/point_light_system.hpp"
 #include "yttria/backend/movement_controller.hpp"
+#include "yttria/backend/image.hpp"
+#include "yttria/backend/linear_clamp_sampler.hpp"
 
 #include <GLFW/glfw3.h>
 #include <glm/ext/matrix_float2x2.hpp>
@@ -13,6 +15,8 @@
 #include <vulkan/vulkan_core.h>
 #include <glm/gtc/constants.hpp>
 #include <chrono>
+#include <array>
+#include <iostream>
 
 namespace Application {
 
@@ -21,6 +25,8 @@ MainApp::MainApp() {
     globalPool = DescriptorPool::Builder(device)
         .setMaxSets(SwapChain::MAX_FRAMES_IN_FLIGHT)
         .addPoolSize(VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER, SwapChain::MAX_FRAMES_IN_FLIGHT)
+        .addPoolSize(VK_DESCRIPTOR_TYPE_COMBINED_IMAGE_SAMPLER, SwapChain::MAX_FRAMES_IN_FLIGHT)
+        .addPoolSize(VK_DESCRIPTOR_TYPE_STORAGE_IMAGE, SwapChain::MAX_FRAMES_IN_FLIGHT * 2)
         .build();
 
     loadSceneObjects();
@@ -43,16 +49,61 @@ void MainApp::run() {
         uboBuffers[i]->map();
     }
 
+    auto linearClampSampler = std::make_unique<LinearClampSampler>(device);
+    auto velocityImage = std::make_unique<Image>(
+        device,
+        256, 256, 256,
+        VK_FORMAT_R16G16B16A16_SFLOAT,
+        VK_IMAGE_USAGE_STORAGE_BIT | VK_IMAGE_USAGE_SAMPLED_BIT | VK_IMAGE_USAGE_TRANSFER_DST_BIT,
+        VK_IMAGE_ASPECT_COLOR_BIT,
+        VK_IMAGE_TILING_OPTIMAL,
+        VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT,
+        VK_IMAGE_LAYOUT_GENERAL
+    );
+
+    auto currentDye = std::make_unique<Image>(
+        device,
+        256, 256, 256,
+        VK_FORMAT_R16_SFLOAT,
+        VK_IMAGE_USAGE_STORAGE_BIT | VK_IMAGE_USAGE_SAMPLED_BIT | VK_IMAGE_USAGE_TRANSFER_DST_BIT,
+        VK_IMAGE_ASPECT_COLOR_BIT,
+        VK_IMAGE_TILING_OPTIMAL,
+        VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT,
+        VK_IMAGE_LAYOUT_GENERAL
+    );
+
+    auto nextDye = std::make_unique<Image>(
+        device,
+        256, 256, 256,
+        VK_FORMAT_R16_SFLOAT,
+        VK_IMAGE_USAGE_STORAGE_BIT | VK_IMAGE_USAGE_TRANSFER_DST_BIT,
+        VK_IMAGE_ASPECT_COLOR_BIT,
+        VK_IMAGE_TILING_OPTIMAL,
+        VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT,
+        VK_IMAGE_LAYOUT_GENERAL
+    );
+
     auto globalSetLayout =
         DescriptorSetLayout::Builder(device)
             .addBinding(0, VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER, VK_SHADER_STAGE_ALL)
+
+            .addBinding(1, VK_DESCRIPTOR_TYPE_STORAGE_IMAGE, VK_SHADER_STAGE_COMPUTE_BIT)
+            .addBinding(2, VK_DESCRIPTOR_TYPE_COMBINED_IMAGE_SAMPLER, VK_SHADER_STAGE_COMPUTE_BIT)
+            .addBinding(3, VK_DESCRIPTOR_TYPE_STORAGE_IMAGE, VK_SHADER_STAGE_COMPUTE_BIT)
             .build();
 
     std::vector<VkDescriptorSet> globalDescriptorSets(SwapChain::MAX_FRAMES_IN_FLIGHT);
     for (size_t i = 0; i < globalDescriptorSets.size(); i++) {
         auto bufferInfo = uboBuffers[i]->descriptorInfo();
+        auto velocityImageInfo = velocityImage->descriptorInfo(linearClampSampler->sampler());
+        auto currentDyeInfo = currentDye->descriptorInfo(linearClampSampler->sampler());
+        auto nextDyeInfo = nextDye->descriptorInfo(linearClampSampler->sampler());
+
         DescriptorWriter(*globalSetLayout, *globalPool)
             .writeBuffer(0, &bufferInfo)
+            .writeImage(1, &velocityImageInfo)
+            .writeImage(2, &currentDyeInfo)
+            .writeImage(3, &nextDyeInfo)
             .build(globalDescriptorSets[i]);
     }
 
@@ -77,6 +128,10 @@ void MainApp::run() {
 
     MovementController cameraController{};
 
+    constexpr size_t NUM_FRAMES = 1000;
+    std::array<float, NUM_FRAMES> frameTimes{};
+    size_t frameNum = 0;
+
     auto currentTime = std::chrono::high_resolution_clock::now();
 
     while (!window.shouldClose()) {
@@ -86,11 +141,25 @@ void MainApp::run() {
         float frameTime = std::chrono::duration<float, std::chrono::seconds::period>(newTime - currentTime).count();
         currentTime = newTime;
 
+        frameTimes[frameNum % NUM_FRAMES] = frameTime;
+        frameNum++;
+
+        size_t count = std::min(frameNum, NUM_FRAMES);
+        float total = 0.0f;
+        for (size_t i = 0; i < count; ++i) {
+            total += frameTimes[i];
+        }
+        float avgFrameTime = total / static_cast<float>(count);
+        float avgFPS = 1.0f / avgFrameTime;
+
+        if (frameNum % 100 == 0) {
+            std::cout << "Average FPS (last " << count << " frames): " << avgFPS << std::endl;
+        }
+
         cameraController.moveInPlaneXZ(window.getGLFWWindow(), frameTime, viewerObject);
         camera.setViewYXZ(viewerObject.transform.translation, viewerObject.transform.rotation);
 
         float aspect = renderer.getAspectRatio();
-        // camera.setOrthographicProjection(-aspect, aspect, -1, 1, -1, 1);
         camera.setPerspectiveProjection(glm::radians(90.f), aspect, 0.1f, 100.f);
 
         if (auto commandBuffer = renderer.beginFrame()) {
@@ -124,20 +193,6 @@ void MainApp::run() {
 };
 
 void MainApp::loadSceneObjects() {
-    std::shared_ptr<Model> model = Model::createModelFromFile(device, "examples/dev_app/models/smooth_vase.obj");
-    auto sceneObj = SceneObject::createSceneObject();
-    sceneObj.model = model;
-    sceneObj.transform.translation = {.0f, .5f, 1.f};
-    sceneObj.transform.scale = 10.f;
-    sceneObjects.emplace(sceneObj.getId(), std::move(sceneObj));
-
-    std::shared_ptr<Model> model2 = Model::createModelFromFile(device, "examples/dev_app/models/smooth_vase.obj");
-    auto sceneObj2 = SceneObject::createSceneObject();
-    sceneObj2.model = model2;
-    sceneObj2.transform.translation = {2.f, .1f, 1.f};
-    sceneObj2.transform.scale = 5.f;
-    sceneObjects.emplace(sceneObj2.getId(), std::move(sceneObj2));
-
     std::shared_ptr<Model> floor = Model::createModelFromFile(device, "examples/dev_app/models/quad.obj");
     auto floorObj = SceneObject::createSceneObject();
     floorObj.model = floor;

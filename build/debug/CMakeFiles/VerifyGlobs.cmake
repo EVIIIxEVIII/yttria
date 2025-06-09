@@ -9,6 +9,8 @@ set(OLD_GLOB
   "/home/alderson/Projects/Mine/yttria/src/backend/camera.cpp"
   "/home/alderson/Projects/Mine/yttria/src/backend/descriptors.cpp"
   "/home/alderson/Projects/Mine/yttria/src/backend/device.cpp"
+  "/home/alderson/Projects/Mine/yttria/src/backend/image.cpp"
+  "/home/alderson/Projects/Mine/yttria/src/backend/linear_clamp_sampler.cpp"
   "/home/alderson/Projects/Mine/yttria/src/backend/model.cpp"
   "/home/alderson/Projects/Mine/yttria/src/backend/movement_controller.cpp"
   "/home/alderson/Projects/Mine/yttria/src/backend/pipeline.cpp"

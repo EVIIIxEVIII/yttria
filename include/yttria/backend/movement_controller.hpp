@@ -25,7 +25,7 @@ public:
 
     KeyMappings keys{};
     float moveSpeed{3.f};
-    float turnSpeed{1.5f};
+    float turnSpeed{0.25f};
 
 };
 
