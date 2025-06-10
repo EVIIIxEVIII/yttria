@@ -64,8 +64,9 @@ private:
 
     Device& device_;
     VkPipeline pipeline_;
-    VkShaderModule vertShaderModule_;
-    VkShaderModule fragShaderModule_;
+    VkShaderModule vertShaderModule_ = VK_NULL_HANDLE;
+    VkShaderModule fragShaderModule_ = VK_NULL_HANDLE;
+    VkShaderModule compShaderModule_ = VK_NULL_HANDLE;
 };
 
 }

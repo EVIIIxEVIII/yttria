@@ -2161,6 +2161,7 @@ CMakeFiles/yttria.dir/src/backend/pipeline.cpp.o: /home/alderson/Projects/Mine/y
   /usr/include/c++/13/bits/cpp_type_traits.h \
   /usr/include/c++/13/bits/cxxabi_forced.h \
   /usr/include/c++/13/bits/cxxabi_init_exception.h \
+  /usr/include/c++/13/bits/enable_special_members.h \
   /usr/include/c++/13/bits/exception.h \
   /usr/include/c++/13/bits/exception_defines.h \
   /usr/include/c++/13/bits/exception_ptr.h \
@@ -2247,6 +2248,7 @@ CMakeFiles/yttria.dir/src/backend/pipeline.cpp.o: /home/alderson/Projects/Mine/y
   /usr/include/c++/13/limits \
   /usr/include/c++/13/memory \
   /usr/include/c++/13/new \
+  /usr/include/c++/13/optional \
   /usr/include/c++/13/ostream \
   /usr/include/c++/13/pstl/execution_defs.h \
   /usr/include/c++/13/pstl/glue_memory_defs.h \
@@ -3423,6 +3425,7 @@ CMakeFiles/yttria.dir/src/backend/systems/ink_sim.cpp.o: /home/alderson/Projects
   /usr/include/c++/13/bits/cpp_type_traits.h \
   /usr/include/c++/13/bits/cxxabi_forced.h \
   /usr/include/c++/13/bits/cxxabi_init_exception.h \
+  /usr/include/c++/13/bits/enable_special_members.h \
   /usr/include/c++/13/bits/exception.h \
   /usr/include/c++/13/bits/exception_defines.h \
   /usr/include/c++/13/bits/exception_ptr.h \
@@ -3487,6 +3490,7 @@ CMakeFiles/yttria.dir/src/backend/systems/ink_sim.cpp.o: /home/alderson/Projects
   /usr/include/c++/13/iosfwd \
   /usr/include/c++/13/memory \
   /usr/include/c++/13/new \
+  /usr/include/c++/13/optional \
   /usr/include/c++/13/pstl/execution_defs.h \
   /usr/include/c++/13/pstl/glue_memory_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
@@ -3716,6 +3720,7 @@ CMakeFiles/yttria.dir/src/backend/systems/point_light_system.cpp.o: /home/alders
   /usr/include/c++/13/limits \
   /usr/include/c++/13/memory \
   /usr/include/c++/13/new \
+  /usr/include/c++/13/optional \
   /usr/include/c++/13/pstl/execution_defs.h \
   /usr/include/c++/13/pstl/glue_memory_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
@@ -4123,6 +4128,7 @@ CMakeFiles/yttria.dir/src/backend/systems/simple_render_system.cpp.o: /home/alde
   /usr/include/c++/13/limits \
   /usr/include/c++/13/memory \
   /usr/include/c++/13/new \
+  /usr/include/c++/13/optional \
   /usr/include/c++/13/pstl/execution_defs.h \
   /usr/include/c++/13/pstl/glue_memory_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
@@ -5124,6 +5130,8 @@ CMakeFiles/yttria.dir/src/backend/window.cpp.o: /home/alderson/Projects/Mine/ytt
 /usr/include/glm/vec4.hpp:
 
 /usr/include/glm/ext/matrix_double2x4_precision.hpp:
+
+/usr/include/c++/13/optional:
 
 /usr/include/c++/13/bits/vector.tcc:
 

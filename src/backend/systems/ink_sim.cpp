@@ -1,6 +1,7 @@
 #include "yttria/backend/systems/ink_sim.hpp"
 #include "yttria/backend/pipeline.hpp"
 
+#include <optional>
 #include <stdexcept>
 #include <assert.h>
 
@@ -19,7 +20,7 @@ void InkSim::createPipeline(VkRenderPass renderPass) {
     ShaderInfo shaderInfo {
         "src/shaders/point_light.vert.spv",
         "src/shaders/point_light.frag.spv",
-        ""
+        std::nullopt
     };
 
     PipelineConfigInfo pipelineConfig{};

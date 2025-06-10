@@ -46,18 +46,55 @@ std::vector<VkPipelineShaderStageCreateInfo> Pipeline::createShaders(ShaderInfo 
     if (shaderInfo.vertPath.has_value()) {
         auto vertCode = readFile(shaderInfo.vertPath.value());
         createShaderModule(vertCode, &vertShaderModule_);
-        VkPipelineShaderStageCreateInfo vertStageCreateInfo {
-            VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_CREATE_INFO,
-            VK_SHADER_STAGE_VERTEX_BIT,
-            vertShaderModule_
-            .pName = "main",
-            0,
-            nullptr,
-            nullptr,
-        };
-        shaderStages.push_back(vertStageCreateInfo);
+
+        VkPipelineShaderStageCreateInfo vertStageCreateInfo {};
+        vertStageCreateInfo.sType = VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_CREATE_INFO;
+        vertStageCreateInfo.stage = VK_SHADER_STAGE_VERTEX_BIT;
+        vertStageCreateInfo.module = vertShaderModule_;
+        vertStageCreateInfo.pName = "main";
+        vertStageCreateInfo.flags = 0;
+        vertStageCreateInfo.pNext = nullptr;
+        vertStageCreateInfo.pSpecializationInfo = nullptr;
+
+        std::cout << "Vertex shader size: " << vertCode.size() << "\n";
+        shaderStages[0] = vertStageCreateInfo;
     }
 
+    if (shaderInfo.fragPath.has_value()) {
+        auto fragCode = readFile(shaderInfo.fragPath.value());
+        createShaderModule(fragCode, &fragShaderModule_);
+
+        VkPipelineShaderStageCreateInfo fragStageCreateInfo {};
+        fragStageCreateInfo.sType = VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_CREATE_INFO;
+        fragStageCreateInfo.stage = VK_SHADER_STAGE_FRAGMENT_BIT;
+        fragStageCreateInfo.module = fragShaderModule_;
+        fragStageCreateInfo.pName = "main";
+        fragStageCreateInfo.flags = 0;
+        fragStageCreateInfo.pNext = nullptr;
+        fragStageCreateInfo.pSpecializationInfo = nullptr;
+
+        std::cout << "Fragment shader size: " << fragCode.size() << "\n";
+        shaderStages[1] = fragStageCreateInfo;
+    }
+
+    if (shaderInfo.compPath.has_value()) {
+        auto compCode = readFile(shaderInfo.compPath.value());
+        createShaderModule(compCode, &compShaderModule_);
+
+        VkPipelineShaderStageCreateInfo compStageCreateInfo {};
+        compStageCreateInfo.sType = VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_CREATE_INFO;
+        compStageCreateInfo.stage = VK_SHADER_STAGE_COMPUTE_BIT;
+        compStageCreateInfo.module = compShaderModule_;
+        compStageCreateInfo.pName = "main";
+        compStageCreateInfo.flags = 0;
+        compStageCreateInfo.pNext = nullptr;
+        compStageCreateInfo.pSpecializationInfo = nullptr;
+
+        std::cout << "Compute shader size: " << compCode.size() << "\n";
+        shaderStages[2] = compStageCreateInfo;
+    }
+
+    return shaderStages;
 }
 
 void Pipeline::createPipeline(
@@ -74,29 +111,7 @@ void Pipeline::createPipeline(
         "Cannot create a graphics pipeline: no render pass was provided."
     );
 
-    auto vertCode = readFile(shaderInfo.vertPath);
-    auto fragCode = readFile(shaderInfo.fragPath);
-
-    createShaderModule(vertCode, &vertShaderModule_);
-    createShaderModule(fragCode, &fragShaderModule_);
-
-    VkPipelineShaderStageCreateInfo shaderStages[2];
-    shaderStages[0].sType = VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_CREATE_INFO;
-    shaderStages[0].stage = VK_SHADER_STAGE_VERTEX_BIT;
-    shaderStages[0].module = vertShaderModule_;
-    shaderStages[0].pName = "main";
-    shaderStages[0].flags = 0;
-    shaderStages[0].pNext = nullptr;
-    shaderStages[0].pspecializationinfo = nullptr;
-
-    shaderStages[1].sType = VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_CREATE_INFO;
-    shaderStages[1].stage = VK_SHADER_STAGE_FRAGMENT_BIT;
-    shaderStages[1].module = fragShaderModule_;
-    shaderStages[1].pName = "main";
-    shaderStages[1].flags = 0;
-    shaderStages[1].pNext = nullptr;
-    shaderStages[1].pSpecializationInfo = nullptr;
-
+    auto shaderStages = createShaders(shaderInfo);
 
     auto& bindingDescriptions = configInfo.bindingDescriptions;
     auto& attributeDescriptions = configInfo.attributeDescriptions;
@@ -110,7 +125,7 @@ void Pipeline::createPipeline(
     VkGraphicsPipelineCreateInfo pipelineInfo{};
     pipelineInfo.sType = VK_STRUCTURE_TYPE_GRAPHICS_PIPELINE_CREATE_INFO;
     pipelineInfo.stageCount = 2;
-    pipelineInfo.pStages = shaderStages;
+    pipelineInfo.pStages = shaderStages.data();
     pipelineInfo.pVertexInputState = &vertexInputInfo;
     pipelineInfo.pInputAssemblyState = &configInfo.inputAssemblyInfo;
     pipelineInfo.pViewportState = &configInfo.viewportInfo;
@@ -136,19 +151,18 @@ void Pipeline::createPipeline(
           &pipeline_) != VK_SUCCESS) {
         throw std::runtime_error("failed to create graphics pipeline!");
     }
-
-
-    std::cout << "Vertex shader size: " << vertCode.size() << "\n";
-    std::cout << "Fragment shader size: " << fragCode.size() << "\n";
 }
 
 Pipeline::~Pipeline() {
-    vkDestroyShaderModule(device_.device(), fragShaderModule_, nullptr);
-    vkDestroyShaderModule(device_.device(), vertShaderModule_, nullptr);
+    if (fragShaderModule_ != VK_NULL_HANDLE) vkDestroyShaderModule(device_.device(), fragShaderModule_, nullptr);
+    if (vertShaderModule_ != VK_NULL_HANDLE) vkDestroyShaderModule(device_.device(), vertShaderModule_, nullptr);
+    if (compShaderModule_ != VK_NULL_HANDLE) vkDestroyShaderModule(device_.device(), compShaderModule_, nullptr);
+
     vkDestroyPipeline(device_.device(), pipeline_, nullptr);
 
     fragShaderModule_ = VK_NULL_HANDLE;
     vertShaderModule_ = VK_NULL_HANDLE;
+    compShaderModule_ = VK_NULL_HANDLE;
 }
 
 void Pipeline::createShaderModule(const std::vector<char>& code, VkShaderModule *shaderModule) {

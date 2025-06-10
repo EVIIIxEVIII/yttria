@@ -55,7 +55,7 @@ void PointLightSystem::createPipeline(VkRenderPass renderPass) {
     ShaderInfo shaderInfo {
         "src/shaders/point_light.vert.spv",
         "src/shaders/point_light.frag.spv",
-        "",
+        std::nullopt
     };
 
 

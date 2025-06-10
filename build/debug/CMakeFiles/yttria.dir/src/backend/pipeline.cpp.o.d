@@ -141,7 +141,12 @@ CMakeFiles/yttria.dir/src/backend/pipeline.cpp.o: \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
- /usr/include/c++/13/bits/vector.tcc /usr/include/vulkan/vulkan_core.h \
+ /usr/include/c++/13/bits/vector.tcc /usr/include/c++/13/optional \
+ /usr/include/c++/13/exception /usr/include/c++/13/bits/exception_ptr.h \
+ /usr/include/c++/13/bits/cxxabi_init_exception.h \
+ /usr/include/c++/13/typeinfo /usr/include/c++/13/bits/nested_exception.h \
+ /usr/include/c++/13/bits/enable_special_members.h \
+ /usr/include/vulkan/vulkan_core.h \
  /home/alderson/Projects/Mine/yttria/include/yttria/backend/model.hpp \
  /home/alderson/Projects/Mine/yttria/include/yttria/backend/buffer.hpp \
  /usr/include/glm/glm.hpp /usr/include/glm/detail/_fixes.hpp \
@@ -296,7 +301,7 @@ CMakeFiles/yttria.dir/src/backend/pipeline.cpp.o: \
  /usr/include/c++/13/bits/stl_raw_storage_iter.h \
  /usr/include/c++/13/bits/align.h /usr/include/c++/13/bits/unique_ptr.h \
  /usr/include/c++/13/bits/shared_ptr.h \
- /usr/include/c++/13/bits/shared_ptr_base.h /usr/include/c++/13/typeinfo \
+ /usr/include/c++/13/bits/shared_ptr_base.h \
  /usr/include/c++/13/bits/allocated_ptr.h \
  /usr/include/c++/13/ext/aligned_buffer.h \
  /usr/include/c++/13/ext/atomicity.h \
@@ -314,10 +319,7 @@ CMakeFiles/yttria.dir/src/backend/pipeline.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
- /usr/include/c++/13/ext/concurrence.h /usr/include/c++/13/exception \
- /usr/include/c++/13/bits/exception_ptr.h \
- /usr/include/c++/13/bits/cxxabi_init_exception.h \
- /usr/include/c++/13/bits/nested_exception.h \
+ /usr/include/c++/13/ext/concurrence.h \
  /usr/include/c++/13/bits/shared_ptr_atomic.h \
  /usr/include/c++/13/bits/atomic_base.h \
  /usr/include/c++/13/bits/atomic_lockfree_defines.h \

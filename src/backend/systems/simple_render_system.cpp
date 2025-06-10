@@ -4,6 +4,7 @@
 #include "yttria/backend/scene_object.hpp"
 
 #include <memory>
+#include <optional>
 #include <stdexcept>
 #include <vulkan/vulkan_core.h>
 #include <glm/gtc/constants.hpp>
@@ -50,7 +51,7 @@ void SimpleRenderSystem::createPipeline(VkRenderPass renderPass) {
     ShaderInfo shaderInfo {
         "src/shaders/vert.spv",
         "src/shaders/frag.spv",
-        "",
+        std::nullopt
     };
 
     PipelineConfigInfo pipelineConfig{};
