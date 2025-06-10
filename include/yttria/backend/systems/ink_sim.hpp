@@ -17,6 +17,7 @@ private:
     void createPipelineLayout(VkDescriptorSetLayout globalSetLayout);
     void createPipeline(VkRenderPass renderPass);
 
+
     Device& device_;
     std::unique_ptr<Pipeline> pipeline_;
     VkPipelineLayout pipelineLayout_;
