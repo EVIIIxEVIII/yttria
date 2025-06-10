@@ -17,6 +17,7 @@ set(OLD_GLOB
   "/home/alderson/Projects/Mine/yttria/src/backend/renderer.cpp"
   "/home/alderson/Projects/Mine/yttria/src/backend/scene_object.cpp"
   "/home/alderson/Projects/Mine/yttria/src/backend/swap_chain.cpp"
+  "/home/alderson/Projects/Mine/yttria/src/backend/systems/ink_sim.cpp"
   "/home/alderson/Projects/Mine/yttria/src/backend/systems/point_light_system.cpp"
   "/home/alderson/Projects/Mine/yttria/src/backend/systems/simple_render_system.cpp"
   "/home/alderson/Projects/Mine/yttria/src/backend/window.cpp"

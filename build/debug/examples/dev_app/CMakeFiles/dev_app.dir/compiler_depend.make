@@ -142,6 +142,7 @@ examples/dev_app/CMakeFiles/dev_app.dir/MainApp.cpp.o: /home/alderson/Projects/M
   /usr/include/c++/13/limits \
   /usr/include/c++/13/memory \
   /usr/include/c++/13/new \
+  /usr/include/c++/13/optional \
   /usr/include/c++/13/ostream \
   /usr/include/c++/13/pstl/execution_defs.h \
   /usr/include/c++/13/pstl/glue_memory_defs.h \
@@ -1091,6 +1092,8 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 
 /usr/include/glm/ext/scalar_constants.inl:
 
+/usr/include/glm/ext/matrix_projection.inl:
+
 /usr/include/glm/ext/vector_float3_precision.hpp:
 
 /usr/include/c++/13/debug/assertions.h:
@@ -1140,8 +1143,6 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 /usr/include/glm/ext/matrix_transform.inl:
 
 /usr/include/glm/ext/matrix_float3x3.hpp:
-
-/usr/include/c++/13/bits/vector.tcc:
 
 /home/alderson/Projects/Mine/yttria/include/yttria/backend/camera.hpp:
 
@@ -1471,6 +1472,10 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 
 /usr/include/c++/13/bits/exception_ptr.h:
 
+/usr/include/c++/13/bits/vector.tcc:
+
+/usr/include/c++/13/optional:
+
 /usr/include/c++/13/bits/hashtable_policy.h:
 
 /usr/include/c++/13/bits/cxxabi_forced.h:
@@ -1592,8 +1597,6 @@ examples/dev_app/CMakeFiles/dev_app.dir/main.cpp.o: /home/alderson/Projects/Mine
 /usr/include/c++/13/bits/nested_exception.h:
 
 /usr/include/c++/13/tuple:
-
-/usr/include/glm/ext/matrix_projection.inl:
 
 /usr/include/c++/13/bits/allocator.h:
 

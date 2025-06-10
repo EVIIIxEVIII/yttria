@@ -73,6 +73,12 @@
 },
 {
   "directory": "/home/alderson/Projects/Mine/yttria/build/debug",
+  "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/systems/ink_sim.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/systems/ink_sim.cpp",
+  "file": "/home/alderson/Projects/Mine/yttria/src/backend/systems/ink_sim.cpp",
+  "output": "CMakeFiles/yttria.dir/src/backend/systems/ink_sim.cpp.o"
+},
+{
+  "directory": "/home/alderson/Projects/Mine/yttria/build/debug",
   "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/systems/point_light_system.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/systems/point_light_system.cpp",
   "file": "/home/alderson/Projects/Mine/yttria/src/backend/systems/point_light_system.cpp",
   "output": "CMakeFiles/yttria.dir/src/backend/systems/point_light_system.cpp.o"

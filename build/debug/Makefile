@@ -431,6 +431,30 @@ src/backend/swap_chain.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/swap_chain.cpp.s
 .PHONY : src/backend/swap_chain.cpp.s
 
+src/backend/systems/ink_sim.o: src/backend/systems/ink_sim.cpp.o
+.PHONY : src/backend/systems/ink_sim.o
+
+# target to build an object file
+src/backend/systems/ink_sim.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/systems/ink_sim.cpp.o
+.PHONY : src/backend/systems/ink_sim.cpp.o
+
+src/backend/systems/ink_sim.i: src/backend/systems/ink_sim.cpp.i
+.PHONY : src/backend/systems/ink_sim.i
+
+# target to preprocess a source file
+src/backend/systems/ink_sim.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/systems/ink_sim.cpp.i
+.PHONY : src/backend/systems/ink_sim.cpp.i
+
+src/backend/systems/ink_sim.s: src/backend/systems/ink_sim.cpp.s
+.PHONY : src/backend/systems/ink_sim.s
+
+# target to generate assembly for a file
+src/backend/systems/ink_sim.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/systems/ink_sim.cpp.s
+.PHONY : src/backend/systems/ink_sim.cpp.s
+
 src/backend/systems/point_light_system.o: src/backend/systems/point_light_system.cpp.o
 .PHONY : src/backend/systems/point_light_system.o
 
@@ -549,6 +573,9 @@ help:
 	@echo "... src/backend/swap_chain.o"
 	@echo "... src/backend/swap_chain.i"
 	@echo "... src/backend/swap_chain.s"
+	@echo "... src/backend/systems/ink_sim.o"
+	@echo "... src/backend/systems/ink_sim.i"
+	@echo "... src/backend/systems/ink_sim.s"
 	@echo "... src/backend/systems/point_light_system.o"
 	@echo "... src/backend/systems/point_light_system.i"
 	@echo "... src/backend/systems/point_light_system.s"

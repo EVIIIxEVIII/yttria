@@ -2,6 +2,7 @@
 
 #include "yttria/backend/device.hpp"
 
+#include <optional>
 #include <string>
 #include <vector>
 #include <vulkan/vulkan_core.h>
@@ -29,13 +30,18 @@ struct PipelineConfigInfo {
     uint32_t subpass = 0;
 };
 
+struct ShaderInfo {
+    std::optional<std::string> vertPath;
+    std::optional<std::string> fragPath;
+    std::optional<std::string> compPath;
+};
+
 class Pipeline {
 
 public:
     Pipeline(
         Device &device,
-        const std::string& vertFilepath,
-        const std::string& fragFilepath,
+        const ShaderInfo& shaderInfo,
         const PipelineConfigInfo& configInfo
     );
 
@@ -49,17 +55,18 @@ public:
 private:
     static std::vector<char> readFile(const std::string& filename);
     void createPipeline(
-        const std::string& vertFilepath,
-        const std::string& fragFilepath,
+        const ShaderInfo& shaderInfo,
         const PipelineConfigInfo& configInfo
     );
 
     void createShaderModule(const std::vector<char>& code, VkShaderModule *shaderModule);
+    std::vector<VkPipelineShaderStageCreateInfo> createShaders(ShaderInfo shaderInfo);
 
     Device& device_;
     VkPipeline pipeline_;
-    VkShaderModule vertShaderModule_;
-    VkShaderModule fragShaderModule_;
+    VkShaderModule vertShaderModule_ = VK_NULL_HANDLE;
+    VkShaderModule fragShaderModule_ = VK_NULL_HANDLE;
+    VkShaderModule compShaderModule_ = VK_NULL_HANDLE;
 };
 
 }

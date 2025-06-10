@@ -158,9 +158,9 @@ void SwapChain::createSwapChain() {
     createInfo.imageUsage = VK_IMAGE_USAGE_COLOR_ATTACHMENT_BIT;
 
     QueueFamilyIndices indices = device_.findPhysicalQueueFamilies();
-    uint32_t queueFamilyIndices[] = {indices.graphicsFamily, indices.presentFamily};
+    uint32_t queueFamilyIndices[] = {indices.graphicsAndComputeFamily, indices.presentFamily};
 
-    if (indices.graphicsFamily != indices.presentFamily) {
+    if (indices.graphicsAndComputeFamily != indices.presentFamily) {
         createInfo.imageSharingMode = VK_SHARING_MODE_CONCURRENT;
         createInfo.queueFamilyIndexCount = 2;
         createInfo.pQueueFamilyIndices = queueFamilyIndices;
@@ -392,7 +392,7 @@ VkSurfaceFormatKHR SwapChain::chooseSwapSurfaceFormat(
 VkPresentModeKHR SwapChain::chooseSwapPresentMode(
     const std::vector<VkPresentModeKHR> &availablePresentModes) {
     for (const auto &availablePresentMode : availablePresentModes) {
-        if (availablePresentMode == VK_PRESENT_MODE_IMMEDIATE_KHR) {
+        if (availablePresentMode == VK_PRESENT_MODE_FIFO_KHR) {
             std::cout << "Present mode: Mailbox" << std::endl;
             return availablePresentMode;
         }
