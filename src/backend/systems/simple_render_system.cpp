@@ -47,14 +47,19 @@ void SimpleRenderSystem::createPipelineLayout(VkDescriptorSetLayout globalSetLay
 void SimpleRenderSystem::createPipeline(VkRenderPass renderPass) {
     assert(pipelineLayout_ != nullptr && "Cannot create pipeline before pipeline layout");
 
+    ShaderInfo shaderInfo {
+        "src/shaders/vert.spv",
+        "src/shaders/frag.spv",
+        "",
+    };
+
     PipelineConfigInfo pipelineConfig{};
     Pipeline::defaultPipelineConfigInfo(pipelineConfig);
     pipelineConfig.renderPass = renderPass;
     pipelineConfig.pipelineLayout = pipelineLayout_;
     pipeline_ = std::make_unique<Pipeline>(
         device_,
-        "src/shaders/vert.spv",
-        "src/shaders/frag.spv",
+        shaderInfo,
         pipelineConfig
     );
 }

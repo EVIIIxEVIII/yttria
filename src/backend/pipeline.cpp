@@ -14,12 +14,11 @@ namespace yttria::backend {
 
 Pipeline::Pipeline(
     Device &device,
-    const std::string& vertFilepath,
-    const std::string& fragFilepath,
+    const ShaderInfo& shaderInfo,
     const PipelineConfigInfo& configInfo
 ):  device_{device}
 {
-    createPipeline(vertFilepath, fragFilepath, configInfo);
+    createPipeline(shaderInfo, configInfo);
 }
 
 std::vector<char> Pipeline::readFile(const std::string& filename) {
@@ -41,9 +40,28 @@ std::vector<char> Pipeline::readFile(const std::string& filename) {
     return buffer;
 }
 
+std::vector<VkPipelineShaderStageCreateInfo> Pipeline::createShaders(ShaderInfo shaderInfo) {
+    std::vector<VkPipelineShaderStageCreateInfo> shaderStages(3);
+
+    if (shaderInfo.vertPath.has_value()) {
+        auto vertCode = readFile(shaderInfo.vertPath.value());
+        createShaderModule(vertCode, &vertShaderModule_);
+        VkPipelineShaderStageCreateInfo vertStageCreateInfo {
+            VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_CREATE_INFO,
+            VK_SHADER_STAGE_VERTEX_BIT,
+            vertShaderModule_
+            .pName = "main",
+            0,
+            nullptr,
+            nullptr,
+        };
+        shaderStages.push_back(vertStageCreateInfo);
+    }
+
+}
+
 void Pipeline::createPipeline(
-    const std::string& vertFilepath,
-    const std::string& fragFilepath,
+    const ShaderInfo& shaderInfo,
     const PipelineConfigInfo& configInfo
 ) {
     assert(
@@ -56,8 +74,8 @@ void Pipeline::createPipeline(
         "Cannot create a graphics pipeline: no render pass was provided."
     );
 
-    auto vertCode = readFile(vertFilepath);
-    auto fragCode = readFile(fragFilepath);
+    auto vertCode = readFile(shaderInfo.vertPath);
+    auto fragCode = readFile(shaderInfo.fragPath);
 
     createShaderModule(vertCode, &vertShaderModule_);
     createShaderModule(fragCode, &fragShaderModule_);
@@ -69,7 +87,7 @@ void Pipeline::createPipeline(
     shaderStages[0].pName = "main";
     shaderStages[0].flags = 0;
     shaderStages[0].pNext = nullptr;
-    shaderStages[0].pSpecializationInfo = nullptr;
+    shaderStages[0].pspecializationinfo = nullptr;
 
     shaderStages[1].sType = VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_CREATE_INFO;
     shaderStages[1].stage = VK_SHADER_STAGE_FRAGMENT_BIT;

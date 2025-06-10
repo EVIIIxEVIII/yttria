@@ -23,6 +23,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/yttria.dir/src/backend/scene_object.cpp.o.d"
   "CMakeFiles/yttria.dir/src/backend/swap_chain.cpp.o"
   "CMakeFiles/yttria.dir/src/backend/swap_chain.cpp.o.d"
+  "CMakeFiles/yttria.dir/src/backend/systems/ink_sim.cpp.o"
+  "CMakeFiles/yttria.dir/src/backend/systems/ink_sim.cpp.o.d"
   "CMakeFiles/yttria.dir/src/backend/systems/point_light_system.cpp.o"
   "CMakeFiles/yttria.dir/src/backend/systems/point_light_system.cpp.o.d"
   "CMakeFiles/yttria.dir/src/backend/systems/simple_render_system.cpp.o"
