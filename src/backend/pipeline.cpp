@@ -41,7 +41,7 @@ std::vector<char> Pipeline::readFile(const std::string& filename) {
 }
 
 std::vector<VkPipelineShaderStageCreateInfo> Pipeline::createShaders(ShaderInfo shaderInfo) {
-    std::vector<VkPipelineShaderStageCreateInfo> shaderStages(3);
+    std::vector<VkPipelineShaderStageCreateInfo> shaderStages;
 
     if (shaderInfo.vertPath.has_value()) {
         auto vertCode = readFile(shaderInfo.vertPath.value());
@@ -57,7 +57,7 @@ std::vector<VkPipelineShaderStageCreateInfo> Pipeline::createShaders(ShaderInfo 
         vertStageCreateInfo.pSpecializationInfo = nullptr;
 
         std::cout << "Vertex shader size: " << vertCode.size() << "\n";
-        shaderStages[0] = vertStageCreateInfo;
+        shaderStages.push_back(vertStageCreateInfo);
     }
 
     if (shaderInfo.fragPath.has_value()) {
@@ -74,7 +74,7 @@ std::vector<VkPipelineShaderStageCreateInfo> Pipeline::createShaders(ShaderInfo 
         fragStageCreateInfo.pSpecializationInfo = nullptr;
 
         std::cout << "Fragment shader size: " << fragCode.size() << "\n";
-        shaderStages[1] = fragStageCreateInfo;
+        shaderStages.push_back(fragStageCreateInfo);
     }
 
     if (shaderInfo.compPath.has_value()) {
@@ -91,7 +91,7 @@ std::vector<VkPipelineShaderStageCreateInfo> Pipeline::createShaders(ShaderInfo 
         compStageCreateInfo.pSpecializationInfo = nullptr;
 
         std::cout << "Compute shader size: " << compCode.size() << "\n";
-        shaderStages[2] = compStageCreateInfo;
+        shaderStages.push_back(compStageCreateInfo);
     }
 
     return shaderStages;
@@ -124,7 +124,7 @@ void Pipeline::createPipeline(
 
     VkGraphicsPipelineCreateInfo pipelineInfo{};
     pipelineInfo.sType = VK_STRUCTURE_TYPE_GRAPHICS_PIPELINE_CREATE_INFO;
-    pipelineInfo.stageCount = 2;
+    pipelineInfo.stageCount = static_cast<uint32_t>(shaderStages.size());
     pipelineInfo.pStages = shaderStages.data();
     pipelineInfo.pVertexInputState = &vertexInputInfo;
     pipelineInfo.pInputAssemblyState = &configInfo.inputAssemblyInfo;

@@ -2,6 +2,8 @@
 
 #include "yttria/backend/systems/simple_render_system.hpp"
 #include "yttria/backend/systems/point_light_system.hpp"
+#include "yttria/backend/systems/ink_sim.hpp"
+
 #include "yttria/backend/movement_controller.hpp"
 #include "yttria/backend/image.hpp"
 #include "yttria/backend/linear_clamp_sampler.hpp"
@@ -113,7 +115,13 @@ void MainApp::run() {
         globalSetLayout->getDescriptorSetLayout()
     };
 
-    PointLightSystem pointLightSystem{
+    //PointLightSystem pointLightSystem{
+    //    device,
+    //    renderer.getSwapChainRenderPass(),
+    //    globalSetLayout->getDescriptorSetLayout()
+    //};
+
+    InkSim inkSim {
         device,
         renderer.getSwapChainRenderPass(),
         globalSetLayout->getDescriptorSetLayout()
@@ -177,13 +185,13 @@ void MainApp::run() {
             ubo.projection = camera.getProjection();
             ubo.view = camera.getView();
             ubo.inverseView = camera.getInverseView();
-            pointLightSystem.update(frameInfo, ubo);
+            //pointLightSystem.update(frameInfo, ubo);
             uboBuffers[static_cast<size_t>(frameIndex)]->writeToBuffer((void*)&ubo);
             uboBuffers[static_cast<size_t>(frameIndex)]->flush();
 
             renderer.beginSwapChainRenderPass(commandBuffer);
             simpleRenderSystem.renderSceneObjects(frameInfo);
-            pointLightSystem.render(frameInfo);
+            //pointLightSystem.render(frameInfo);
             renderer.endSwapChainRenderPass(commandBuffer);
             renderer.endFrame();
         }
@@ -193,7 +201,7 @@ void MainApp::run() {
 };
 
 void MainApp::loadSceneObjects() {
-    std::shared_ptr<Model> floor = Model::createModelFromFile(device, "examples/dev_app/models/quad.obj");
+    std::shared_ptr<Model> floor = Model::createModelFromFile(device, "/home/alderson/Projects/Mine/yttria/examples/dev_app/models/quad.obj");
     auto floorObj = SceneObject::createSceneObject();
     floorObj.model = floor;
     floorObj.transform.translation = {0.f, 0.1f, 0.f};

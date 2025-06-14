@@ -49,8 +49,8 @@ void SimpleRenderSystem::createPipeline(VkRenderPass renderPass) {
     assert(pipelineLayout_ != nullptr && "Cannot create pipeline before pipeline layout");
 
     ShaderInfo shaderInfo {
-        "src/shaders/vert.spv",
-        "src/shaders/frag.spv",
+        "/home/alderson/Projects/Mine/yttria/src/shaders/vert.spv",
+        "/home/alderson/Projects/Mine/yttria/src/shaders/frag.spv",
         std::nullopt
     };
 

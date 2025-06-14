@@ -14,13 +14,17 @@ InkSim::InkSim(Device& device, VkRenderPass renderPass, VkDescriptorSetLayout gl
     createPipeline(renderPass);
 }
 
+InkSim::~InkSim() {
+    vkDestroyPipelineLayout(device_.device(), pipelineLayout_, nullptr);
+}
+
 void InkSim::createPipeline(VkRenderPass renderPass) {
     assert(pipelineLayout_ != nullptr && "Cannot create pipeline before pipeline layout");
 
     ShaderInfo shaderInfo {
-        "src/shaders/point_light.vert.spv",
-        "src/shaders/point_light.frag.spv",
-        std::nullopt
+        std::nullopt,
+        std::nullopt,
+        "/home/alderson/Projects/Mine/yttria/src/shaders/ink_sim.comp.spv"
     };
 
     PipelineConfigInfo pipelineConfig{};

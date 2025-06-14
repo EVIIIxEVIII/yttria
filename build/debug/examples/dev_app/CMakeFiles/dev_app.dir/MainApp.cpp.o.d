@@ -354,6 +354,7 @@ examples/dev_app/CMakeFiles/dev_app.dir/MainApp.cpp.o: \
  /home/alderson/Projects/Mine/yttria/include/yttria/backend/frame_info.hpp \
  /home/alderson/Projects/Mine/yttria/include/yttria/backend/camera.hpp \
  /home/alderson/Projects/Mine/yttria/include/yttria/backend/systems/point_light_system.hpp \
+ /home/alderson/Projects/Mine/yttria/include/yttria/backend/systems/ink_sim.hpp \
  /home/alderson/Projects/Mine/yttria/include/yttria/backend/movement_controller.hpp \
  /home/alderson/Projects/Mine/yttria/include/yttria/backend/image.hpp \
  /home/alderson/Projects/Mine/yttria/include/yttria/backend/linear_clamp_sampler.hpp \

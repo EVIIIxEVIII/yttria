@@ -53,8 +53,8 @@ void PointLightSystem::createPipeline(VkRenderPass renderPass) {
     pipelineConfig.bindingDescriptions.clear();
 
     ShaderInfo shaderInfo {
-        "src/shaders/point_light.vert.spv",
-        "src/shaders/point_light.frag.spv",
+        "/home/alderson/Projects/Mine/yttria/src/shaders/point_light.vert.spv",
+        "/home/alderson/Projects/Mine/yttria/src/shaders/point_light.frag.spv",
         std::nullopt
     };
 

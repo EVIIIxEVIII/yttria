@@ -99,7 +99,7 @@ class Device {
   VkQueue graphicsQueue_;
   VkQueue presentQueue_;
 
-  const std::vector<const char *> validationLayers_ = {"VK_LAYER_KHRONOS_validation"};
+  const std::vector<const char *> validationLayers_ =  {"VK_LAYER_KHRONOS_validation"};
   const std::vector<const char *> deviceExtensions_ = {VK_KHR_SWAPCHAIN_EXTENSION_NAME};
 };
 
