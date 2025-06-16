@@ -1,7 +1,5 @@
 #include "yttria/backend/systems/ink_sim.hpp"
-#include "yttria/backend/pipeline.hpp"
 
-#include <optional>
 #include <stdexcept>
 #include <assert.h>
 
@@ -21,24 +19,7 @@ InkSim::~InkSim() {
 void InkSim::createPipeline(VkRenderPass renderPass) {
     assert(pipelineLayout_ != nullptr && "Cannot create pipeline before pipeline layout");
 
-    ShaderInfo shaderInfo {
-        std::nullopt,
-        std::nullopt,
-        "/home/alderson/Projects/Mine/yttria/src/shaders/ink_sim.comp.spv"
-    };
 
-    PipelineConfigInfo pipelineConfig{};
-    Pipeline::defaultPipelineConfigInfo(pipelineConfig);
-    pipelineConfig.attributeDescriptions.clear();
-    pipelineConfig.bindingDescriptions.clear();
-
-    pipelineConfig.renderPass = renderPass;
-    pipelineConfig.pipelineLayout = pipelineLayout_;
-    pipeline_ = std::make_unique<Pipeline>(
-        device_,
-        shaderInfo,
-        pipelineConfig
-    );
 }
 
 void InkSim::createPipelineLayout(VkDescriptorSetLayout globalSetLayout) {

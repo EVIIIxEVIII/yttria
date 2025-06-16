@@ -98,12 +98,12 @@ examples/dev_app/clean: examples/dev_app/CMakeFiles/dev_app.dir/clean
 CMakeFiles/yttria.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 "Built target yttria"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21 "Built target yttria"
 .PHONY : CMakeFiles/yttria.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/yttria.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles 18
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/yttria.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles 0
 .PHONY : CMakeFiles/yttria.dir/rule
@@ -129,7 +129,7 @@ examples/dev_app/CMakeFiles/dev_app.dir/all: CMakeFiles/yttria.dir/all
 
 # Build rule for subdir invocation for target.
 examples/dev_app/CMakeFiles/dev_app.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles 20
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles 21
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/dev_app/CMakeFiles/dev_app.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles 0
 .PHONY : examples/dev_app/CMakeFiles/dev_app.dir/rule

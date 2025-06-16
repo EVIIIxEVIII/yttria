@@ -1,10 +1,8 @@
 #include "yttria/backend/systems/simple_render_system.hpp"
-
-#include "yttria/backend/pipeline.hpp"
+#include "yttria/backend/graphics_pipeline.hpp"
 #include "yttria/backend/scene_object.hpp"
 
 #include <memory>
-#include <optional>
 #include <stdexcept>
 #include <vulkan/vulkan_core.h>
 #include <glm/gtc/constants.hpp>
@@ -48,19 +46,14 @@ void SimpleRenderSystem::createPipelineLayout(VkDescriptorSetLayout globalSetLay
 void SimpleRenderSystem::createPipeline(VkRenderPass renderPass) {
     assert(pipelineLayout_ != nullptr && "Cannot create pipeline before pipeline layout");
 
-    ShaderInfo shaderInfo {
-        "/home/alderson/Projects/Mine/yttria/src/shaders/vert.spv",
-        "/home/alderson/Projects/Mine/yttria/src/shaders/frag.spv",
-        std::nullopt
-    };
-
-    PipelineConfigInfo pipelineConfig{};
-    Pipeline::defaultPipelineConfigInfo(pipelineConfig);
+    GraphicsPipelineConfigInfo pipelineConfig{};
+    GraphicsPipeline::defaultGraphicsPipelineConfigInfo(pipelineConfig);
     pipelineConfig.renderPass = renderPass;
     pipelineConfig.pipelineLayout = pipelineLayout_;
-    pipeline_ = std::make_unique<Pipeline>(
+    pipeline_ = std::make_unique<GraphicsPipeline>(
         device_,
-        shaderInfo,
+        "/home/alderson/Projects/Mine/yttria/src/shaders/vert.spv",
+        "/home/alderson/Projects/Mine/yttria/src/shaders/frag.spv",
         pipelineConfig
     );
 }

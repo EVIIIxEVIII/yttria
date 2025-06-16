@@ -1,7 +1,6 @@
 #include "MainApp.hpp"
 
 #include "yttria/backend/systems/simple_render_system.hpp"
-#include "yttria/backend/systems/point_light_system.hpp"
 #include "yttria/backend/systems/ink_sim.hpp"
 
 #include "yttria/backend/movement_controller.hpp"

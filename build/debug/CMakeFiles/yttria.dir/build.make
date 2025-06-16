@@ -97,10 +97,24 @@ CMakeFiles/yttria.dir/src/backend/camera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/yttria.dir/src/backend/camera.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alderson/Projects/Mine/yttria/src/backend/camera.cpp -o CMakeFiles/yttria.dir/src/backend/camera.cpp.s
 
+CMakeFiles/yttria.dir/src/backend/compute_pipeline.cpp.o: CMakeFiles/yttria.dir/flags.make
+CMakeFiles/yttria.dir/src/backend/compute_pipeline.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/compute_pipeline.cpp
+CMakeFiles/yttria.dir/src/backend/compute_pipeline.cpp.o: CMakeFiles/yttria.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/yttria.dir/src/backend/compute_pipeline.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/yttria.dir/src/backend/compute_pipeline.cpp.o -MF CMakeFiles/yttria.dir/src/backend/compute_pipeline.cpp.o.d -o CMakeFiles/yttria.dir/src/backend/compute_pipeline.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/compute_pipeline.cpp
+
+CMakeFiles/yttria.dir/src/backend/compute_pipeline.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/yttria.dir/src/backend/compute_pipeline.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alderson/Projects/Mine/yttria/src/backend/compute_pipeline.cpp > CMakeFiles/yttria.dir/src/backend/compute_pipeline.cpp.i
+
+CMakeFiles/yttria.dir/src/backend/compute_pipeline.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/yttria.dir/src/backend/compute_pipeline.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alderson/Projects/Mine/yttria/src/backend/compute_pipeline.cpp -o CMakeFiles/yttria.dir/src/backend/compute_pipeline.cpp.s
+
 CMakeFiles/yttria.dir/src/backend/descriptors.cpp.o: CMakeFiles/yttria.dir/flags.make
 CMakeFiles/yttria.dir/src/backend/descriptors.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/descriptors.cpp
 CMakeFiles/yttria.dir/src/backend/descriptors.cpp.o: CMakeFiles/yttria.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/yttria.dir/src/backend/descriptors.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/yttria.dir/src/backend/descriptors.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/yttria.dir/src/backend/descriptors.cpp.o -MF CMakeFiles/yttria.dir/src/backend/descriptors.cpp.o.d -o CMakeFiles/yttria.dir/src/backend/descriptors.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/descriptors.cpp
 
 CMakeFiles/yttria.dir/src/backend/descriptors.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/yttria.dir/src/backend/descriptors.cpp.s: cmake_force
 CMakeFiles/yttria.dir/src/backend/device.cpp.o: CMakeFiles/yttria.dir/flags.make
 CMakeFiles/yttria.dir/src/backend/device.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/device.cpp
 CMakeFiles/yttria.dir/src/backend/device.cpp.o: CMakeFiles/yttria.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/yttria.dir/src/backend/device.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/yttria.dir/src/backend/device.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/yttria.dir/src/backend/device.cpp.o -MF CMakeFiles/yttria.dir/src/backend/device.cpp.o.d -o CMakeFiles/yttria.dir/src/backend/device.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/device.cpp
 
 CMakeFiles/yttria.dir/src/backend/device.cpp.i: cmake_force
@@ -125,10 +139,24 @@ CMakeFiles/yttria.dir/src/backend/device.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/yttria.dir/src/backend/device.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alderson/Projects/Mine/yttria/src/backend/device.cpp -o CMakeFiles/yttria.dir/src/backend/device.cpp.s
 
+CMakeFiles/yttria.dir/src/backend/graphics_pipeline.cpp.o: CMakeFiles/yttria.dir/flags.make
+CMakeFiles/yttria.dir/src/backend/graphics_pipeline.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/graphics_pipeline.cpp
+CMakeFiles/yttria.dir/src/backend/graphics_pipeline.cpp.o: CMakeFiles/yttria.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/yttria.dir/src/backend/graphics_pipeline.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/yttria.dir/src/backend/graphics_pipeline.cpp.o -MF CMakeFiles/yttria.dir/src/backend/graphics_pipeline.cpp.o.d -o CMakeFiles/yttria.dir/src/backend/graphics_pipeline.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/graphics_pipeline.cpp
+
+CMakeFiles/yttria.dir/src/backend/graphics_pipeline.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/yttria.dir/src/backend/graphics_pipeline.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alderson/Projects/Mine/yttria/src/backend/graphics_pipeline.cpp > CMakeFiles/yttria.dir/src/backend/graphics_pipeline.cpp.i
+
+CMakeFiles/yttria.dir/src/backend/graphics_pipeline.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/yttria.dir/src/backend/graphics_pipeline.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alderson/Projects/Mine/yttria/src/backend/graphics_pipeline.cpp -o CMakeFiles/yttria.dir/src/backend/graphics_pipeline.cpp.s
+
 CMakeFiles/yttria.dir/src/backend/image.cpp.o: CMakeFiles/yttria.dir/flags.make
 CMakeFiles/yttria.dir/src/backend/image.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/image.cpp
 CMakeFiles/yttria.dir/src/backend/image.cpp.o: CMakeFiles/yttria.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/yttria.dir/src/backend/image.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/yttria.dir/src/backend/image.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/yttria.dir/src/backend/image.cpp.o -MF CMakeFiles/yttria.dir/src/backend/image.cpp.o.d -o CMakeFiles/yttria.dir/src/backend/image.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/image.cpp
 
 CMakeFiles/yttria.dir/src/backend/image.cpp.i: cmake_force
@@ -142,7 +170,7 @@ CMakeFiles/yttria.dir/src/backend/image.cpp.s: cmake_force
 CMakeFiles/yttria.dir/src/backend/linear_clamp_sampler.cpp.o: CMakeFiles/yttria.dir/flags.make
 CMakeFiles/yttria.dir/src/backend/linear_clamp_sampler.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/linear_clamp_sampler.cpp
 CMakeFiles/yttria.dir/src/backend/linear_clamp_sampler.cpp.o: CMakeFiles/yttria.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/yttria.dir/src/backend/linear_clamp_sampler.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/yttria.dir/src/backend/linear_clamp_sampler.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/yttria.dir/src/backend/linear_clamp_sampler.cpp.o -MF CMakeFiles/yttria.dir/src/backend/linear_clamp_sampler.cpp.o.d -o CMakeFiles/yttria.dir/src/backend/linear_clamp_sampler.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/linear_clamp_sampler.cpp
 
 CMakeFiles/yttria.dir/src/backend/linear_clamp_sampler.cpp.i: cmake_force
@@ -156,7 +184,7 @@ CMakeFiles/yttria.dir/src/backend/linear_clamp_sampler.cpp.s: cmake_force
 CMakeFiles/yttria.dir/src/backend/model.cpp.o: CMakeFiles/yttria.dir/flags.make
 CMakeFiles/yttria.dir/src/backend/model.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/model.cpp
 CMakeFiles/yttria.dir/src/backend/model.cpp.o: CMakeFiles/yttria.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/yttria.dir/src/backend/model.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/yttria.dir/src/backend/model.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/yttria.dir/src/backend/model.cpp.o -MF CMakeFiles/yttria.dir/src/backend/model.cpp.o.d -o CMakeFiles/yttria.dir/src/backend/model.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/model.cpp
 
 CMakeFiles/yttria.dir/src/backend/model.cpp.i: cmake_force
@@ -170,7 +198,7 @@ CMakeFiles/yttria.dir/src/backend/model.cpp.s: cmake_force
 CMakeFiles/yttria.dir/src/backend/movement_controller.cpp.o: CMakeFiles/yttria.dir/flags.make
 CMakeFiles/yttria.dir/src/backend/movement_controller.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/movement_controller.cpp
 CMakeFiles/yttria.dir/src/backend/movement_controller.cpp.o: CMakeFiles/yttria.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/yttria.dir/src/backend/movement_controller.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/yttria.dir/src/backend/movement_controller.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/yttria.dir/src/backend/movement_controller.cpp.o -MF CMakeFiles/yttria.dir/src/backend/movement_controller.cpp.o.d -o CMakeFiles/yttria.dir/src/backend/movement_controller.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/movement_controller.cpp
 
 CMakeFiles/yttria.dir/src/backend/movement_controller.cpp.i: cmake_force
@@ -181,24 +209,10 @@ CMakeFiles/yttria.dir/src/backend/movement_controller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/yttria.dir/src/backend/movement_controller.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alderson/Projects/Mine/yttria/src/backend/movement_controller.cpp -o CMakeFiles/yttria.dir/src/backend/movement_controller.cpp.s
 
-CMakeFiles/yttria.dir/src/backend/pipeline.cpp.o: CMakeFiles/yttria.dir/flags.make
-CMakeFiles/yttria.dir/src/backend/pipeline.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/pipeline.cpp
-CMakeFiles/yttria.dir/src/backend/pipeline.cpp.o: CMakeFiles/yttria.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/yttria.dir/src/backend/pipeline.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/yttria.dir/src/backend/pipeline.cpp.o -MF CMakeFiles/yttria.dir/src/backend/pipeline.cpp.o.d -o CMakeFiles/yttria.dir/src/backend/pipeline.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/pipeline.cpp
-
-CMakeFiles/yttria.dir/src/backend/pipeline.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/yttria.dir/src/backend/pipeline.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alderson/Projects/Mine/yttria/src/backend/pipeline.cpp > CMakeFiles/yttria.dir/src/backend/pipeline.cpp.i
-
-CMakeFiles/yttria.dir/src/backend/pipeline.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/yttria.dir/src/backend/pipeline.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alderson/Projects/Mine/yttria/src/backend/pipeline.cpp -o CMakeFiles/yttria.dir/src/backend/pipeline.cpp.s
-
 CMakeFiles/yttria.dir/src/backend/renderer.cpp.o: CMakeFiles/yttria.dir/flags.make
 CMakeFiles/yttria.dir/src/backend/renderer.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/renderer.cpp
 CMakeFiles/yttria.dir/src/backend/renderer.cpp.o: CMakeFiles/yttria.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/yttria.dir/src/backend/renderer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/yttria.dir/src/backend/renderer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/yttria.dir/src/backend/renderer.cpp.o -MF CMakeFiles/yttria.dir/src/backend/renderer.cpp.o.d -o CMakeFiles/yttria.dir/src/backend/renderer.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/renderer.cpp
 
 CMakeFiles/yttria.dir/src/backend/renderer.cpp.i: cmake_force
@@ -212,7 +226,7 @@ CMakeFiles/yttria.dir/src/backend/renderer.cpp.s: cmake_force
 CMakeFiles/yttria.dir/src/backend/scene_object.cpp.o: CMakeFiles/yttria.dir/flags.make
 CMakeFiles/yttria.dir/src/backend/scene_object.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/scene_object.cpp
 CMakeFiles/yttria.dir/src/backend/scene_object.cpp.o: CMakeFiles/yttria.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/yttria.dir/src/backend/scene_object.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/yttria.dir/src/backend/scene_object.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/yttria.dir/src/backend/scene_object.cpp.o -MF CMakeFiles/yttria.dir/src/backend/scene_object.cpp.o.d -o CMakeFiles/yttria.dir/src/backend/scene_object.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/scene_object.cpp
 
 CMakeFiles/yttria.dir/src/backend/scene_object.cpp.i: cmake_force
@@ -226,7 +240,7 @@ CMakeFiles/yttria.dir/src/backend/scene_object.cpp.s: cmake_force
 CMakeFiles/yttria.dir/src/backend/swap_chain.cpp.o: CMakeFiles/yttria.dir/flags.make
 CMakeFiles/yttria.dir/src/backend/swap_chain.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/swap_chain.cpp
 CMakeFiles/yttria.dir/src/backend/swap_chain.cpp.o: CMakeFiles/yttria.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/yttria.dir/src/backend/swap_chain.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/yttria.dir/src/backend/swap_chain.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/yttria.dir/src/backend/swap_chain.cpp.o -MF CMakeFiles/yttria.dir/src/backend/swap_chain.cpp.o.d -o CMakeFiles/yttria.dir/src/backend/swap_chain.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/swap_chain.cpp
 
 CMakeFiles/yttria.dir/src/backend/swap_chain.cpp.i: cmake_force
@@ -240,7 +254,7 @@ CMakeFiles/yttria.dir/src/backend/swap_chain.cpp.s: cmake_force
 CMakeFiles/yttria.dir/src/backend/systems/ink_sim.cpp.o: CMakeFiles/yttria.dir/flags.make
 CMakeFiles/yttria.dir/src/backend/systems/ink_sim.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/systems/ink_sim.cpp
 CMakeFiles/yttria.dir/src/backend/systems/ink_sim.cpp.o: CMakeFiles/yttria.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/yttria.dir/src/backend/systems/ink_sim.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/yttria.dir/src/backend/systems/ink_sim.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/yttria.dir/src/backend/systems/ink_sim.cpp.o -MF CMakeFiles/yttria.dir/src/backend/systems/ink_sim.cpp.o.d -o CMakeFiles/yttria.dir/src/backend/systems/ink_sim.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/systems/ink_sim.cpp
 
 CMakeFiles/yttria.dir/src/backend/systems/ink_sim.cpp.i: cmake_force
@@ -254,7 +268,7 @@ CMakeFiles/yttria.dir/src/backend/systems/ink_sim.cpp.s: cmake_force
 CMakeFiles/yttria.dir/src/backend/systems/point_light_system.cpp.o: CMakeFiles/yttria.dir/flags.make
 CMakeFiles/yttria.dir/src/backend/systems/point_light_system.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/systems/point_light_system.cpp
 CMakeFiles/yttria.dir/src/backend/systems/point_light_system.cpp.o: CMakeFiles/yttria.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/yttria.dir/src/backend/systems/point_light_system.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/yttria.dir/src/backend/systems/point_light_system.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/yttria.dir/src/backend/systems/point_light_system.cpp.o -MF CMakeFiles/yttria.dir/src/backend/systems/point_light_system.cpp.o.d -o CMakeFiles/yttria.dir/src/backend/systems/point_light_system.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/systems/point_light_system.cpp
 
 CMakeFiles/yttria.dir/src/backend/systems/point_light_system.cpp.i: cmake_force
@@ -268,7 +282,7 @@ CMakeFiles/yttria.dir/src/backend/systems/point_light_system.cpp.s: cmake_force
 CMakeFiles/yttria.dir/src/backend/systems/simple_render_system.cpp.o: CMakeFiles/yttria.dir/flags.make
 CMakeFiles/yttria.dir/src/backend/systems/simple_render_system.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/systems/simple_render_system.cpp
 CMakeFiles/yttria.dir/src/backend/systems/simple_render_system.cpp.o: CMakeFiles/yttria.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/yttria.dir/src/backend/systems/simple_render_system.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/yttria.dir/src/backend/systems/simple_render_system.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/yttria.dir/src/backend/systems/simple_render_system.cpp.o -MF CMakeFiles/yttria.dir/src/backend/systems/simple_render_system.cpp.o.d -o CMakeFiles/yttria.dir/src/backend/systems/simple_render_system.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/systems/simple_render_system.cpp
 
 CMakeFiles/yttria.dir/src/backend/systems/simple_render_system.cpp.i: cmake_force
@@ -282,7 +296,7 @@ CMakeFiles/yttria.dir/src/backend/systems/simple_render_system.cpp.s: cmake_forc
 CMakeFiles/yttria.dir/src/backend/window.cpp.o: CMakeFiles/yttria.dir/flags.make
 CMakeFiles/yttria.dir/src/backend/window.cpp.o: /home/alderson/Projects/Mine/yttria/src/backend/window.cpp
 CMakeFiles/yttria.dir/src/backend/window.cpp.o: CMakeFiles/yttria.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/yttria.dir/src/backend/window.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/yttria.dir/src/backend/window.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/yttria.dir/src/backend/window.cpp.o -MF CMakeFiles/yttria.dir/src/backend/window.cpp.o.d -o CMakeFiles/yttria.dir/src/backend/window.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/window.cpp
 
 CMakeFiles/yttria.dir/src/backend/window.cpp.i: cmake_force
@@ -297,13 +311,14 @@ CMakeFiles/yttria.dir/src/backend/window.cpp.s: cmake_force
 yttria_OBJECTS = \
 "CMakeFiles/yttria.dir/src/backend/buffer.cpp.o" \
 "CMakeFiles/yttria.dir/src/backend/camera.cpp.o" \
+"CMakeFiles/yttria.dir/src/backend/compute_pipeline.cpp.o" \
 "CMakeFiles/yttria.dir/src/backend/descriptors.cpp.o" \
 "CMakeFiles/yttria.dir/src/backend/device.cpp.o" \
+"CMakeFiles/yttria.dir/src/backend/graphics_pipeline.cpp.o" \
 "CMakeFiles/yttria.dir/src/backend/image.cpp.o" \
 "CMakeFiles/yttria.dir/src/backend/linear_clamp_sampler.cpp.o" \
 "CMakeFiles/yttria.dir/src/backend/model.cpp.o" \
 "CMakeFiles/yttria.dir/src/backend/movement_controller.cpp.o" \
-"CMakeFiles/yttria.dir/src/backend/pipeline.cpp.o" \
 "CMakeFiles/yttria.dir/src/backend/renderer.cpp.o" \
 "CMakeFiles/yttria.dir/src/backend/scene_object.cpp.o" \
 "CMakeFiles/yttria.dir/src/backend/swap_chain.cpp.o" \
@@ -317,13 +332,14 @@ yttria_EXTERNAL_OBJECTS =
 
 libyttria.a: CMakeFiles/yttria.dir/src/backend/buffer.cpp.o
 libyttria.a: CMakeFiles/yttria.dir/src/backend/camera.cpp.o
+libyttria.a: CMakeFiles/yttria.dir/src/backend/compute_pipeline.cpp.o
 libyttria.a: CMakeFiles/yttria.dir/src/backend/descriptors.cpp.o
 libyttria.a: CMakeFiles/yttria.dir/src/backend/device.cpp.o
+libyttria.a: CMakeFiles/yttria.dir/src/backend/graphics_pipeline.cpp.o
 libyttria.a: CMakeFiles/yttria.dir/src/backend/image.cpp.o
 libyttria.a: CMakeFiles/yttria.dir/src/backend/linear_clamp_sampler.cpp.o
 libyttria.a: CMakeFiles/yttria.dir/src/backend/model.cpp.o
 libyttria.a: CMakeFiles/yttria.dir/src/backend/movement_controller.cpp.o
-libyttria.a: CMakeFiles/yttria.dir/src/backend/pipeline.cpp.o
 libyttria.a: CMakeFiles/yttria.dir/src/backend/renderer.cpp.o
 libyttria.a: CMakeFiles/yttria.dir/src/backend/scene_object.cpp.o
 libyttria.a: CMakeFiles/yttria.dir/src/backend/swap_chain.cpp.o
@@ -333,7 +349,7 @@ libyttria.a: CMakeFiles/yttria.dir/src/backend/systems/simple_render_system.cpp.
 libyttria.a: CMakeFiles/yttria.dir/src/backend/window.cpp.o
 libyttria.a: CMakeFiles/yttria.dir/build.make
 libyttria.a: CMakeFiles/yttria.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX static library libyttria.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/alderson/Projects/Mine/yttria/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX static library libyttria.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/yttria.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/yttria.dir/link.txt --verbose=$(VERBOSE)
 

@@ -13,6 +13,12 @@
 },
 {
   "directory": "/home/alderson/Projects/Mine/yttria/build/debug",
+  "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/compute_pipeline.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/compute_pipeline.cpp",
+  "file": "/home/alderson/Projects/Mine/yttria/src/backend/compute_pipeline.cpp",
+  "output": "CMakeFiles/yttria.dir/src/backend/compute_pipeline.cpp.o"
+},
+{
+  "directory": "/home/alderson/Projects/Mine/yttria/build/debug",
   "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/descriptors.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/descriptors.cpp",
   "file": "/home/alderson/Projects/Mine/yttria/src/backend/descriptors.cpp",
   "output": "CMakeFiles/yttria.dir/src/backend/descriptors.cpp.o"
@@ -22,6 +28,12 @@
   "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/device.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/device.cpp",
   "file": "/home/alderson/Projects/Mine/yttria/src/backend/device.cpp",
   "output": "CMakeFiles/yttria.dir/src/backend/device.cpp.o"
+},
+{
+  "directory": "/home/alderson/Projects/Mine/yttria/build/debug",
+  "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/graphics_pipeline.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/graphics_pipeline.cpp",
+  "file": "/home/alderson/Projects/Mine/yttria/src/backend/graphics_pipeline.cpp",
+  "output": "CMakeFiles/yttria.dir/src/backend/graphics_pipeline.cpp.o"
 },
 {
   "directory": "/home/alderson/Projects/Mine/yttria/build/debug",
@@ -46,12 +58,6 @@
   "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/movement_controller.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/movement_controller.cpp",
   "file": "/home/alderson/Projects/Mine/yttria/src/backend/movement_controller.cpp",
   "output": "CMakeFiles/yttria.dir/src/backend/movement_controller.cpp.o"
-},
-{
-  "directory": "/home/alderson/Projects/Mine/yttria/build/debug",
-  "command": "/usr/bin/c++  -I/home/alderson/Projects/Mine/yttria/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g -std=gnu++17 -o CMakeFiles/yttria.dir/src/backend/pipeline.cpp.o -c /home/alderson/Projects/Mine/yttria/src/backend/pipeline.cpp",
-  "file": "/home/alderson/Projects/Mine/yttria/src/backend/pipeline.cpp",
-  "output": "CMakeFiles/yttria.dir/src/backend/pipeline.cpp.o"
 },
 {
   "directory": "/home/alderson/Projects/Mine/yttria/build/debug",

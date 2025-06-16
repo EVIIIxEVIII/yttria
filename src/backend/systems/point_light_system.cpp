@@ -1,5 +1,5 @@
 #include "yttria/backend/systems/point_light_system.hpp"
-#include "yttria/backend/pipeline.hpp"
+#include "yttria/backend/graphics_pipeline.hpp"
 
 #include <memory>
 #include <stdexcept>
@@ -47,23 +47,17 @@ void PointLightSystem::createPipelineLayout(VkDescriptorSetLayout globalSetLayou
 void PointLightSystem::createPipeline(VkRenderPass renderPass) {
     assert(pipelineLayout_ != nullptr && "Cannot create pipeline before pipeline layout");
 
-    PipelineConfigInfo pipelineConfig{};
-    Pipeline::defaultPipelineConfigInfo(pipelineConfig);
+    GraphicsPipelineConfigInfo pipelineConfig{};
+    GraphicsPipeline::defaultGraphicsPipelineConfigInfo(pipelineConfig);
     pipelineConfig.attributeDescriptions.clear();
     pipelineConfig.bindingDescriptions.clear();
 
-    ShaderInfo shaderInfo {
-        "/home/alderson/Projects/Mine/yttria/src/shaders/point_light.vert.spv",
-        "/home/alderson/Projects/Mine/yttria/src/shaders/point_light.frag.spv",
-        std::nullopt
-    };
-
-
     pipelineConfig.renderPass = renderPass;
     pipelineConfig.pipelineLayout = pipelineLayout_;
-    pipeline_ = std::make_unique<Pipeline>(
+    pipeline_ = std::make_unique<GraphicsPipeline>(
         device_,
-        shaderInfo,
+        "/home/alderson/Projects/Mine/yttria/src/shaders/point_light.vert.spv",
+        "/home/alderson/Projects/Mine/yttria/src/shaders/point_light.frag.spv",
         pipelineConfig
     );
 }

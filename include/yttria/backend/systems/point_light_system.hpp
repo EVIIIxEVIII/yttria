@@ -3,7 +3,7 @@
 #include <memory>
 #include <vulkan/vulkan_core.h>
 
-#include "yttria/backend/pipeline.hpp"
+#include "yttria/backend/graphics_pipeline.hpp"
 #include "yttria/backend/device.hpp"
 #include "yttria/backend/frame_info.hpp"
 
@@ -26,7 +26,7 @@ private:
     void createPipeline(VkRenderPass renderPass);
 
     Device& device_;
-    std::unique_ptr<Pipeline> pipeline_;
+    std::unique_ptr<GraphicsPipeline> pipeline_;
     VkPipelineLayout pipelineLayout_;
 };
 

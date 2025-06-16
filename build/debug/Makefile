@@ -191,6 +191,30 @@ src/backend/camera.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/camera.cpp.s
 .PHONY : src/backend/camera.cpp.s
 
+src/backend/compute_pipeline.o: src/backend/compute_pipeline.cpp.o
+.PHONY : src/backend/compute_pipeline.o
+
+# target to build an object file
+src/backend/compute_pipeline.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/compute_pipeline.cpp.o
+.PHONY : src/backend/compute_pipeline.cpp.o
+
+src/backend/compute_pipeline.i: src/backend/compute_pipeline.cpp.i
+.PHONY : src/backend/compute_pipeline.i
+
+# target to preprocess a source file
+src/backend/compute_pipeline.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/compute_pipeline.cpp.i
+.PHONY : src/backend/compute_pipeline.cpp.i
+
+src/backend/compute_pipeline.s: src/backend/compute_pipeline.cpp.s
+.PHONY : src/backend/compute_pipeline.s
+
+# target to generate assembly for a file
+src/backend/compute_pipeline.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/compute_pipeline.cpp.s
+.PHONY : src/backend/compute_pipeline.cpp.s
+
 src/backend/descriptors.o: src/backend/descriptors.cpp.o
 .PHONY : src/backend/descriptors.o
 
@@ -238,6 +262,30 @@ src/backend/device.s: src/backend/device.cpp.s
 src/backend/device.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/device.cpp.s
 .PHONY : src/backend/device.cpp.s
+
+src/backend/graphics_pipeline.o: src/backend/graphics_pipeline.cpp.o
+.PHONY : src/backend/graphics_pipeline.o
+
+# target to build an object file
+src/backend/graphics_pipeline.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/graphics_pipeline.cpp.o
+.PHONY : src/backend/graphics_pipeline.cpp.o
+
+src/backend/graphics_pipeline.i: src/backend/graphics_pipeline.cpp.i
+.PHONY : src/backend/graphics_pipeline.i
+
+# target to preprocess a source file
+src/backend/graphics_pipeline.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/graphics_pipeline.cpp.i
+.PHONY : src/backend/graphics_pipeline.cpp.i
+
+src/backend/graphics_pipeline.s: src/backend/graphics_pipeline.cpp.s
+.PHONY : src/backend/graphics_pipeline.s
+
+# target to generate assembly for a file
+src/backend/graphics_pipeline.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/graphics_pipeline.cpp.s
+.PHONY : src/backend/graphics_pipeline.cpp.s
 
 src/backend/image.o: src/backend/image.cpp.o
 .PHONY : src/backend/image.o
@@ -334,30 +382,6 @@ src/backend/movement_controller.s: src/backend/movement_controller.cpp.s
 src/backend/movement_controller.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/movement_controller.cpp.s
 .PHONY : src/backend/movement_controller.cpp.s
-
-src/backend/pipeline.o: src/backend/pipeline.cpp.o
-.PHONY : src/backend/pipeline.o
-
-# target to build an object file
-src/backend/pipeline.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/pipeline.cpp.o
-.PHONY : src/backend/pipeline.cpp.o
-
-src/backend/pipeline.i: src/backend/pipeline.cpp.i
-.PHONY : src/backend/pipeline.i
-
-# target to preprocess a source file
-src/backend/pipeline.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/pipeline.cpp.i
-.PHONY : src/backend/pipeline.cpp.i
-
-src/backend/pipeline.s: src/backend/pipeline.cpp.s
-.PHONY : src/backend/pipeline.s
-
-# target to generate assembly for a file
-src/backend/pipeline.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/yttria.dir/build.make CMakeFiles/yttria.dir/src/backend/pipeline.cpp.s
-.PHONY : src/backend/pipeline.cpp.s
 
 src/backend/renderer.o: src/backend/renderer.cpp.o
 .PHONY : src/backend/renderer.o
@@ -543,12 +567,18 @@ help:
 	@echo "... src/backend/camera.o"
 	@echo "... src/backend/camera.i"
 	@echo "... src/backend/camera.s"
+	@echo "... src/backend/compute_pipeline.o"
+	@echo "... src/backend/compute_pipeline.i"
+	@echo "... src/backend/compute_pipeline.s"
 	@echo "... src/backend/descriptors.o"
 	@echo "... src/backend/descriptors.i"
 	@echo "... src/backend/descriptors.s"
 	@echo "... src/backend/device.o"
 	@echo "... src/backend/device.i"
 	@echo "... src/backend/device.s"
+	@echo "... src/backend/graphics_pipeline.o"
+	@echo "... src/backend/graphics_pipeline.i"
+	@echo "... src/backend/graphics_pipeline.s"
 	@echo "... src/backend/image.o"
 	@echo "... src/backend/image.i"
 	@echo "... src/backend/image.s"
@@ -561,9 +591,6 @@ help:
 	@echo "... src/backend/movement_controller.o"
 	@echo "... src/backend/movement_controller.i"
 	@echo "... src/backend/movement_controller.s"
-	@echo "... src/backend/pipeline.o"
-	@echo "... src/backend/pipeline.i"
-	@echo "... src/backend/pipeline.s"
 	@echo "... src/backend/renderer.o"
 	@echo "... src/backend/renderer.i"
 	@echo "... src/backend/renderer.s"
