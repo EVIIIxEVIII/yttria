@@ -24,7 +24,7 @@ public:
     Image& operator=(const Image&) = delete;
 
     VkImageView getImageView() const { return imageView_; }
-    VkImage getImage() const { return image_; }
+    VkImage image() const { return image_; }
     VkDescriptorImageInfo descriptorInfo(VkSampler sampler);
 
 private:

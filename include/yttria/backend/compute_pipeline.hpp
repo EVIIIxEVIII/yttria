@@ -11,8 +11,8 @@ public:
     );
     ~ComputePipeline();
 
+    VkPipeline pipeline() { return computePipeline_; }
 private:
-
     Device& device_;
     VkPipeline computePipeline_;
     VkShaderModule compShaderModule_;

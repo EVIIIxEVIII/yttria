@@ -16,8 +16,6 @@
 #include <vulkan/vulkan_core.h>
 #include <glm/gtc/constants.hpp>
 #include <chrono>
-#include <array>
-#include <iostream>
 
 namespace Application {
 
@@ -89,16 +87,20 @@ void MainApp::run() {
             .addBinding(0, VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER, VK_SHADER_STAGE_ALL)
 
             .addBinding(1, VK_DESCRIPTOR_TYPE_STORAGE_IMAGE, VK_SHADER_STAGE_COMPUTE_BIT)
-            .addBinding(2, VK_DESCRIPTOR_TYPE_COMBINED_IMAGE_SAMPLER, VK_SHADER_STAGE_COMPUTE_BIT)
+            .addBinding(2, VK_DESCRIPTOR_TYPE_COMBINED_IMAGE_SAMPLER,
+                        VK_SHADER_STAGE_VERTEX_BIT |
+                        VK_SHADER_STAGE_FRAGMENT_BIT |
+                        VK_SHADER_STAGE_COMPUTE_BIT
+            )
             .addBinding(3, VK_DESCRIPTOR_TYPE_STORAGE_IMAGE, VK_SHADER_STAGE_COMPUTE_BIT)
             .build();
 
     std::vector<VkDescriptorSet> globalDescriptorSets(SwapChain::MAX_FRAMES_IN_FLIGHT);
     for (size_t i = 0; i < globalDescriptorSets.size(); i++) {
         auto bufferInfo = uboBuffers[i]->descriptorInfo();
-        auto velocityImageInfo = velocityImage->descriptorInfo(linearClampSampler->sampler());
+        auto velocityImageInfo = velocityImage->descriptorInfo(nullptr);
+        auto nextDyeInfo = nextDye->descriptorInfo(nullptr);
         auto currentDyeInfo = currentDye->descriptorInfo(linearClampSampler->sampler());
-        auto nextDyeInfo = nextDye->descriptorInfo(linearClampSampler->sampler());
 
         DescriptorWriter(*globalSetLayout, *globalPool)
             .writeBuffer(0, &bufferInfo)
@@ -114,30 +116,25 @@ void MainApp::run() {
         globalSetLayout->getDescriptorSetLayout()
     };
 
-    //PointLightSystem pointLightSystem{
-    //    device,
-    //    renderer.getSwapChainRenderPass(),
-    //    globalSetLayout->getDescriptorSetLayout()
-    //};
-
-    InkSim inkSim {
-        device,
-        renderer.getSwapChainRenderPass(),
-        globalSetLayout->getDescriptorSetLayout()
+    InkImages inkImages{
+        std::move(velocityImage),
+        std::move(currentDye),
+        std::move(nextDye)
     };
 
+    InkSim inkSim (
+        device,
+        globalSetLayout->getDescriptorSetLayout(),
+        inkImages
+    );
+
     Camera camera{};
-    // camera.setViewDirection(glm::vec3(0.f), glm::vec3(0.5, 0.f, 1.f));
     camera.setViewTarget(glm::vec3(-1.f, -2.f, 2.f), glm::vec3(0.f, 0.f, 2.5f));
 
     auto viewerObject = SceneObject::createSceneObject();
     viewerObject.transform.translation.z = -2.5;
 
     MovementController cameraController{};
-
-    constexpr size_t NUM_FRAMES = 1000;
-    std::array<float, NUM_FRAMES> frameTimes{};
-    size_t frameNum = 0;
 
     auto currentTime = std::chrono::high_resolution_clock::now();
 
@@ -147,21 +144,6 @@ void MainApp::run() {
         auto newTime = std::chrono::high_resolution_clock::now();
         float frameTime = std::chrono::duration<float, std::chrono::seconds::period>(newTime - currentTime).count();
         currentTime = newTime;
-
-        frameTimes[frameNum % NUM_FRAMES] = frameTime;
-        frameNum++;
-
-        size_t count = std::min(frameNum, NUM_FRAMES);
-        float total = 0.0f;
-        for (size_t i = 0; i < count; ++i) {
-            total += frameTimes[i];
-        }
-        float avgFrameTime = total / static_cast<float>(count);
-        float avgFPS = 1.0f / avgFrameTime;
-
-        if (frameNum % 100 == 0) {
-            std::cout << "Average FPS (last " << count << " frames): " << avgFPS << std::endl;
-        }
 
         cameraController.moveInPlaneXZ(window.getGLFWWindow(), frameTime, viewerObject);
         camera.setViewYXZ(viewerObject.transform.translation, viewerObject.transform.rotation);
@@ -180,17 +162,16 @@ void MainApp::run() {
                 sceneObjects
             };
 
+            inkSim.record(commandBuffer, frameInfo.globalDescriptorSet);
             GlobalUbo ubo{};
             ubo.projection = camera.getProjection();
             ubo.view = camera.getView();
             ubo.inverseView = camera.getInverseView();
-            //pointLightSystem.update(frameInfo, ubo);
             uboBuffers[static_cast<size_t>(frameIndex)]->writeToBuffer((void*)&ubo);
             uboBuffers[static_cast<size_t>(frameIndex)]->flush();
 
             renderer.beginSwapChainRenderPass(commandBuffer);
             simpleRenderSystem.renderSceneObjects(frameInfo);
-            //pointLightSystem.render(frameInfo);
             renderer.endSwapChainRenderPass(commandBuffer);
             renderer.endFrame();
         }
