@@ -1,1 +1,0 @@
-/usr/bin/c++  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -g CMakeFiles/dev_app.dir/main.cpp.o CMakeFiles/dev_app.dir/MainApp.cpp.o -o dev_app  ../../libyttria.a /usr/lib/x86_64-linux-gnu/libvulkan.so -lglfw 

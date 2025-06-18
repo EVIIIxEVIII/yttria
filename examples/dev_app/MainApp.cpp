@@ -1,7 +1,7 @@
 #include "MainApp.hpp"
 
 #include "yttria/backend/systems/simple_render_system.hpp"
-#include "yttria/backend/systems/ink_sim.hpp"
+#include "yttria/backend/systems/fluid_sim.hpp"
 
 #include "yttria/backend/movement_controller.hpp"
 #include "yttria/backend/image.hpp"
@@ -74,7 +74,7 @@ void MainApp::run() {
     auto nextDye = std::make_unique<Image>(
         device,
         256, 256, 256,
-        VK_FORMAT_R16_SFLOAT,
+        VK_FORMAT_R32_SFLOAT,
         VK_IMAGE_USAGE_STORAGE_BIT | VK_IMAGE_USAGE_TRANSFER_DST_BIT,
         VK_IMAGE_ASPECT_COLOR_BIT,
         VK_IMAGE_TILING_OPTIMAL,
@@ -116,16 +116,16 @@ void MainApp::run() {
         globalSetLayout->getDescriptorSetLayout()
     };
 
-    InkImages inkImages{
+    FluidImages fluidImages{
         std::move(velocityImage),
         std::move(currentDye),
         std::move(nextDye)
     };
 
-    InkSim inkSim (
+    FluidSim fluidSim (
         device,
         globalSetLayout->getDescriptorSetLayout(),
-        inkImages
+        fluidImages
     );
 
     Camera camera{};
@@ -162,7 +162,8 @@ void MainApp::run() {
                 sceneObjects
             };
 
-            inkSim.record(commandBuffer, frameInfo.globalDescriptorSet);
+            fluidSim.record(frameInfo);
+
             GlobalUbo ubo{};
             ubo.projection = camera.getProjection();
             ubo.view = camera.getView();

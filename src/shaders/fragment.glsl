@@ -49,7 +49,7 @@ void main()
     vec3  accum = vec3(0.0);
     float alpha = 0.0;
 
-    for (int i = 0; i < 512 && t < tExit && alpha < 0.99; ++i) {
+    for (int i = 0; i < 256 && t < tExit && alpha < 0.99; ++i) {
         vec3 pObj = roObj + rdObj * t;
         vec3 uvw  = pObj + 0.5;
 
