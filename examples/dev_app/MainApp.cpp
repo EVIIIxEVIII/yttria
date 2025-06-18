@@ -25,7 +25,7 @@ MainApp::MainApp() {
         .setMaxSets(SwapChain::MAX_FRAMES_IN_FLIGHT)
         .addPoolSize(VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER, SwapChain::MAX_FRAMES_IN_FLIGHT)
         .addPoolSize(VK_DESCRIPTOR_TYPE_COMBINED_IMAGE_SAMPLER, SwapChain::MAX_FRAMES_IN_FLIGHT)
-        .addPoolSize(VK_DESCRIPTOR_TYPE_STORAGE_IMAGE, SwapChain::MAX_FRAMES_IN_FLIGHT * 2)
+        .addPoolSize(VK_DESCRIPTOR_TYPE_STORAGE_IMAGE, SwapChain::MAX_FRAMES_IN_FLIGHT * 3)
         .build();
 
     loadSceneObjects();
@@ -63,7 +63,7 @@ void MainApp::run() {
     auto currentDye = std::make_unique<Image>(
         device,
         256, 256, 256,
-        VK_FORMAT_R16_SFLOAT,
+        VK_FORMAT_R16G16_SFLOAT, // the green channel is treated as an alpha one
         VK_IMAGE_USAGE_STORAGE_BIT | VK_IMAGE_USAGE_SAMPLED_BIT | VK_IMAGE_USAGE_TRANSFER_DST_BIT,
         VK_IMAGE_ASPECT_COLOR_BIT,
         VK_IMAGE_TILING_OPTIMAL,
@@ -87,12 +87,9 @@ void MainApp::run() {
             .addBinding(0, VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER, VK_SHADER_STAGE_ALL)
 
             .addBinding(1, VK_DESCRIPTOR_TYPE_STORAGE_IMAGE, VK_SHADER_STAGE_COMPUTE_BIT)
-            .addBinding(2, VK_DESCRIPTOR_TYPE_COMBINED_IMAGE_SAMPLER,
-                        VK_SHADER_STAGE_VERTEX_BIT |
-                        VK_SHADER_STAGE_FRAGMENT_BIT |
-                        VK_SHADER_STAGE_COMPUTE_BIT
-            )
+            .addBinding(2, VK_DESCRIPTOR_TYPE_STORAGE_IMAGE, VK_SHADER_STAGE_COMPUTE_BIT)
             .addBinding(3, VK_DESCRIPTOR_TYPE_STORAGE_IMAGE, VK_SHADER_STAGE_COMPUTE_BIT)
+            .addBinding(4, VK_DESCRIPTOR_TYPE_COMBINED_IMAGE_SAMPLER, VK_SHADER_STAGE_VERTEX_BIT | VK_SHADER_STAGE_FRAGMENT_BIT)
             .build();
 
     std::vector<VkDescriptorSet> globalDescriptorSets(SwapChain::MAX_FRAMES_IN_FLIGHT);
@@ -100,13 +97,16 @@ void MainApp::run() {
         auto bufferInfo = uboBuffers[i]->descriptorInfo();
         auto velocityImageInfo = velocityImage->descriptorInfo(nullptr);
         auto nextDyeInfo = nextDye->descriptorInfo(nullptr);
+
+        auto currentDyeInfoNoSampler = currentDye->descriptorInfo(nullptr);
         auto currentDyeInfo = currentDye->descriptorInfo(linearClampSampler->sampler());
 
         DescriptorWriter(*globalSetLayout, *globalPool)
             .writeBuffer(0, &bufferInfo)
             .writeImage(1, &velocityImageInfo)
-            .writeImage(2, &currentDyeInfo)
+            .writeImage(2, &currentDyeInfoNoSampler)
             .writeImage(3, &nextDyeInfo)
+            .writeImage(4, &currentDyeInfo)
             .build(globalDescriptorSets[i]);
     }
 
