@@ -2,6 +2,7 @@
 #include "yttria/backend/graphics_pipeline.hpp"
 #include "yttria/backend/scene_object.hpp"
 
+#include <glm/fwd.hpp>
 #include <memory>
 #include <stdexcept>
 #include <vulkan/vulkan_core.h>
@@ -11,6 +12,7 @@ namespace yttria::backend {
 
 struct SimplePushConstantData {
     alignas(16) glm::mat4 modelMatrix{1.f};
+    alignas(16) glm::mat4 modelMatrixInv{1.f};
 };
 
 SimpleRenderSystem::SimpleRenderSystem(Device& device, VkRenderPass renderPass, VkDescriptorSetLayout globalSetLayout):
@@ -78,6 +80,7 @@ void SimpleRenderSystem::renderSceneObjects(
 
         SimplePushConstantData push{};
         push.modelMatrix = obj.transform.mat4();
+        push.modelMatrixInv = glm::inverse(obj.transform.mat4());
 
         vkCmdPushConstants(
             frameInfo.commandBuffer,

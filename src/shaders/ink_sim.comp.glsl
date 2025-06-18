@@ -1,21 +1,18 @@
 #version 450
 layout(local_size_x = 8, local_size_y = 8, local_size_z = 8) in;
-layout(set = 0, binding = 2, rg16f) writeonly uniform image3D outVol;
+
+layout(set = 0, binding = 2, r32f) writeonly uniform image3D dst;
 
 void main()
 {
-    ivec3 p   = ivec3(gl_GlobalInvocationID); // (x,y,z)
-    if (p.z != 64) return;                   // slice 64 only
+    ivec3  P   = ivec3(gl_GlobalInvocationID);
+    ivec3  dim = imageSize(dst);
+    vec3   pos = (vec3(P) + 0.5) / vec3(dim);
 
-    vec2 centre = vec2(128.0);   // centre of 256×256 slice
-    float radius = 40.0;         // tweak as you like
+    vec3   center = vec3(0.5);
+    float  radius = 0.25;
+    float  inside = length(pos - center) < radius ? 1.0 : 0.0;
 
-    vec2 pos    = vec2(p.xy) + 0.5;
-    float dist  = length(pos - centre);
-
-    if (dist < radius)
-        imageStore(outVol, p, vec4(1.0));
-    else
-        imageStore(outVol, p, vec4(0.0));
+    imageStore(dst, P, vec4(inside));
 }
 

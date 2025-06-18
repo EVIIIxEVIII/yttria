@@ -63,7 +63,7 @@ void MainApp::run() {
     auto currentDye = std::make_unique<Image>(
         device,
         256, 256, 256,
-        VK_FORMAT_R16G16_SFLOAT, // the green channel is treated as an alpha one
+        VK_FORMAT_R32_SFLOAT,
         VK_IMAGE_USAGE_STORAGE_BIT | VK_IMAGE_USAGE_SAMPLED_BIT | VK_IMAGE_USAGE_TRANSFER_DST_BIT,
         VK_IMAGE_ASPECT_COLOR_BIT,
         VK_IMAGE_TILING_OPTIMAL,
@@ -181,12 +181,12 @@ void MainApp::run() {
 };
 
 void MainApp::loadSceneObjects() {
-    std::shared_ptr<Model> floor = Model::createModelFromFile(device, "/home/alderson/Projects/Mine/yttria/examples/dev_app/models/quad.obj");
-    auto floorObj = SceneObject::createSceneObject();
-    floorObj.model = floor;
-    floorObj.transform.translation = {0.f, 0.1f, 0.f};
-    floorObj.transform.scale = 3.f;
-    sceneObjects.emplace(floorObj.getId(), std::move(floorObj));
+    std::shared_ptr<Model> screen = Model::createModelFromFile(device, "/home/alderson/Projects/Mine/yttria/examples/dev_app/models/cube.obj");
+    auto screenObj = SceneObject::createSceneObject();
+    screenObj.model = screen;
+    screenObj.transform.translation = {0.f, 0.1f, 0.f};
+    screenObj.transform.scale = 3.f;
+    sceneObjects.emplace(screenObj.getId(), std::move(screenObj));
 
     std::vector<glm::vec3> lightColors{
       {1.f, .1f, .1f},
