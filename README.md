@@ -1,4 +1,6 @@
-# Building and running 
+# Yttria - a graphics engine for fluid simulation
+
+## Building and running 
 
 ```
 scripts/build_debug.sh
