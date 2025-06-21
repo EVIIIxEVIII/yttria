@@ -5,6 +5,7 @@
 #include "yttria/backend/renderer.hpp"
 #include "yttria/backend/scene_object.hpp"
 #include "yttria/backend/descriptors.hpp"
+#include "yttria/backend/systems/fluid_sim.hpp"
 
 using namespace yttria::backend;
 
@@ -26,6 +27,9 @@ public:
 
 private:
     void loadSceneObjects();
+
+    std::vector<float> initFluid(const FluidContext& fluidContext);
+    std::vector<glm::vec4> initVelocity(const FluidContext& fluidContext);
 
     Window window{WIDTH, HEIGHT, "Vulkan App"};
     Device device{window};

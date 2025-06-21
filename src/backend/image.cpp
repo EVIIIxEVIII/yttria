@@ -13,7 +13,7 @@ Image::Image(
     VkImageTiling tiling,
     VkMemoryPropertyFlags memoryProperties,
     VkImageLayout targetLayout
-): device_{device}, layout_{targetLayout}
+): device_{device}, layout_{targetLayout}, format_{format}
 {
     createImage(width, height, depth, format, usage, tiling, memoryProperties);
     createImageView(format, aspectFlags);
@@ -94,6 +94,14 @@ void Image::createImageView(VkFormat format, VkImageAspectFlags aspectFlags) {
     if (vkCreateImageView(device_.device(), &viewInfo, nullptr, &imageView_) != VK_SUCCESS) {
         throw std::runtime_error("Failed to create image view");
     }
+}
+
+template<typename T>
+void Image::loadIntoImage(const std::vector<T>& buffer) {
+    VkCommandBuffer commandBuffer = device_.beginSingleTimeCommands();
+
+
+    device_.endSingleTimeCommands(commandBuffer);
 }
 
 void Image::transitionImage(

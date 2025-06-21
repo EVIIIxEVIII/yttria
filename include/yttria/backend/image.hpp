@@ -27,12 +27,16 @@ public:
     VkImage image() const { return image_; }
     VkDescriptorImageInfo descriptorInfo(VkSampler sampler);
 
+    template<typename T>
+    void loadIntoImage(const std::vector<T>& buffer);
+
 private:
     Device& device_;
     VkImageLayout layout_;
     VkImage image_{VK_NULL_HANDLE};
     VkDeviceMemory memory_{VK_NULL_HANDLE};
     VkImageView imageView_{VK_NULL_HANDLE};
+    VkFormat format_;
 
     void createImageView(VkFormat format, VkImageAspectFlags aspectFlags);
     void createImage(
@@ -40,6 +44,7 @@ private:
         VkFormat format, VkImageUsageFlags usage,
         VkImageTiling tiling, VkMemoryPropertyFlags properties
     );
+
     void transitionImage(
         VkImageLayout oldLayout,
         VkImageLayout newLayout,

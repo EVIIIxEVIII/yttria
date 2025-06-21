@@ -8,7 +8,6 @@
 #include "yttria/backend/linear_clamp_sampler.hpp"
 
 #include <GLFW/glfw3.h>
-#include <cmath>
 #include <glm/ext/matrix_float2x2.hpp>
 #include <glm/ext/matrix_transform.hpp>
 #include <glm/fwd.hpp>
@@ -41,47 +40,22 @@ MainApp::~MainApp() {}
 
 std::vector<float> MainApp::initFluid(const FluidContext& fluidContext) {
     std::vector<float> initiaData(fluidContext.dim.x * fluidContext.dim.y * fluidContext.dim.z);
-    glm::uvec3 dim = fluidContext.dim;
 
-    for (uint32_t z = 0; z < dim.z; ++z) {
-        for (uint32_t y = 0; y < dim.y; ++y) {
-            for (uint32_t x = 0; x < dim.x; ++x) {
-                uint32_t idx = x + y*dim.x + z*dim.x*dim.y;
-                initiaData[idx] = (y < 64) ? 1.0 : 0.0;
-            }
+    for (uint32_t z = 0; z < fluidContext.dim.z; ++z)
+    for (uint32_t y = 0; y < fluidContext.dim.y; ++y)
+    for (uint32_t x = 0; x < fluidContext.dim.x; ++x) {
+        if (y < 64) {
+            initiaData[x + y*fluidContext.dim.x + z*fluidContext.dim.y] = 1.0;
+        } else {
+            initiaData[x + y*fluidContext.dim.x + z*fluidContext.dim.y] = 0.0;
         }
     }
 
     return initiaData;
 }
 
-// the vector field is initialized with
-// u(x, y, z) = cos(y)sin(x)
-// v(x, y, z) = -cos(x)sin(y)
-// w(x, y, z) = 0
-// because this has 0 divergence, but some curl
-std::vector<glm::vec4> MainApp::initVelocity(const FluidContext& fluidContext) {
-    std::vector<glm::vec4> initiaData(fluidContext.dim.x * fluidContext.dim.y * fluidContext.dim.z);
-    glm::uvec3 dim = fluidContext.dim;
+void MainApp::initVelocity(const FluidContext& fluidContext) {
 
-    for (uint32_t z = 0; z < dim.z; ++z) {
-        for (uint32_t y = 0; y < dim.y; ++y) {
-            for (uint32_t x = 0; x < dim.x; ++x) {
-                uint32_t idx = x + y*dim.x + z*dim.x*dim.y;
-
-                double radX = (double)x / dim.x * 2.0 * M_PI;
-                double radY = (double)y / dim.y * 2.0 * M_PI;
-
-                double u = std::cos(radY)*std::sin(radX);
-                double v = -std::cos(radX)*std::sin(radY);
-                double w = 0;
-
-                initiaData[idx] = glm::vec4(u, v, w, 0);
-            }
-        }
-    }
-
-    return initiaData;
 }
 
 void MainApp::run() {

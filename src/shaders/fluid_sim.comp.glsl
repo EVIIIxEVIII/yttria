@@ -12,13 +12,13 @@ layout(push_constant) uniform Push {
 void main()
 {
     ivec3  P   = ivec3(gl_GlobalInvocationID);
-    ivec3  dim = imageSize(dst);
+    ivec3  dim = imageSize(current);
     vec3   pos = (vec3(P) + 0.5) / vec3(dim);
 
     vec3   center = vec3(0.5);
     float  radius = 0.25;
     float  inside = length(pos - center) < radius ? 1.0 : 0.0;
 
-    imageStore(dst, P, vec4(inside));
+    imageStore(current, P, vec4(inside));
 }
 

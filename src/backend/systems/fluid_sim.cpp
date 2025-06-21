@@ -7,10 +7,9 @@
 
 namespace yttria::backend {
 
-
-FluidSim::FluidSim(Device& device, VkDescriptorSetLayout globalSetLayout, const FluidImages& inkImages):
+FluidSim::FluidSim(Device& device, VkDescriptorSetLayout globalSetLayout, const FluidContext& fluidContext):
     device_{device},
-    inkImages_{inkImages}
+    fluidContext_{fluidContext}
 {
     createPipelineLayout(globalSetLayout);
     createPipeline();
@@ -73,7 +72,17 @@ void FluidSim::record(FrameInfo &frameInfo) {
         0, nullptr
     );
 
-    vkCmdDispatch(frameInfo.commandBuffer, 32, 32, 32);
+    uint32_t threadsPerBlock = 8;
+    auto roundUp = [](uint32_t x, uint32_t blockSize) {
+        return (x + blockSize - 1) / blockSize;
+    };
+
+    vkCmdDispatch(
+        frameInfo.commandBuffer,
+        roundUp(fluidContext_.dim.x, threadsPerBlock),
+        roundUp(fluidContext_.dim.y, threadsPerBlock),
+        roundUp(fluidContext_.dim.z, threadsPerBlock)
+    );
 
     VkImageMemoryBarrier barrier{};
     barrier.sType               = VK_STRUCTURE_TYPE_IMAGE_MEMORY_BARRIER;
@@ -83,7 +92,7 @@ void FluidSim::record(FrameInfo &frameInfo) {
     barrier.newLayout           = VK_IMAGE_LAYOUT_GENERAL;
     barrier.srcQueueFamilyIndex = VK_QUEUE_FAMILY_IGNORED;
     barrier.dstQueueFamilyIndex = VK_QUEUE_FAMILY_IGNORED;
-    barrier.image               = inkImages_.velocity->image();
+    barrier.image               = fluidContext_.fluid->image();
     barrier.subresourceRange    = {
         VK_IMAGE_ASPECT_COLOR_BIT, 0, 1, 0, 1
     };
